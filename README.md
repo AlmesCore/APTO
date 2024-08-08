@@ -29,7 +29,7 @@ APTO defines nine object properties:
 - `:residue_of`: Indicates that a by-product is the residue of manufacturing another product (e.g., `:Whey :residue_of :Cheese`).
 - `:is_a_hybrid_of`: Specific to the `:Organism` subclasses, indicating a hybrid of two species (e.g., `:Citrus_aurantium :is_a_hybrid_of ( :Citrus_reticulata and :Citrus_maxima )`).
 
-### Data Properties
+### Data and Annotation Properties
 APTO does not include any data properties. Default annotation properties from OWL and RDF are used, with SKOS vocabulary imported to indicate alternative labels for the classes.
 
 ### Availability and Licensing
