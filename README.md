@@ -8,6 +8,7 @@ This ontology contains labels and comments in both Portuguese and English. There
 
 | Prefix      | Namespace IRI                                             |
 |-------------|-----------------------------------------------------------|
+| apto          | [https://w3id.org/apto#](https://w3id.org/apto#) |
 | ro          | [http://purl.obolibrary.org/obo/RO_](http://purl.obolibrary.org/obo/RO_) |
 | bco         | [http://purl.obolibrary.org/obo/BCO_](http://purl.obolibrary.org/obo/BCO_) |
 | owl         | [http://www.w3.org/2002/07/owl#](http://www.w3.org/2002/07/owl#) |
