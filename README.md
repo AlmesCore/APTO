@@ -2,7 +2,19 @@
 
 This is the normative document for the Agriculture Product Types Ontology (APTO). APTO is an ontology of types, meaning it does not contain individuals and is intended as a classification system for agricultural commodities price index databases in Brazil.
 
-This ontology contains labels and comments in both Portuguese and English. There are two main modules: `:Organism` and `:Product_type`.
+## Distributions
+
+Normative document in [HTML](https://github.com/AlmesCore/APTO/blob/main/README.md)
+
+[apto.owl](https://w3id.org/apto#)
+
+### Services for browsing the ontology:
+
+[Text search](https://data.pldn.nl/FilipiSoares/APTO/elasticsearch/APTO-Text-search/) (search entities by labels and comments)
+
+[Virtuoso](https://data.pldn.nl/FilipiSoares/APTO/sparql) (query the ontology using SPARQL)
+
+
 
 ### Normative Namespaces
 
@@ -21,6 +33,8 @@ This ontology contains labels and comments in both Portuguese and English. There
 | skos        | [http://www.w3.org/2004/02/skos/core#](http://www.w3.org/2004/02/skos/core#) |
 | agrovoc     | [http://aims.fao.org/aos/agrovoc/](http://aims.fao.org/aos/agrovoc/) |
 | agrotermos  | [https://sistemas.sede.embrapa.br/agrotermos/resources/](https://sistemas.sede.embrapa.br/agrotermos/resources/) |
+
+This ontology contains labels and comments in both Portuguese and English. There are two main modules: `:Organism` and `:Product_type`.
 
 
 ### `:Organism` Module
