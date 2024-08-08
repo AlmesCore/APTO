@@ -24,9 +24,9 @@ APTO defines nine object properties:
 
 - `:has_ingredient` and `:is_ingredient_of` (inverse properties): Indicate that a product type is used in the manufacturing of a processed product type (e.g., `:Cow_cheese :has_ingredient :Cow_milk`).
 - `:derives_from` and `:derives_in` (inverse properties, imported from the Relations Ontology (RO)): Indicate that a product type originates from another product type (e.g., `:Cocoa_almond :derives_from :Cocoa`).
-- `:memberOfTaxon` (imported from the Biological Collections Ontology (BCO)): Indicates that an organismal entity belongs to a taxon (e.g., `:Pacu :memberOfTaxon :Piaractus_mesopotamicus`).
-- `:produced_by` and `:produces` (inverse properties, imported from RO): Indicate that an organismal entity produces a given type of product. For example, `:Cotton :produced_by :CottonPlant`, and `:CottonPlant :memberOfTaxon :Gossypium`. If only the final product is listed in commodity databases and the rest of the organism holds no commercial value, the product is linked directly to the taxon (e.g., `:Pineapple :produced_by :Ananas_comosus`).
-- `:residueOf`: Indicates that a by-product is the residue of manufacturing another product (e.g., `:Whey :residueOf :Cheese`).
+- `:member_of_taxon` (imported from the Biological Collections Ontology (BCO)): Indicates that an organismal entity belongs to a taxon (e.g., `:Pacu :member_of_taxon :Piaractus_mesopotamicus`).
+- `:produced_by` and `:produces` (inverse properties, imported from RO): Indicate that an organismal entity produces a given type of product. For example, `:Cotton :produced_by :Cotton_plant`, and `:Cotton_plant :member_of_taxon :Gossypium`. If only the final product is listed in commodity databases and the rest of the organism holds no commercial value, the product is linked directly to the taxon (e.g., `:Pineapple :produced_by :Ananas_comosus`).
+- `:residue_of`: Indicates that a by-product is the residue of manufacturing another product (e.g., `:Whey :residue_of :Cheese`).
 - `:is_a_hybrid_of`: Specific to the `:Organism` subclasses, indicating a hybrid of two species (e.g., `:Citrus_aurantium :is_a_hybrid_of ( :Citrus_reticulata and :Citrus_maxima )`).
 
 ### Data Properties
