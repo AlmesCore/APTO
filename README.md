@@ -4,15 +4,15 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 ## Distributions
 
-Normative document in [HTML](https://github.com/AlmesCore/APTO/blob/main/README.md)
+- This normative document in [HTML](https://github.com/AlmesCore/APTO/blob/main/README.md)
 
-[apto.owl](https://w3id.org/apto#)
+- [apto.owl](https://w3id.org/apto#)
 
 ### Services for browsing the ontology:
 
-[Text search](https://data.pldn.nl/FilipiSoares/APTO/elasticsearch/APTO-Text-search/) (search entities by labels and comments)
+- [Text search](https://data.pldn.nl/FilipiSoares/APTO/elasticsearch/APTO-Text-search/) (search entities by labels and comments)
 
-[Virtuoso](https://data.pldn.nl/FilipiSoares/APTO/sparql) (query the ontology using SPARQL)
+- [Virtuoso](https://data.pldn.nl/FilipiSoares/APTO/sparql) (query the ontology using SPARQL)
 
 
 
