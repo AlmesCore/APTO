@@ -20,7 +20,7 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 | Prefix      | Namespace IRI                                             |
 |-------------|-----------------------------------------------------------|
-| apto          | [https://w3id.org/apto#](https://w3id.org/APTO#) |
+| apto          | [https://w3id.org/APTO#](https://w3id.org/APTO#) |
 | ro          | [http://purl.obolibrary.org/obo/RO_](http://purl.obolibrary.org/obo/RO_) |
 | bco         | [http://purl.obolibrary.org/obo/BCO_](http://purl.obolibrary.org/obo/BCO_) |
 | owl         | [http://www.w3.org/2002/07/owl#](http://www.w3.org/2002/07/owl#) |
