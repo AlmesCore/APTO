@@ -4,6 +4,24 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 This ontology contains labels and comments in both Portuguese and English. There are two main modules: `:Organism` and `:Product_type`.
 
+### Normative Namespaces
+
+| Prefix      | Namespace IRI                                             |
+|-------------|-----------------------------------------------------------|
+| ro          | [http://purl.obolibrary.org/obo/RO_](http://purl.obolibrary.org/obo/RO_) |
+| bco         | [http://purl.obolibrary.org/obo/BCO_](http://purl.obolibrary.org/obo/BCO_) |
+| owl         | [http://www.w3.org/2002/07/owl#](http://www.w3.org/2002/07/owl#) |
+| rdf         | [http://www.w3.org/1999/02/22-rdf-syntax-ns#](http://www.w3.org/1999/02/22-rdf-syntax-ns#) |
+| sdo         | [https://schema.org/](https://schema.org/) |
+| xml         | [http://www.w3.org/XML/1998/namespace](http://www.w3.org/XML/1998/namespace) |
+| xsd         | [http://www.w3.org/2001/XMLSchema#](http://www.w3.org/2001/XMLSchema#) |
+| gbif        | [https://www.gbif.org/species/](https://www.gbif.org/species/) |
+| rdfs        | [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#) |
+| skos        | [http://www.w3.org/2004/02/skos/core#](http://www.w3.org/2004/02/skos/core#) |
+| agrovoc     | [http://aims.fao.org/aos/agrovoc/](http://aims.fao.org/aos/agrovoc/) |
+| agrotermos  | [https://sistemas.sede.embrapa.br/agrotermos/resources/](https://sistemas.sede.embrapa.br/agrotermos/resources/) |
+
+
 ### `:Organism` Module
 The `:Organism` class contains subclasses that represent the taxonomy of species related to the production of given product types. It imports taxonomic information from the Global Biodiversity Information Facility (GBIF) Backbone Taxonomy via API.
 
