@@ -6,7 +6,7 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 - This normative document in [HTML](https://github.com/AlmesCore/APTO/blob/main/README.md)
 
-- [apto.owl](https://w3id.org/apto#)
+- [apto.owl](https://w3id.org/APTO#)
 
 ### Services for browsing the ontology:
 
