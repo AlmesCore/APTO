@@ -3,7 +3,8 @@
 This is the normative document for the Agriculture Product Types Ontology (APTO). APTO is an ontology of types, meaning it does not contain individuals and is intended as a classification system for agricultural commodities price index databases in Brazil.
 
 # Version
-Current version: v1.1
+### Current version: v1.1
+
 Previous versions are available on [Zenodo](https://doi.org/10.5281/zenodo.13271285).
 
 ## Distributions
