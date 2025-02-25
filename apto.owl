@@ -4,6 +4,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/APTO#">
     <Prefix name="" IRI="https://w3id.org/APTO#"/>
@@ -23,6 +24,45 @@
         <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
         <IRI>http://www.w3.org/TR/skos-reference/</IRI>
     </Annotation>
+
+    <!-- Metadata Section -->
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
+        <Literal xml:lang="en">Agriculture Product Types Ontology (APTO)</Literal>
+    </Annotation>
+
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
+        <Literal xml:lang="en">
+            The Agriculture Product Types Ontology (APTO) is an ontology of types, meaning it does not contain individuals and is intended as a classification system for agricultural commodities price index databases in Brazil. This ontology contains labels and comments in both Portuguese and English. There are two main modules: :Organism and :Product_type. The :Organism class contains subclasses that represent the taxonomy of species related to the production of given product types. It imports taxonomic information from the Global Biodiversity Information Facility (GBIF) Backbone Taxonomy via API. The :Product_type class has six main subclasses organized into major groups: :Inorganic_compound :Animal_product :Plant_product :Raw_product :Processed_product :By-product The :Animal_product and :Plant_product classes include subclasses indicating the type of processing the product has undergone.
+        </Literal>
+    </Annotation>
+
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.2</Literal>
+    </Annotation>
+
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-10-15</Literal>
+    </Annotation>
+
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-02-25</Literal>
+    </Annotation>
+
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <Literal>Filipi Miranda Soares</Literal>
+    </Annotation>
+
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
+        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+    </Annotation>
+
     <Declaration>
         <Class abbreviatedIRI="agrovoc:c_019ee1cc"/>
     </Declaration>
