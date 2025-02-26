@@ -21,7 +21,7 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 [v1.2](https://doi.org/10.5281/zenodo.14932980)
 
-Previous versions:
+### Previous versions:
 
 [v1.0](https://doi.org/10.5281/zenodo.13271285)
 [v1.1](https://doi.org/10.5281/zenodo.13499357)
