@@ -17,13 +17,15 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 # Version
 
-### Current version: v1.1
+### Current version: v1.2
 
-Previous versions are available on [Zenodo](https://doi.org/10.5281/zenodo.13271285).
+Previous versions:
+[v1.0](https://doi.org/10.5281/zenodo.13271285)
+v1.1
 
 ## Distributions
 
-- This normative document in [HTML](https://github.com/AlmesCore/APTO/blob/main/README.md)
+- This normative document in [HTML](https://almescore.github.io/APTO/)
 
 - [apto.owl](https://w3id.org/APTO#)
 
@@ -32,6 +34,8 @@ Previous versions are available on [Zenodo](https://doi.org/10.5281/zenodo.13271
 - [Text search](https://data.pldn.nl/FilipiSoares/APTO/elasticsearch/APTO-Text-search/) (search entities by labels and comments)
 
 - [Virtuoso](https://data.pldn.nl/FilipiSoares/APTO/sparql) (query the ontology using SPARQL)
+
+- [Agroportal](https://agroportal.lirmm.fr/ontologies/APTO)
 
 
 
