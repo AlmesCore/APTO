@@ -4,7 +4,6 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="https://w3id.org/APTO#">
     <Prefix name="" IRI="https://w3id.org/APTO#"/>
@@ -21,48 +20,89 @@
     <Prefix name="agrovoc" IRI="http://aims.fao.org/aos/agrovoc/"/>
     <Prefix name="agrotermos" IRI="https://sistemas.sede.embrapa.br/agrotermos/resources/"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
-        <IRI>http://www.w3.org/TR/skos-reference/</IRI>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en">The Agriculture Product Types Ontology (APTO) is an ontology of types, meaning it does not contain individuals and is intended as a classification system for agricultural commodities price index databases in Brazil. This ontology contains labels and comments in both Portuguese and English. There are two main modules: :Organism and :Product_type. The :Organism class contains subclasses that represent the taxonomy of species related to the production of given product types. It imports taxonomic information from the Global Biodiversity Information Facility (GBIF) Backbone Taxonomy via API. The :Product_type class has six main subclasses organized into major groups: :Inorganic_compound :Animal_product :Plant_product :Raw_product :Processed_product :By-product The :Animal_product and :Plant_product classes include subclasses indicating the type of processing the product has undergone.</Literal>
     </Annotation>
-
-    <!-- Metadata Section -->
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:title"/>
-        <Literal xml:lang="en">Agriculture Product Types Ontology (APTO)</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/APTO#</Literal>
     </Annotation>
-
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:description"/>
-        <Literal xml:lang="en">
-            The Agriculture Product Types Ontology (APTO) is an ontology of types, meaning it does not contain individuals and is intended as a classification system for agricultural commodities price index databases in Brazil. This ontology contains labels and comments in both Portuguese and English. There are two main modules: :Organism and :Product_type. The :Organism class contains subclasses that represent the taxonomy of species related to the production of given product types. It imports taxonomic information from the Global Biodiversity Information Facility (GBIF) Backbone Taxonomy via API. The :Product_type class has six main subclasses organized into major groups: :Inorganic_compound :Animal_product :Plant_product :Raw_product :Processed_product :By-product The :Animal_product and :Plant_product classes include subclasses indicating the type of processing the product has undergone.
-        </Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal>CC-BY-4.0</Literal>
     </Annotation>
-
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal>1.2</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.5281/zenodo.14932980</Literal>
     </Annotation>
-
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:issued"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-10-15</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Agriculture</Literal>
     </Annotation>
-
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-02-25</Literal>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Ontology</Literal>
     </Annotation>
-
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:creator"/>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+        <Literal datatypeIRI="http://www.w3.org/2000/01/rdf-schema#Literal">Product types</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Alexandre Cláudio Botazzo Delbem</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Antonio Mauro Saraiva</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Debora Pignatari Drucker</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Dilvan de Abreu Moreira</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Fernando Elias Corrêa</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Kelly Rosa Braghetto</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Luiz Olavo Bonino da Silva Santos</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+        <Literal>Luís Ferreira Pires</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
         <Literal>Filipi Miranda Soares</Literal>
     </Annotation>
-
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="dcterms:license"/>
-        <IRI>https://creativecommons.org/licenses/by/4.0/</IRI>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-10-15</Literal>
     </Annotation>
-
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://creativecommons.org/licenses/by/4.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-02-25</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+        <Literal>Agriculture Product Types Ontology (APTO)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.2</Literal>
+    </Annotation>
     <Declaration>
         <Class abbreviatedIRI="agrovoc:c_019ee1cc"/>
     </Declaration>
@@ -119,6 +159,9 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="agrovoc:c_13120"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="agrovoc:c_13127"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="agrovoc:c_13132"/>
@@ -277,6 +320,9 @@
         <Class abbreviatedIRI="agrovoc:c_3376"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="agrovoc:c_3568"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="agrovoc:c_3609"/>
     </Declaration>
     <Declaration>
@@ -403,6 +449,9 @@
         <Class abbreviatedIRI="agrovoc:c_7498"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="agrovoc:c_7501"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="agrovoc:c_7550"/>
     </Declaration>
     <Declaration>
@@ -473,12 +522,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="agrovoc:c_995ecefb"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="sdo:Açucar_Refinado_Amorfo"/>
@@ -614,9 +657,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="https://sistemas.sede.embrapa.br/agrotermos/resources/936400f151ba2146a86cfcc342279f57"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="https://sistemas.sede.embrapa.br/agrotermos/resources/http://aims.fao.org/aos/agrovoc/c_13127"/>
     </Declaration>
     <Declaration>
         <Class IRI="Acai-verdadeiro"/>
@@ -1834,7 +1874,34 @@
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -1918,11 +1985,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_10097"/>
-        <Class abbreviatedIRI="agrovoc:c_8174"/>
+        <Class abbreviatedIRI="agrovoc:c_3568"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_10097"/>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568"/>
+        <Class abbreviatedIRI="agrovoc:c_8174"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_10097"/>
@@ -1949,7 +2016,7 @@
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_10677"/>
         <ObjectUnionOf>
-            <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
+            <Class abbreviatedIRI="agrovoc:c_7501"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001000"/>
                 <Class abbreviatedIRI="agrovoc:c_12332"/>
@@ -2091,17 +2158,28 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_13120"/>
-        <Class abbreviatedIRI="agrovoc:c_8174"/>
+        <Class abbreviatedIRI="agrovoc:c_3568"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_13120"/>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568"/>
+        <Class abbreviatedIRI="agrovoc:c_8174"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_13120"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/BCO_0000087"/>
             <Class IRI="https://www.gbif.org/species/7828157"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_13127"/>
+        <Class abbreviatedIRI="agrovoc:c_7974"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_13127"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0003001"/>
+            <Class IRI="https://www.gbif.org/species/2874190"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -2324,7 +2402,7 @@
         <Class abbreviatedIRI="agrovoc:c_16477"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001000"/>
-            <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
+            <Class abbreviatedIRI="agrovoc:c_7501"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -2545,6 +2623,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_3376"/>
         <Class abbreviatedIRI="agrovoc:c_8174"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_3568"/>
+        <Class IRI="Raw_plant_product"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_3609"/>
@@ -2925,6 +3007,35 @@
         <Class IRI="Sucroenergetico"/>
     </SubClassOf>
     <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_7501"/>
+        <Class IRI="Raw_plant_product"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_7501"/>
+        <Class IRI="Sugar_plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_7501"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BCO_0000087"/>
+            <Class IRI="https://www.gbif.org/species/2703910"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_7501"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001001"/>
+            <Class abbreviatedIRI="agrovoc:c_10677"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="agrovoc:c_7501"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001001"/>
+            <Class abbreviatedIRI="agrovoc:c_16477"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_7550"/>
         <Class abbreviatedIRI="agrovoc:c_1641"/>
     </SubClassOf>
@@ -3109,11 +3220,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_9813"/>
-        <Class abbreviatedIRI="agrovoc:c_8174"/>
+        <Class abbreviatedIRI="agrovoc:c_3568"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_9813"/>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568"/>
+        <Class abbreviatedIRI="agrovoc:c_8174"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_9813"/>
@@ -3125,39 +3236,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="agrovoc:c_995ecefb"/>
         <Class abbreviatedIRI="agrovoc:c_8171"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568"/>
-        <Class IRI="Raw_plant_product"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
-        <Class IRI="Raw_plant_product"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
-        <Class IRI="Sugar_plant"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/BCO_0000087"/>
-            <Class IRI="https://www.gbif.org/species/2703910"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001001"/>
-            <Class abbreviatedIRI="agrovoc:c_10677"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001001"/>
-            <Class abbreviatedIRI="agrovoc:c_16477"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="sdo:Açucar_Refinado_Amorfo"/>
@@ -3591,17 +3669,6 @@
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0003001"/>
             <Class IRI="https://www.gbif.org/species/8185571"/>
-        </ObjectExactCardinality>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://sistemas.sede.embrapa.br/agrotermos/resources/http://aims.fao.org/aos/agrovoc/c_13127"/>
-        <Class abbreviatedIRI="agrovoc:c_7974"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="https://sistemas.sede.embrapa.br/agrotermos/resources/http://aims.fao.org/aos/agrovoc/c_13127"/>
-        <ObjectExactCardinality cardinality="1">
-            <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0003001"/>
-            <Class IRI="https://www.gbif.org/species/2874190"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -4417,7 +4484,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="cheiroverde"/>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568"/>
+        <Class abbreviatedIRI="agrovoc:c_3568"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="etanolanidro"/>
@@ -4429,7 +4496,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="fitweed"/>
-        <Class IRI="https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568"/>
+        <Class abbreviatedIRI="agrovoc:c_3568"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="fitweed"/>
@@ -4567,7 +4634,7 @@
         <Class IRI="polpamaracuja"/>
         <ObjectExactCardinality cardinality="1">
             <ObjectProperty IRI="http://purl.obolibrary.org/obo/RO_0001000"/>
-            <Class IRI="https://sistemas.sede.embrapa.br/agrotermos/resources/http://aims.fao.org/aos/agrovoc/c_13127"/>
+            <Class abbreviatedIRI="agrovoc:c_13127"/>
         </ObjectExactCardinality>
     </SubClassOf>
     <SubClassOf>
@@ -6044,6 +6111,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>agrovoc:c_13127</AbbreviatedIRI>
+        <Literal xml:lang="pt-br">Maracujá</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>agrovoc:c_13127</AbbreviatedIRI>
+        <Literal xml:lang="en">Passion fruit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
+        <AbbreviatedIRI>agrovoc:c_13127</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/9e2501934d067d71bb1c5850722a73d1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>agrovoc:c_13132</AbbreviatedIRI>
         <Literal xml:lang="pt-br">Leite pasteurizado</Literal>
     </AnnotationAssertion>
@@ -6879,6 +6961,16 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>agrovoc:c_3568</AbbreviatedIRI>
+        <Literal xml:lang="en">Culinary herbs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>agrovoc:c_3568</AbbreviatedIRI>
+        <Literal xml:lang="pt-br">Planta aromática para culinária</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>agrovoc:c_3609</AbbreviatedIRI>
         <Literal xml:lang="pt-br">Couros e peles</Literal>
     </AnnotationAssertion>
@@ -7539,6 +7631,21 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>agrovoc:c_7501</AbbreviatedIRI>
+        <Literal xml:lang="pt-br">Cana-de-açúcar</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>agrovoc:c_7501</AbbreviatedIRI>
+        <Literal xml:lang="en">Sugar cane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
+        <AbbreviatedIRI>agrovoc:c_7501</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/fe91bcfb4bc023da0ecfabf5030f92db</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>agrovoc:c_7550</AbbreviatedIRI>
         <Literal xml:lang="pt-br">Laranja</Literal>
     </AnnotationAssertion>
@@ -8135,31 +8242,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568</IRI>
-        <Literal xml:lang="en">Culinary herbs</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://agrovoc.fao.org/browse/agrovoc/en/page/c_3568</IRI>
-        <Literal xml:lang="pt-br">Planta aromática para culinária</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501</IRI>
-        <Literal xml:lang="pt-br">Cana-de-açúcar</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501</IRI>
-        <Literal xml:lang="en">Sugar cane</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
-        <IRI>https://agrovoc.fao.org/browse/agrovoc/en/page/c_7501</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/fe91bcfb4bc023da0ecfabf5030f92db</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>sdo:Açucar_Refinado_Amorfo</AbbreviatedIRI>
         <Literal xml:lang="pt-br">Açúcar refinado amorfo</Literal>
     </AnnotationAssertion>
@@ -8577,21 +8659,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://sistemas.sede.embrapa.br/agrotermos/resources/936400f151ba2146a86cfcc342279f57</IRI>
         <Literal xml:lang="pt-br">Cajá</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://sistemas.sede.embrapa.br/agrotermos/resources/http://aims.fao.org/aos/agrovoc/c_13127</IRI>
-        <Literal xml:lang="pt-br">Maracujá</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>https://sistemas.sede.embrapa.br/agrotermos/resources/http://aims.fao.org/aos/agrovoc/c_13127</IRI>
-        <Literal xml:lang="en">Passion fruit</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
-        <IRI>https://sistemas.sede.embrapa.br/agrotermos/resources/http://aims.fao.org/aos/agrovoc/c_13127</IRI>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/9e2501934d067d71bb1c5850722a73d1</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
