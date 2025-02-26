@@ -6770,6 +6770,11 @@
         <Literal xml:lang="pt-br">Café em grãos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>agrovoc:c_29108</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents living animals that are directly useful to humans, such as livestock (cattle, chicken, etc).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>agrovoc:c_29108</AbbreviatedIRI>
         <Literal xml:lang="pt-br">Animal útil</Literal>
@@ -6813,6 +6818,11 @@
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
         <AbbreviatedIRI>agrovoc:c_2988</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/9df38bda0adee40b17d54026429d0fdb</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>agrovoc:c_29989</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents plant-derived products that have undergone processing, altering their physical or chemical properties, such as flour, paper, or refined oil.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8025,6 +8035,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/c0304fb7306cc510b82e5a98d7db7618</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>agrovoc:c_995ecefb</AbbreviatedIRI>
+        <Literal xml:lang="en">Represents whole plants or plant parts that are directly useful to humans without requiring further processing, such as rubber plants or wood trees.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>agrovoc:c_995ecefb</AbbreviatedIRI>
         <Literal xml:lang="pt-br">Planta útil</Literal>
@@ -8686,6 +8701,11 @@
         <Literal xml:lang="pt-br">Algodão em caroço</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Animal_by_product</IRI>
+        <Literal xml:lang="en">Represents secondary products resulting from the processing of animal products, such as whey or gelatin.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Animal_by_product</IRI>
         <Literal xml:lang="en">Animal by-product</Literal>
@@ -9206,6 +9226,11 @@
         <Literal xml:lang="pt-br">Pinus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Plant_by-product</IRI>
+        <Literal xml:lang="en">Represents secondary products resulting from the processing of plant products, such as sawdust or bran.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Plant_by-product</IRI>
         <Literal xml:lang="en">Plant by-product</Literal>
@@ -9286,6 +9311,11 @@
         <Literal xml:lang="pt-br">Produto da avicultura</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Processed_animal_product</IRI>
+        <Literal xml:lang="en">Represents animal-derived products that have undergone processing, altering their physical or chemical properties, such as cheese, leather, or sausages.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Processed_animal_product</IRI>
         <Literal xml:lang="en">Processed animal product</Literal>
@@ -9306,6 +9336,11 @@
         <Literal xml:lang="pt-br">Tipo de produto</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Raw_animal_product</IRI>
+        <Literal xml:lang="en">Represents unprocessed products obtained from animals, such as raw meat, eggs, or wool.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Raw_animal_product</IRI>
         <Literal xml:lang="pt-br">Produto de origem animal in natura</Literal>
@@ -9314,6 +9349,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Raw_animal_product</IRI>
         <Literal xml:lang="en">Raw animal product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>Raw_plant_product</IRI>
+        <Literal xml:lang="en">Represents unprocessed products obtained from plants, such as fresh fruits, vegetables, or raw timber.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
