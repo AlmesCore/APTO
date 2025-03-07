@@ -5,7 +5,7 @@ author: "Filipi Miranda Soares"
 date: "2024-10-15"
 last_modified: "2025-02-25"
 license: "CC-BY-4.0"
-version: "1.2"
+version: "1.3"
 tags: ["Ontology", "Agriculture", "Product Types", "Semantic Web"]
 doi: "https://doi.org/10.5281/zenodo.14932980"
 identifier: "https://w3id.org/APTO#"
@@ -19,12 +19,13 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 ### Current version: 
 
-[v1.2](https://doi.org/10.5281/zenodo.14932980)
+[v1.3](https://doi.org/10.5281/zenodo.14989612)
 
 ### Previous versions:
 
 [v1.0](https://doi.org/10.5281/zenodo.13271285)
 [v1.1](https://doi.org/10.5281/zenodo.13499357)
+[v1.2](https://doi.org/10.5281/zenodo.14932980)
 
 ## Distributions
 
