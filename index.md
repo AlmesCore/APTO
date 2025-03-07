@@ -102,4 +102,4 @@ APTO is available both in a user-friendly browser and as an OWL file. Reuse is p
 
 ### Citation
 
-Soares, F. M., Ferreira Pires, L., Olavo Bonino da Silva Santos, L., Corrêa, F. E., de Abreu Moreira, D., Pignatari Drucker, D., Braghetto, K. R., Botazzo Delbem, A. C., & Mauro Saraiva, A. (2025). Agriculture Product Types Ontology (APTO) (v1.2). Zenodo. https://doi.org/10.5281/zenodo.14932980
+Soares, F. M., Ferreira Pires, L., Olavo Bonino da Silva Santos, L., Corrêa, F. E., de Abreu Moreira, D., Pignatari Drucker, D., Braghetto, K. R., Botazzo Delbem, A. C., & Mauro Saraiva, A. (2025). Agriculture Product Types Ontology (APTO) (v1.3). Zenodo. [https://doi.org/10.5281/zenodo.14989612](https://doi.org/10.5281/zenodo.14989612)
