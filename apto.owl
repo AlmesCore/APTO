@@ -93,7 +93,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/modified"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-02-25</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2025-03-07</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
@@ -101,7 +101,7 @@
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.2</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.3</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="agrovoc:c_019ee1cc"/>
@@ -6772,7 +6772,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>agrovoc:c_29108</AbbreviatedIRI>
-        <Literal xml:lang="en">Represents living animals that are directly useful to humans, such as livestock (cattle, chicken, etc).</Literal>
+        <Literal xml:lang="en">An animal that provides direct or indirect benefits to humans or ecosystems. These benefits may include food, labor, companionship, raw materials, pest control, or ecological balance. Examples include cattle for milk and meat, bees for pollination, horses for transportation, and earthworms for soil enrichment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -6822,7 +6822,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>agrovoc:c_29989</AbbreviatedIRI>
-        <Literal xml:lang="en">Represents plant-derived products that have undergone processing, altering their physical or chemical properties, such as flour, paper, or refined oil.</Literal>
+        <Literal xml:lang="en">A plant-derived product that have undergone processing, altering their physical or chemical properties, such as flour, paper, or refined oil.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7163,6 +7163,11 @@
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
         <AbbreviatedIRI>agrovoc:c_4259</AbbreviatedIRI>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/23a6a6f019e446235d9251e7bf1939c4</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>agrovoc:c_438</AbbreviatedIRI>
+        <Literal xml:lang="en">A product derived from an organism belonging to a specific taxon classified under Animalia.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -7805,6 +7810,11 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/resources/f3577d6a7af8c40945365082dd588456</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>agrovoc:c_8171</AbbreviatedIRI>
+        <Literal xml:lang="en">A product derived from an organism belonging to a specific taxon classified under Plantae.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>agrovoc:c_8171</AbbreviatedIRI>
         <Literal xml:lang="en">Plant product</Literal>
@@ -8037,7 +8047,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>agrovoc:c_995ecefb</AbbreviatedIRI>
-        <Literal xml:lang="en">Represents whole plants or plant parts that are directly useful to humans without requiring further processing, such as rubber plants or wood trees.</Literal>
+        <Literal xml:lang="en">A plant that provides direct or indirect benefits to humans, animals, or the environment. These benefits may include food, medicine, raw materials, fuel, ecological services, or ornamental value. Examples include wheat for food, aloe vera for medicinal use, cotton for fiber, and trees for carbon sequestration.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -8703,7 +8713,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Animal_by_product</IRI>
-        <Literal xml:lang="en">Represents secondary products resulting from the processing of animal products, such as whey or gelatin.</Literal>
+        <Literal xml:lang="en">A secondary or residual product obtained during the processing or utilization of a primary Animal Product. While not the main intended output, an Animal By-Product retains economic, nutritional, or industrial value. Examples include gelatin from collagen extraction, bone meal from meat processing, and lanolin from wool production.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9228,7 +9238,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Plant_by-product</IRI>
-        <Literal xml:lang="en">Represents secondary products resulting from the processing of plant products, such as sawdust or bran.</Literal>
+        <Literal xml:lang="en">A secondary or residual product obtained during the processing or extraction of a primary Plant Product. While not the main intended output, a Plant By-Product retains economic, nutritional, or industrial value. Examples include bran from grain milling, bagasse from sugarcane processing, and fruit peels from juice production.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9313,7 +9323,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Processed_animal_product</IRI>
-        <Literal xml:lang="en">Represents animal-derived products that have undergone processing, altering their physical or chemical properties, such as cheese, leather, or sausages.</Literal>
+        <Literal xml:lang="en">A animal-derived product that have undergone processing, altering their physical or chemical properties, such as cheese, leather, or sausages.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9338,7 +9348,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Raw_animal_product</IRI>
-        <Literal xml:lang="en">Represents unprocessed products obtained from animals, such as raw meat, eggs, or wool.</Literal>
+        <Literal xml:lang="en">An Animal Product that has undergone minimal or no processing after being obtained from an animal. This category includes products that are in their natural state or have only been subjected to basic preservation methods (e.g., refrigeration, freezing, or drying) without significant transformation. Examples include fresh milk, raw meat, eggs, and unprocessed wool.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -9353,7 +9363,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>Raw_plant_product</IRI>
-        <Literal xml:lang="en">Represents unprocessed products obtained from plants, such as fresh fruits, vegetables, or raw timber.</Literal>
+        <Literal xml:lang="en">A Plant Product that has undergone minimal or no processing after being harvested from a plant. These products remain in their natural state or have only been subjected to basic preservation methods (e.g., drying, washing, or refrigeration) without significant transformation. Examples include fresh fruits, raw grains, unprocessed nuts, and freshly harvested leaves.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -11288,7 +11298,5 @@
         <AbbreviatedIRI>xsd:anyURI</AbbreviatedIRI>
     </AnnotationPropertyRange>
 </Ontology>
-
-
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
