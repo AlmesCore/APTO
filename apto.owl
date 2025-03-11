@@ -28,12 +28,20 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://w3id.org/APTO#</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://aims.fao.org/aos/agrovoc/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
         <Literal>CC-BY-4.0</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/source"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.5281/zenodo.14989612</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://doi.org/10.5281/zenodo.15008549</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/subject"/>
@@ -84,6 +92,10 @@
         <Literal>Filipi Miranda Soares</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasFormat"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://data.pldn.nl/FilipiSoares/APTO</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#date">2024-10-15</Literal>
     </Annotation>
@@ -100,8 +112,20 @@
         <Literal>Agriculture Product Types Ontology (APTO)</Literal>
     </Annotation>
     <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocommons/voaf#specializes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">http://aims.fao.org/aos/agrovoc/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/vocommons/voaf#specializes"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://sistemas.sede.embrapa.br/agrotermos/</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.3</Literal>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.31</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="sdo:includedInDataCatalog"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://agroportal.lirmm.fr/</Literal>
     </Annotation>
     <Declaration>
         <Class abbreviatedIRI="agrovoc:c_019ee1cc"/>
@@ -1871,10 +1895,19 @@
         <ObjectProperty IRI="residue_of"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://omv.ontoware.org/2005/05/ontology#numberOfClasses"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://omv.ontoware.org/2005/05/ontology#numberOfProperties"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/identifier"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/relation"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
@@ -1892,6 +1925,9 @@
         <AnnotationProperty IRI="http://purl.org/dc/terms/creator"/>
     </Declaration>
     <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/terms/hasFormat"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/issued"/>
     </Declaration>
     <Declaration>
@@ -1902,6 +1938,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty IRI="http://purl.org/dc/terms/title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/vocommons/voaf#specializes"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
@@ -1926,6 +1965,9 @@
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:relatedMatch"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="sdo:includedInDataCatalog"/>
     </Declaration>
     <Declaration>
         <Datatype abbreviatedIRI="xsd:date"/>
