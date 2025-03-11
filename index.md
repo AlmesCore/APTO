@@ -19,13 +19,14 @@ This is the normative document for the Agriculture Product Types Ontology (APTO)
 
 ### Current version: 
 
-[v1.3](https://doi.org/10.5281/zenodo.14989612)
+[v1.31](https://doi.org/10.5281/zenodo.15008549)
 
 ### Previous versions:
 
 [v1.0](https://doi.org/10.5281/zenodo.13271285)
 [v1.1](https://doi.org/10.5281/zenodo.13499357)
 [v1.2](https://doi.org/10.5281/zenodo.14932980)
+[v1.3](https://doi.org/10.5281/zenodo.14989612)
 
 ## Distributions
 
@@ -102,4 +103,82 @@ APTO is available both in a user-friendly browser and as an OWL file. Reuse is p
 
 ### Citation
 
-Soares, F. M., Ferreira Pires, L., Olavo Bonino da Silva Santos, L., Corrêa, F. E., de Abreu Moreira, D., Pignatari Drucker, D., Braghetto, K. R., Botazzo Delbem, A. C., & Mauro Saraiva, A. (2025). Agriculture Product Types Ontology (APTO) (v1.3). Zenodo. [https://doi.org/10.5281/zenodo.14989612](https://doi.org/10.5281/zenodo.14989612)
+Soares, F. M., Ferreira Pires, L., Olavo Bonino da Silva Santos, L., Corrêa, F. E., de Abreu Moreira, D., Pignatari Drucker, D., Braghetto, K. R., Botazzo Delbem, A. C., & Mauro Saraiva, A. (2025). Agriculture Product Types Ontology (APTO) (v1.31). Zenodo. [https://doi.org/10.5281/zenodo.15008549](https://doi.org/10.5281/zenodo.15008549)
+
+<!-- JSON-LD Metadata -->
+<script type="application/ld+json">
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "dcterms": "http://purl.org/dc/terms/"
+  },
+  "@type": "Dataset",
+  "name": "Agriculture Product Types Ontology (APTO)",
+  "description": "APTO is an ontology designed for the classification of agricultural commodities in Brazil.",
+  "creator": {
+    "@type": "Person",
+    "name": "Filipi Miranda Soares"
+  },
+  "dateCreated": "2024-10-15",
+  "dateModified": "2025-02-25",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "version": "1.3",
+  "keywords": ["Ontology", "Agriculture", "Product Types", "Semantic Web"],
+  "identifier": "https://w3id.org/APTO#",
+  "sameAs": "https://doi.org/10.5281/zenodo.14932980",
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/html",
+      "contentUrl": "https://almescore.github.io/APTO/"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/rdf+xml",
+      "contentUrl": "https://w3id.org/APTO#"
+    }
+  ],
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "AgroPortal",
+    "url": "https://agroportal.lirmm.fr/ontologies/APTO"
+  },
+  "schemaVersion": "1.31",
+  "previousVersion": [
+    "https://doi.org/10.5281/zenodo.13271285",
+    "https://doi.org/10.5281/zenodo.13499357",
+    "https://doi.org/10.5281/zenodo.14932980",
+    "https://doi.org/10.5281/zenodo.14989612"
+  ],
+  "vann:preferredNamespacePrefix": "APTO",
+  "mod:metrics": "https://data.agroportal.lirmm.fr/ontologies/APTO/metrics",
+  "void:classes": null,
+  "void:properties": null,
+  "void:triples": null,
+  "void:entities": null,
+  "citation": {
+    "@type": "CreativeWork",
+    "name": "Agriculture Product Types Ontology (APTO) v1.31",
+    "author": [
+      "Soares, F. M.",
+      "Ferreira Pires, L.",
+      "Olavo Bonino da Silva Santos, L.",
+      "Corrêa, F. E.",
+      "de Abreu Moreira, D.",
+      "Pignatari Drucker, D.",
+      "Braghetto, K. R.",
+      "Botazzo Delbem, A. C.",
+      "Mauro Saraiva, A."
+    ],
+    "url": "https://doi.org/10.5281/zenodo.15008549",
+    "publisher": "Zenodo",
+    "datePublished": "2025"
+  }
+}
+</script>
