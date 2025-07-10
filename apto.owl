@@ -8895,7 +8895,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Citrus_maxima</IRI>
-        <Literal xml:lang="lat">Citrus maxima</Literal>
+        <Literal xml:lang="en">Citrus maxima</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
@@ -8905,7 +8905,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Citrus_reticulata</IRI>
-        <Literal xml:lang="lat">Citrus reticulata</Literal>
+        <Literal xml:lang="en">Citrus reticulata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
@@ -9530,7 +9530,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>Triticum</IRI>
-        <Literal xml:lang="lat">Triticum</Literal>
+        <Literal xml:lang="en">Triticum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="skos:exactMatch"/>
@@ -9720,7 +9720,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>is_a_hybrid_of</IRI>
-        <Literal xml:lang="pt">é um híbrido de</Literal>
+        <Literal xml:lang="pt-br">é um híbrido de</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -9860,257 +9860,257 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1</IRI>
-        <Literal xml:lang="lat">Animalia</Literal>
+        <Literal xml:lang="en">Animalia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1069</IRI>
-        <Literal xml:lang="lat">Osteoglossiformes</Literal>
+        <Literal xml:lang="en">Osteoglossiformes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/10779983</IRI>
-        <Literal xml:lang="lat">Dipteryx odorata</Literal>
+        <Literal xml:lang="en">Dipteryx odorata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/10792217</IRI>
-        <Literal xml:lang="lat">Ilex</Literal>
+        <Literal xml:lang="en">Ilex</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1169</IRI>
-        <Literal xml:lang="lat">Asparagales</Literal>
+        <Literal xml:lang="en">Asparagales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1176</IRI>
-        <Literal xml:lang="lat">Solanales</Literal>
+        <Literal xml:lang="en">Solanales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1334757</IRI>
-        <Literal xml:lang="lat">Apis</Literal>
+        <Literal xml:lang="en">Apis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1341976</IRI>
-        <Literal xml:lang="lat">Apis mellifera</Literal>
+        <Literal xml:lang="en">Apis mellifera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1351</IRI>
-        <Literal xml:lang="lat">Apiales</Literal>
+        <Literal xml:lang="en">Apiales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1353</IRI>
-        <Literal xml:lang="lat">Ericales</Literal>
+        <Literal xml:lang="en">Ericales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1354</IRI>
-        <Literal xml:lang="lat">Fagales</Literal>
+        <Literal xml:lang="en">Fagales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1369</IRI>
-        <Literal xml:lang="lat">Poales</Literal>
+        <Literal xml:lang="en">Poales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1370</IRI>
-        <Literal xml:lang="lat">Fabales</Literal>
+        <Literal xml:lang="en">Fabales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1414</IRI>
-        <Literal xml:lang="lat">Malpighiales</Literal>
+        <Literal xml:lang="en">Malpighiales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1457</IRI>
-        <Literal xml:lang="lat">Hymenoptera</Literal>
+        <Literal xml:lang="en">Hymenoptera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1868660</IRI>
-        <Literal xml:lang="lat">Bombyx</Literal>
+        <Literal xml:lang="en">Bombyx</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/1868664</IRI>
-        <Literal xml:lang="lat">Bombyx mori</Literal>
+        <Literal xml:lang="en">Bombyx mori</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/194</IRI>
-        <Literal xml:lang="lat">Pinopsida</Literal>
+        <Literal xml:lang="en">Pinopsida</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/196</IRI>
-        <Literal xml:lang="lat">Liliopsida</Literal>
+        <Literal xml:lang="en">Liliopsida</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/212</IRI>
-        <Literal xml:lang="lat">Aves</Literal>
+        <Literal xml:lang="en">Aves</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/216</IRI>
-        <Literal xml:lang="lat">Insecta</Literal>
+        <Literal xml:lang="en">Insecta</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/220</IRI>
-        <Literal xml:lang="lat">Magnoliopsida</Literal>
+        <Literal xml:lang="en">Magnoliopsida</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2352125</IRI>
-        <Literal xml:lang="lat">Semaprochilodus</Literal>
+        <Literal xml:lang="en">Semaprochilodus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2352126</IRI>
-        <Literal xml:lang="lat">Semaprochilodus insignis</Literal>
+        <Literal xml:lang="en">Semaprochilodus insignis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2352134</IRI>
-        <Literal xml:lang="lat">Semaprochilodus taeniurus</Literal>
+        <Literal xml:lang="en">Semaprochilodus taeniurus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2352148</IRI>
-        <Literal xml:lang="lat">Prochilodus</Literal>
+        <Literal xml:lang="en">Prochilodus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2352151</IRI>
-        <Literal xml:lang="lat">Prochilodus brevis</Literal>
+        <Literal xml:lang="en">Prochilodus brevis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2352154</IRI>
-        <Literal xml:lang="lat">Prochilodus lineatus</Literal>
+        <Literal xml:lang="en">Prochilodus lineatus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2352177</IRI>
-        <Literal xml:lang="lat">Prochilodus argenteus</Literal>
+        <Literal xml:lang="en">Prochilodus argenteus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2353218</IRI>
-        <Literal xml:lang="lat">Piaractus</Literal>
+        <Literal xml:lang="en">Piaractus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2353219</IRI>
-        <Literal xml:lang="lat">Piaractus mesopotamicus</Literal>
+        <Literal xml:lang="en">Piaractus mesopotamicus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2370578</IRI>
-        <Literal xml:lang="lat">Tilapia</Literal>
+        <Literal xml:lang="en">Tilapia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2378</IRI>
-        <Literal xml:lang="lat">Passifloraceae</Literal>
+        <Literal xml:lang="en">Passifloraceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2389</IRI>
-        <Literal xml:lang="lat">Convolvulaceae</Literal>
+        <Literal xml:lang="en">Convolvulaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2396</IRI>
-        <Literal xml:lang="lat">Rutaceae</Literal>
+        <Literal xml:lang="en">Rutaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2397</IRI>
-        <Literal xml:lang="lat">Meliaceae</Literal>
+        <Literal xml:lang="en">Meliaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2398</IRI>
-        <Literal xml:lang="lat">Anacardiaceae</Literal>
+        <Literal xml:lang="en">Anacardiaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2402332</IRI>
-        <Literal xml:lang="lat">Arapaima</Literal>
+        <Literal xml:lang="en">Arapaima</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2441017</IRI>
-        <Literal xml:lang="lat">Bos</Literal>
+        <Literal xml:lang="en">Bos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2441022</IRI>
-        <Literal xml:lang="lat">Bos taurus</Literal>
+        <Literal xml:lang="en">Bos taurus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2441047</IRI>
-        <Literal xml:lang="lat">Capra</Literal>
+        <Literal xml:lang="en">Capra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2441056</IRI>
-        <Literal xml:lang="lat">Capra hircus</Literal>
+        <Literal xml:lang="en">Capra hircus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2441110</IRI>
-        <Literal xml:lang="lat">Ovis aries</Literal>
+        <Literal xml:lang="en">Ovis aries</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2441213</IRI>
-        <Literal xml:lang="lat">Sus</Literal>
+        <Literal xml:lang="en">Sus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2473720</IRI>
-        <Literal xml:lang="lat">Gallus</Literal>
+        <Literal xml:lang="en">Gallus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2499</IRI>
-        <Literal xml:lang="lat">Juglandaceae</Literal>
+        <Literal xml:lang="en">Juglandaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2684241</IRI>
-        <Literal xml:lang="lat">Pinus</Literal>
+        <Literal xml:lang="en">Pinus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2684910</IRI>
-        <Literal xml:lang="lat">Araucaria</Literal>
+        <Literal xml:lang="en">Araucaria</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2684940</IRI>
-        <Literal xml:lang="lat">Araucaria angustifolia</Literal>
+        <Literal xml:lang="en">Araucaria angustifolia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2699430</IRI>
-        <Literal xml:lang="lat">Ananas</Literal>
+        <Literal xml:lang="en">Ananas</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2703201</IRI>
-        <Literal xml:lang="lat">Cenchrus</Literal>
+        <Literal xml:lang="en">Cenchrus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
@@ -10125,1187 +10125,1187 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2703325</IRI>
-        <Literal xml:lang="lat">×Triticosecale</Literal>
+        <Literal xml:lang="en">×Triticosecale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2703455</IRI>
-        <Literal xml:lang="lat">Oryza</Literal>
+        <Literal xml:lang="en">Oryza</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2703459</IRI>
-        <Literal xml:lang="lat">Oryza sativa</Literal>
+        <Literal xml:lang="en">Oryza sativa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2703464</IRI>
-        <Literal xml:lang="lat">Oryza glaberrima</Literal>
+        <Literal xml:lang="en">Oryza glaberrima</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2703910</IRI>
-        <Literal xml:lang="lat">Saccharum</Literal>
+        <Literal xml:lang="en">Saccharum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705049</IRI>
-        <Literal xml:lang="lat">Zea</Literal>
+        <Literal xml:lang="en">Zea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705180</IRI>
-        <Literal xml:lang="lat">Sorghum</Literal>
+        <Literal xml:lang="en">Sorghum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705181</IRI>
-        <Literal xml:lang="lat">Sorghum bicolor</Literal>
+        <Literal xml:lang="en">Sorghum bicolor</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705282</IRI>
-        <Literal xml:lang="lat">Avena</Literal>
+        <Literal xml:lang="en">Avena</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705290</IRI>
-        <Literal xml:lang="lat">Avena sativa</Literal>
+        <Literal xml:lang="en">Avena sativa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705292</IRI>
-        <Literal xml:lang="lat">Avena byzantina</Literal>
+        <Literal xml:lang="en">Avena byzantina</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705965</IRI>
-        <Literal xml:lang="lat">Secale</Literal>
+        <Literal xml:lang="en">Secale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2705966</IRI>
-        <Literal xml:lang="lat">Secale cereale</Literal>
+        <Literal xml:lang="en">Secale cereale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2706050</IRI>
-        <Literal xml:lang="lat">Hordeum</Literal>
+        <Literal xml:lang="en">Hordeum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2706056</IRI>
-        <Literal xml:lang="lat">Hordeum vulgare</Literal>
+        <Literal xml:lang="en">Hordeum vulgare</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2706141</IRI>
-        <Literal xml:lang="lat">Pennisetum glaucum</Literal>
+        <Literal xml:lang="en">Pennisetum glaucum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2732585</IRI>
-        <Literal xml:lang="lat">Leopoldinia</Literal>
+        <Literal xml:lang="en">Leopoldinia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2732586</IRI>
-        <Literal xml:lang="lat">Leopoldinia piassaba</Literal>
+        <Literal xml:lang="en">Leopoldinia piassaba</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2732664</IRI>
-        <Literal xml:lang="lat">Attalea</Literal>
+        <Literal xml:lang="en">Attalea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2732833</IRI>
-        <Literal xml:lang="lat">Attalea funifera</Literal>
+        <Literal xml:lang="en">Attalea funifera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2732877</IRI>
-        <Literal xml:lang="lat">Attalea speciosa</Literal>
+        <Literal xml:lang="en">Attalea speciosa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2735116</IRI>
-        <Literal xml:lang="lat">Cocos</Literal>
+        <Literal xml:lang="en">Cocos</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2735117</IRI>
-        <Literal xml:lang="lat">Cocos nucifera</Literal>
+        <Literal xml:lang="en">Cocos nucifera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2737041</IRI>
-        <Literal xml:lang="lat">Syagrus</Literal>
+        <Literal xml:lang="en">Syagrus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2738048</IRI>
-        <Literal xml:lang="lat">Astrocaryum</Literal>
+        <Literal xml:lang="en">Astrocaryum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2738081</IRI>
-        <Literal xml:lang="lat">Astrocaryum murumuru</Literal>
+        <Literal xml:lang="en">Astrocaryum murumuru</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2738233</IRI>
-        <Literal xml:lang="lat">Copernicia</Literal>
+        <Literal xml:lang="en">Copernicia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2738262</IRI>
-        <Literal xml:lang="lat">Copernicia prunifera</Literal>
+        <Literal xml:lang="en">Copernicia prunifera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2739147</IRI>
-        <Literal xml:lang="lat">Acrocomia</Literal>
+        <Literal xml:lang="en">Acrocomia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2760990</IRI>
-        <Literal xml:lang="lat">Musa</Literal>
+        <Literal xml:lang="en">Musa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2762680</IRI>
-        <Literal xml:lang="lat">Musa acuminata</Literal>
+        <Literal xml:lang="en">Musa acuminata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2762950</IRI>
-        <Literal xml:lang="lat">Musa balbisiana</Literal>
+        <Literal xml:lang="en">Musa balbisiana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2766430</IRI>
-        <Literal xml:lang="lat">Agave</Literal>
+        <Literal xml:lang="en">Agave</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2855860</IRI>
-        <Literal xml:lang="lat">Allium schoenoprasum</Literal>
+        <Literal xml:lang="en">Allium schoenoprasum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2856681</IRI>
-        <Literal xml:lang="lat">Allium sativum</Literal>
+        <Literal xml:lang="en">Allium sativum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2857697</IRI>
-        <Literal xml:lang="lat">Allium cepa</Literal>
+        <Literal xml:lang="en">Allium cepa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874172</IRI>
-        <Literal xml:lang="lat">Passiflora</Literal>
+        <Literal xml:lang="en">Passiflora</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874190</IRI>
-        <Literal xml:lang="lat">Passiflora edulis</Literal>
+        <Literal xml:lang="en">Passiflora edulis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874482</IRI>
-        <Literal xml:lang="lat">Carica</Literal>
+        <Literal xml:lang="en">Carica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874484</IRI>
-        <Literal xml:lang="lat">Carica papaya</Literal>
+        <Literal xml:lang="en">Carica papaya</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874506</IRI>
-        <Literal xml:lang="lat">Cucurbita</Literal>
+        <Literal xml:lang="en">Cucurbita</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874515</IRI>
-        <Literal xml:lang="lat">Cucurbita maxima</Literal>
+        <Literal xml:lang="en">Cucurbita maxima</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874568</IRI>
-        <Literal xml:lang="lat">Cucumis</Literal>
+        <Literal xml:lang="en">Cucumis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874569</IRI>
-        <Literal xml:lang="lat">Cucumis sativus</Literal>
+        <Literal xml:lang="en">Cucumis sativus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874570</IRI>
-        <Literal xml:lang="lat">Cucumis melo</Literal>
+        <Literal xml:lang="en">Cucumis melo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874573</IRI>
-        <Literal xml:lang="lat">Cucumis anguria</Literal>
+        <Literal xml:lang="en">Cucumis anguria</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2874621</IRI>
-        <Literal xml:lang="lat">Citrullus lanatus</Literal>
+        <Literal xml:lang="en">Citrullus lanatus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2895315</IRI>
-        <Literal xml:lang="lat">Coffea</Literal>
+        <Literal xml:lang="en">Coffea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2895345</IRI>
-        <Literal xml:lang="lat">Coffea arabica</Literal>
+        <Literal xml:lang="en">Coffea arabica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2895528</IRI>
-        <Literal xml:lang="lat">Coffea canephora</Literal>
+        <Literal xml:lang="en">Coffea canephora</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2895591</IRI>
-        <Literal xml:lang="lat">Genipa</Literal>
+        <Literal xml:lang="en">Genipa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2895593</IRI>
-        <Literal xml:lang="lat">Genipa americana</Literal>
+        <Literal xml:lang="en">Genipa americana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2928509</IRI>
-        <Literal xml:lang="lat">Ipomoea</Literal>
+        <Literal xml:lang="en">Ipomoea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2928551</IRI>
-        <Literal xml:lang="lat">Ipomoea batatas</Literal>
+        <Literal xml:lang="en">Ipomoea batatas</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2928756</IRI>
-        <Literal xml:lang="lat">Nicotiana</Literal>
+        <Literal xml:lang="en">Nicotiana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2928774</IRI>
-        <Literal xml:lang="lat">Nicotiana tabacum</Literal>
+        <Literal xml:lang="en">Nicotiana tabacum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2928997</IRI>
-        <Literal xml:lang="lat">Solanum</Literal>
+        <Literal xml:lang="en">Solanum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2930137</IRI>
-        <Literal xml:lang="lat">Solanum lycopersicum</Literal>
+        <Literal xml:lang="en">Solanum lycopersicum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2930262</IRI>
-        <Literal xml:lang="lat">Solanum tuberosum</Literal>
+        <Literal xml:lang="en">Solanum tuberosum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2930617</IRI>
-        <Literal xml:lang="lat">Solanum melongena</Literal>
+        <Literal xml:lang="en">Solanum melongena</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2932937</IRI>
-        <Literal xml:lang="lat">Capsicum</Literal>
+        <Literal xml:lang="en">Capsicum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2932944</IRI>
-        <Literal xml:lang="lat">Capsicum annuum</Literal>
+        <Literal xml:lang="en">Capsicum annuum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2947121</IRI>
-        <Literal xml:lang="lat">Dipteryx</Literal>
+        <Literal xml:lang="en">Dipteryx</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2947798</IRI>
-        <Literal xml:lang="lat">Phaseolus</Literal>
+        <Literal xml:lang="en">Phaseolus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2956684</IRI>
-        <Literal xml:lang="lat">Arachis</Literal>
+        <Literal xml:lang="en">Arachis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2974262</IRI>
-        <Literal xml:lang="lat">Dimorphandra</Literal>
+        <Literal xml:lang="en">Dimorphandra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2974269</IRI>
-        <Literal xml:lang="lat">Dimorphandra mollis</Literal>
+        <Literal xml:lang="en">Dimorphandra mollis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2974751</IRI>
-        <Literal xml:lang="lat">Vicia</Literal>
+        <Literal xml:lang="en">Vicia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2974832</IRI>
-        <Literal xml:lang="lat">Vicia faba</Literal>
+        <Literal xml:lang="en">Vicia faba</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2975767</IRI>
-        <Literal xml:lang="lat">Tamarindus</Literal>
+        <Literal xml:lang="en">Tamarindus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2975768</IRI>
-        <Literal xml:lang="lat">Tamarindus indica</Literal>
+        <Literal xml:lang="en">Tamarindus indica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2978115</IRI>
-        <Literal xml:lang="lat">Copaifera</Literal>
+        <Literal xml:lang="en">Copaifera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2978132</IRI>
-        <Literal xml:lang="lat">Copaifera multijuga</Literal>
+        <Literal xml:lang="en">Copaifera multijuga</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2978171</IRI>
-        <Literal xml:lang="lat">Copaifera langsdorffii</Literal>
+        <Literal xml:lang="en">Copaifera langsdorffii</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/2984934</IRI>
-        <Literal xml:lang="lat">Theobroma</Literal>
+        <Literal xml:lang="en">Theobroma</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3001068</IRI>
-        <Literal xml:lang="lat">Malus</Literal>
+        <Literal xml:lang="en">Malus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3001244</IRI>
-        <Literal xml:lang="lat">Malus domestica</Literal>
+        <Literal xml:lang="en">Malus domestica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3020559</IRI>
-        <Literal xml:lang="lat">Prunus</Literal>
+        <Literal xml:lang="en">Prunus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3032212</IRI>
-        <Literal xml:lang="lat">Corchorus</Literal>
+        <Literal xml:lang="en">Corchorus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3034387</IRI>
-        <Literal xml:lang="lat">Eryngium</Literal>
+        <Literal xml:lang="en">Eryngium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3034425</IRI>
-        <Literal xml:lang="lat">Eryngium foetidum</Literal>
+        <Literal xml:lang="en">Eryngium foetidum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3034740</IRI>
-        <Literal xml:lang="lat">Daucus</Literal>
+        <Literal xml:lang="en">Daucus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3034742</IRI>
-        <Literal xml:lang="lat">Daucus carota</Literal>
+        <Literal xml:lang="en">Daucus carota</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3034870</IRI>
-        <Literal xml:lang="lat">Coriandrum</Literal>
+        <Literal xml:lang="en">Coriandrum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3034871</IRI>
-        <Literal xml:lang="lat">Coriandrum sativum</Literal>
+        <Literal xml:lang="en">Coriandrum sativum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3034906</IRI>
-        <Literal xml:lang="lat">Petroselinum</Literal>
+        <Literal xml:lang="en">Petroselinum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3042506</IRI>
-        <Literal xml:lang="lat">Brassica</Literal>
+        <Literal xml:lang="en">Brassica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3042636</IRI>
-        <Literal xml:lang="lat">Brassica napus</Literal>
+        <Literal xml:lang="en">Brassica napus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3042845</IRI>
-        <Literal xml:lang="lat">Brassica oleracea</Literal>
+        <Literal xml:lang="en">Brassica oleracea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3049319</IRI>
-        <Literal xml:lang="lat">Eruca</Literal>
+        <Literal xml:lang="en">Eruca</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3054350</IRI>
-        <Literal xml:lang="lat">Juglans</Literal>
+        <Literal xml:lang="en">Juglans</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3054368</IRI>
-        <Literal xml:lang="lat">Juglans regia</Literal>
+        <Literal xml:lang="en">Juglans regia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3060685</IRI>
-        <Literal xml:lang="lat">Manihot</Literal>
+        <Literal xml:lang="en">Manihot</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3060998</IRI>
-        <Literal xml:lang="lat">Manihot esculenta</Literal>
+        <Literal xml:lang="en">Manihot esculenta</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3065</IRI>
-        <Literal xml:lang="lat">Asteraceae</Literal>
+        <Literal xml:lang="en">Asteraceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3071157</IRI>
-        <Literal xml:lang="lat">Hevea</Literal>
+        <Literal xml:lang="en">Hevea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3071171</IRI>
-        <Literal xml:lang="lat">Hevea brasiliensis</Literal>
+        <Literal xml:lang="en">Hevea brasiliensis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3073</IRI>
-        <Literal xml:lang="lat">Poaceae</Literal>
+        <Literal xml:lang="en">Poaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3075433</IRI>
-        <Literal xml:lang="lat">Piper</Literal>
+        <Literal xml:lang="en">Piper</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3075453</IRI>
-        <Literal xml:lang="lat">Mangifera</Literal>
+        <Literal xml:lang="en">Mangifera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3083179</IRI>
-        <Literal xml:lang="lat">Bertholletia</Literal>
+        <Literal xml:lang="en">Bertholletia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3086357</IRI>
-        <Literal xml:lang="lat">Piper nigrum</Literal>
+        <Literal xml:lang="en">Piper nigrum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3112</IRI>
-        <Literal xml:lang="lat">Brassicaceae</Literal>
+        <Literal xml:lang="en">Brassicaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3119134</IRI>
-        <Literal xml:lang="lat">Helianthus</Literal>
+        <Literal xml:lang="en">Helianthus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3140231</IRI>
-        <Literal xml:lang="lat">Lactuca</Literal>
+        <Literal xml:lang="en">Lactuca</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3152082</IRI>
-        <Literal xml:lang="lat">Corchorus capsularis</Literal>
+        <Literal xml:lang="en">Corchorus capsularis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3152205</IRI>
-        <Literal xml:lang="lat">Theobroma cacao</Literal>
+        <Literal xml:lang="en">Theobroma cacao</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3152208</IRI>
-        <Literal xml:lang="lat">Theobroma grandiflorum</Literal>
+        <Literal xml:lang="en">Theobroma grandiflorum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3152652</IRI>
-        <Literal xml:lang="lat">Gossypium</Literal>
+        <Literal xml:lang="en">Gossypium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3152705</IRI>
-        <Literal xml:lang="lat">Abelmoschus</Literal>
+        <Literal xml:lang="en">Abelmoschus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3152707</IRI>
-        <Literal xml:lang="lat">Abelmoschus esculentus</Literal>
+        <Literal xml:lang="en">Abelmoschus esculentus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3155252</IRI>
-        <Literal xml:lang="lat">Annona</Literal>
+        <Literal xml:lang="en">Annona</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3169678</IRI>
-        <Literal xml:lang="lat">Hancornia</Literal>
+        <Literal xml:lang="en">Hancornia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3169679</IRI>
-        <Literal xml:lang="lat">Hancornia speciosa</Literal>
+        <Literal xml:lang="en">Hancornia speciosa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3187232</IRI>
-        <Literal xml:lang="lat">Psidium</Literal>
+        <Literal xml:lang="en">Psidium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3189661</IRI>
-        <Literal xml:lang="lat">Caryocar</Literal>
+        <Literal xml:lang="en">Caryocar</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3189663</IRI>
-        <Literal xml:lang="lat">Caryocar brasiliense</Literal>
+        <Literal xml:lang="en">Caryocar brasiliense</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3189948</IRI>
-        <Literal xml:lang="lat">Paullinia</Literal>
+        <Literal xml:lang="en">Paullinia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3189949</IRI>
-        <Literal xml:lang="lat">Paullinia cupana</Literal>
+        <Literal xml:lang="en">Paullinia cupana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3190155</IRI>
-        <Literal xml:lang="lat">Citrus</Literal>
+        <Literal xml:lang="en">Citrus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3190164</IRI>
-        <Literal xml:lang="lat">Citrus aurantiifolia</Literal>
+        <Literal xml:lang="en">Citrus aurantiifolia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3190512</IRI>
-        <Literal xml:lang="lat">Carapa</Literal>
+        <Literal xml:lang="en">Carapa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3190513</IRI>
-        <Literal xml:lang="lat">Carapa guianensis</Literal>
+        <Literal xml:lang="en">Carapa guianensis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3190592</IRI>
-        <Literal xml:lang="lat">Spondias</Literal>
+        <Literal xml:lang="en">Spondias</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3190598</IRI>
-        <Literal xml:lang="lat">Spondias purpurea</Literal>
+        <Literal xml:lang="en">Spondias purpurea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3190638</IRI>
-        <Literal xml:lang="lat">Mangifera indica</Literal>
+        <Literal xml:lang="en">Mangifera indica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3191274</IRI>
-        <Literal xml:lang="lat">Malpighia</Literal>
+        <Literal xml:lang="en">Malpighia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3191347</IRI>
-        <Literal xml:lang="lat">Byrsonima</Literal>
+        <Literal xml:lang="en">Byrsonima</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3191361</IRI>
-        <Literal xml:lang="lat">Byrsonima crassifolia</Literal>
+        <Literal xml:lang="en">Byrsonima crassifolia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/359</IRI>
-        <Literal xml:lang="lat">Mammalia</Literal>
+        <Literal xml:lang="en">Mammalia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3740</IRI>
-        <Literal xml:lang="lat">Bromeliaceae</Literal>
+        <Literal xml:lang="en">Bromeliaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3924</IRI>
-        <Literal xml:lang="lat">Araucariaceae</Literal>
+        <Literal xml:lang="en">Araucariaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3925</IRI>
-        <Literal xml:lang="lat">Pinaceae</Literal>
+        <Literal xml:lang="en">Pinaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/3990</IRI>
-        <Literal xml:lang="lat">Lecythidaceae</Literal>
+        <Literal xml:lang="en">Lecythidaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/404</IRI>
-        <Literal xml:lang="lat">Piperales</Literal>
+        <Literal xml:lang="en">Piperales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/412</IRI>
-        <Literal xml:lang="lat">Gentianales</Literal>
+        <Literal xml:lang="en">Gentianales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/414</IRI>
-        <Literal xml:lang="lat">Asterales</Literal>
+        <Literal xml:lang="en">Asterales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/4228</IRI>
-        <Literal xml:lang="lat">Arapaimidae</Literal>
+        <Literal xml:lang="en">Arapaimidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/4287106</IRI>
-        <Literal xml:lang="lat">Serrasalmidae</Literal>
+        <Literal xml:lang="en">Serrasalmidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/4334</IRI>
-        <Literal xml:lang="lat">Apidae</Literal>
+        <Literal xml:lang="en">Apidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/44</IRI>
-        <Literal xml:lang="lat">Chordata</Literal>
+        <Literal xml:lang="en">Chordata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/4686</IRI>
-        <Literal xml:lang="lat">Musaceae</Literal>
+        <Literal xml:lang="en">Musaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/4691</IRI>
-        <Literal xml:lang="lat">Euphorbiaceae</Literal>
+        <Literal xml:lang="en">Euphorbiaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5014</IRI>
-        <Literal xml:lang="lat">Myrtaceae</Literal>
+        <Literal xml:lang="en">Myrtaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5015</IRI>
-        <Literal xml:lang="lat">Rosaceae</Literal>
+        <Literal xml:lang="en">Rosaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5212877</IRI>
-        <Literal xml:lang="lat">Arapaima gigas</Literal>
+        <Literal xml:lang="en">Arapaima gigas</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5288819</IRI>
-        <Literal xml:lang="lat">Ananas comosus</Literal>
+        <Literal xml:lang="en">Ananas comosus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5290052</IRI>
-        <Literal xml:lang="lat">Zea mays</Literal>
+        <Literal xml:lang="en">Zea mays</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5293398</IRI>
-        <Literal xml:lang="lat">Euterpe oleracea</Literal>
+        <Literal xml:lang="en">Euterpe oleracea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5293403</IRI>
-        <Literal xml:lang="lat">Euterpe edulis</Literal>
+        <Literal xml:lang="en">Euterpe edulis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5293875</IRI>
-        <Literal xml:lang="lat">Syagrus coronata</Literal>
+        <Literal xml:lang="en">Syagrus coronata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5294777</IRI>
-        <Literal xml:lang="lat">Mauritia flexuosa</Literal>
+        <Literal xml:lang="en">Mauritia flexuosa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5302</IRI>
-        <Literal xml:lang="lat">Suidae</Literal>
+        <Literal xml:lang="en">Suidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5330758</IRI>
-        <Literal xml:lang="lat">Colocasia</Literal>
+        <Literal xml:lang="en">Colocasia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5330776</IRI>
-        <Literal xml:lang="lat">Colocasia esculenta</Literal>
+        <Literal xml:lang="en">Colocasia esculenta</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5350452</IRI>
-        <Literal xml:lang="lat">Phaseolus vulgaris</Literal>
+        <Literal xml:lang="en">Phaseolus vulgaris</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5353770</IRI>
-        <Literal xml:lang="lat">Arachis hypogaea</Literal>
+        <Literal xml:lang="en">Arachis hypogaea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5359660</IRI>
-        <Literal xml:lang="lat">Glycine max</Literal>
+        <Literal xml:lang="en">Glycine max</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/537</IRI>
-        <Literal xml:lang="lat">Characiformes</Literal>
+        <Literal xml:lang="en">Characiformes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5372392</IRI>
-        <Literal xml:lang="lat">Vitis vinifera</Literal>
+        <Literal xml:lang="en">Vitis vinifera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5380041</IRI>
-        <Literal xml:lang="lat">Ricinus communis</Literal>
+        <Literal xml:lang="en">Ricinus communis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5386</IRI>
-        <Literal xml:lang="lat">Fabaceae</Literal>
+        <Literal xml:lang="en">Fabaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/54</IRI>
-        <Literal xml:lang="lat">Arthropoda</Literal>
+        <Literal xml:lang="en">Arthropoda</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5407099</IRI>
-        <Literal xml:lang="lat">Annona squamosa</Literal>
+        <Literal xml:lang="en">Annona squamosa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5407273</IRI>
-        <Literal xml:lang="lat">Annona muricata</Literal>
+        <Literal xml:lang="en">Annona muricata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5414252</IRI>
-        <Literal xml:lang="lat">Ilex paraguariensis</Literal>
+        <Literal xml:lang="en">Ilex paraguariensis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5420380</IRI>
-        <Literal xml:lang="lat">Psidium guajava</Literal>
+        <Literal xml:lang="en">Psidium guajava</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5421367</IRI>
-        <Literal xml:lang="lat">Anacardium</Literal>
+        <Literal xml:lang="en">Anacardium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5421368</IRI>
-        <Literal xml:lang="lat">Anacardium occidentale</Literal>
+        <Literal xml:lang="en">Anacardium occidentale</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5421429</IRI>
-        <Literal xml:lang="lat">Malpighia glabra</Literal>
+        <Literal xml:lang="en">Malpighia glabra</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/551</IRI>
-        <Literal xml:lang="lat">Alismatales</Literal>
+        <Literal xml:lang="en">Alismatales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/552</IRI>
-        <Literal xml:lang="lat">Arecales</Literal>
+        <Literal xml:lang="en">Arecales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/5828197</IRI>
-        <Literal xml:lang="lat">Cenchrus americanus</Literal>
+        <Literal xml:lang="en">Cenchrus americanus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/587</IRI>
-        <Literal xml:lang="lat">Perciformes</Literal>
+        <Literal xml:lang="en">Perciformes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6</IRI>
-        <Literal xml:lang="lat">Plantae</Literal>
+        <Literal xml:lang="en">Plantae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/627</IRI>
-        <Literal xml:lang="lat">Zingiberales</Literal>
+        <Literal xml:lang="en">Zingiberales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/640</IRI>
-        <Literal xml:lang="lat">Pinales</Literal>
+        <Literal xml:lang="en">Pinales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6634</IRI>
-        <Literal xml:lang="lat">Cucurbitaceae</Literal>
+        <Literal xml:lang="en">Cucurbitaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6636</IRI>
-        <Literal xml:lang="lat">Caricaceae</Literal>
+        <Literal xml:lang="en">Caricaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6647</IRI>
-        <Literal xml:lang="lat">Caryocaraceae</Literal>
+        <Literal xml:lang="en">Caryocaraceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6657</IRI>
-        <Literal xml:lang="lat">Sapindaceae</Literal>
+        <Literal xml:lang="en">Sapindaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6672</IRI>
-        <Literal xml:lang="lat">Vitaceae</Literal>
+        <Literal xml:lang="en">Vitaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6676</IRI>
-        <Literal xml:lang="lat">Malpighiaceae</Literal>
+        <Literal xml:lang="en">Malpighiaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6678</IRI>
-        <Literal xml:lang="lat">Piperaceae</Literal>
+        <Literal xml:lang="en">Piperaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6685</IRI>
-        <Literal xml:lang="lat">Malvaceae</Literal>
+        <Literal xml:lang="en">Malvaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6701</IRI>
-        <Literal xml:lang="lat">Apocynaceae</Literal>
+        <Literal xml:lang="en">Apocynaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6716</IRI>
-        <Literal xml:lang="lat">Aquifoliaceae</Literal>
+        <Literal xml:lang="en">Aquifoliaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6720</IRI>
-        <Literal xml:lang="lat">Apiaceae</Literal>
+        <Literal xml:lang="en">Apiaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/690</IRI>
-        <Literal xml:lang="lat">Myrtales</Literal>
+        <Literal xml:lang="en">Myrtales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/691</IRI>
-        <Literal xml:lang="lat">Rosales</Literal>
+        <Literal xml:lang="en">Rosales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/6979</IRI>
-        <Literal xml:lang="lat">Araceae</Literal>
+        <Literal xml:lang="en">Araceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/718</IRI>
-        <Literal xml:lang="lat">Magnoliales</Literal>
+        <Literal xml:lang="en">Magnoliales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7222050</IRI>
-        <Literal xml:lang="lat">Vitales</Literal>
+        <Literal xml:lang="en">Vitales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7224005</IRI>
-        <Literal xml:lang="lat">Cucurbitales</Literal>
+        <Literal xml:lang="en">Cucurbitales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7225535</IRI>
-        <Literal xml:lang="lat">Brassicales</Literal>
+        <Literal xml:lang="en">Brassicales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7226638</IRI>
-        <Literal xml:lang="lat">Aquifoliales</Literal>
+        <Literal xml:lang="en">Aquifoliales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/723</IRI>
-        <Literal xml:lang="lat">Galliformes</Literal>
+        <Literal xml:lang="en">Galliformes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/731</IRI>
-        <Literal xml:lang="lat">Artiodactyla</Literal>
+        <Literal xml:lang="en">Artiodactyla</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7331</IRI>
-        <Literal xml:lang="lat">Prochilodontidae</Literal>
+        <Literal xml:lang="en">Prochilodontidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7403263</IRI>
-        <Literal xml:lang="lat">Lactuca sativa</Literal>
+        <Literal xml:lang="en">Lactuca sativa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7413879</IRI>
-        <Literal xml:lang="lat">Acrocomia aculeata</Literal>
+        <Literal xml:lang="en">Acrocomia aculeata</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7467468</IRI>
-        <Literal xml:lang="lat">Vitis</Literal>
+        <Literal xml:lang="en">Vitis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7474861</IRI>
-        <Literal xml:lang="lat">Eruca sativa</Literal>
+        <Literal xml:lang="en">Eruca sativa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7493935</IRI>
-        <Literal xml:lang="lat">Eucalyptus</Literal>
+        <Literal xml:lang="en">Eucalyptus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7647136</IRI>
-        <Literal xml:lang="lat">Citrus limon</Literal>
+        <Literal xml:lang="en">Citrus limon</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7681</IRI>
-        <Literal xml:lang="lat">Arecaceae</Literal>
+        <Literal xml:lang="en">Arecaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7682</IRI>
-        <Literal xml:lang="lat">Amaryllidaceae</Literal>
+        <Literal xml:lang="en">Amaryllidaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7683</IRI>
-        <Literal xml:lang="lat">Asparagaceae</Literal>
+        <Literal xml:lang="en">Asparagaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7707728</IRI>
-        <Literal xml:lang="lat">Tracheophyta</Literal>
+        <Literal xml:lang="en">Tracheophyta</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7717</IRI>
-        <Literal xml:lang="lat">Solanaceae</Literal>
+        <Literal xml:lang="en">Solanaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7828157</IRI>
-        <Literal xml:lang="lat">Petroselinum crispum</Literal>
+        <Literal xml:lang="en">Petroselinum crispum</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7906352</IRI>
-        <Literal xml:lang="lat">Euterpe</Literal>
+        <Literal xml:lang="en">Euterpe</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/7968287</IRI>
-        <Literal xml:lang="lat">Glycine</Literal>
+        <Literal xml:lang="en">Glycine</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/797</IRI>
-        <Literal xml:lang="lat">Lepidoptera</Literal>
+        <Literal xml:lang="en">Lepidoptera</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8077391</IRI>
-        <Literal xml:lang="lat">Citrus aurantium</Literal>
+        <Literal xml:lang="en">Citrus aurantium</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8088560</IRI>
-        <Literal xml:lang="lat">Bertholletia excelsa</Literal>
+        <Literal xml:lang="en">Bertholletia excelsa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8123118</IRI>
-        <Literal xml:lang="lat">Agave sisalana</Literal>
+        <Literal xml:lang="en">Agave sisalana</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8149923</IRI>
-        <Literal xml:lang="lat">Prunus persica</Literal>
+        <Literal xml:lang="en">Prunus persica</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8185571</IRI>
-        <Literal xml:lang="lat">Spondias mombin</Literal>
+        <Literal xml:lang="en">Spondias mombin</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8230360</IRI>
-        <Literal xml:lang="lat">Spondias tuberosa</Literal>
+        <Literal xml:lang="en">Spondias tuberosa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8257011</IRI>
-        <Literal xml:lang="lat">Citrullus</Literal>
+        <Literal xml:lang="en">Citrullus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8413640</IRI>
-        <Literal xml:lang="lat">Mauritia</Literal>
+        <Literal xml:lang="en">Mauritia</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8522</IRI>
-        <Literal xml:lang="lat">Cichlidae</Literal>
+        <Literal xml:lang="en">Cichlidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8717303</IRI>
-        <Literal xml:lang="lat">Cucurbita pepo</Literal>
+        <Literal xml:lang="en">Cucurbita pepo</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8798</IRI>
-        <Literal xml:lang="lat">Rubiaceae</Literal>
+        <Literal xml:lang="en">Rubiaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/8832</IRI>
-        <Literal xml:lang="lat">Bombycidae</Literal>
+        <Literal xml:lang="en">Bombycidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9188216</IRI>
-        <Literal xml:lang="lat">Ricinus</Literal>
+        <Literal xml:lang="en">Ricinus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9206251</IRI>
-        <Literal xml:lang="lat">Helianthus annuus</Literal>
+        <Literal xml:lang="en">Helianthus annuus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9291</IRI>
-        <Literal xml:lang="lat">Annonaceae</Literal>
+        <Literal xml:lang="en">Annonaceae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9326020</IRI>
-        <Literal xml:lang="lat">Gallus gallus</Literal>
+        <Literal xml:lang="en">Gallus gallus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/933</IRI>
-        <Literal xml:lang="lat">Sapindales</Literal>
+        <Literal xml:lang="en">Sapindales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9331</IRI>
-        <Literal xml:lang="lat">Phasianidae</Literal>
+        <Literal xml:lang="en">Phasianidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/941</IRI>
-        <Literal xml:lang="lat">Malvales</Literal>
+        <Literal xml:lang="en">Malvales</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9457155</IRI>
-        <Literal xml:lang="lat">Gallus gallus f. domesticus</Literal>
+        <Literal xml:lang="en">Gallus gallus f. domesticus</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9531221</IRI>
-        <Literal xml:lang="lat">Ovis</Literal>
+        <Literal xml:lang="en">Ovis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9614</IRI>
-        <Literal xml:lang="lat">Bovidae</Literal>
+        <Literal xml:lang="en">Bovidae</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>https://www.gbif.org/species/9624496</IRI>
-        <Literal xml:lang="lat">Allium</Literal>
+        <Literal xml:lang="en">Allium</Literal>
     </AnnotationAssertion>
     <SubAnnotationPropertyOf>
         <AnnotationProperty abbreviatedIRI="skos:altLabel"/>
