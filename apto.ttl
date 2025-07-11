@@ -190,10 +190,10 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://purl.obolibrary.org/obo/BCO_0000087
 <http://purl.obolibrary.org/obo/BCO_0000087> rdf:type owl:ObjectProperty ;
-                                             rdfs:comment "A shortcut relation from an organsimal entity to a taxon."@en ,
-                                                          "Uma relação abreviada de uma entidade organismal para um táxon."@pt-br ;
                                              rdfs:label "member of taxon"@en ,
-                                                        "membro do táxon"@pt-br .
+                                                        "membro do táxon"@pt-br ;
+                                             ns1:definition "A shortcut relation from an organsimal entity to a taxon."@en ,
+                                                            "Uma relação abreviada de uma entidade organismal para um táxon."@pt-br .
 
 
 ###  http://purl.obolibrary.org/obo/BFO_0000050
@@ -232,18 +232,18 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://purl.obolibrary.org/obo/RO_0003000
 <http://purl.obolibrary.org/obo/RO_0003000> rdf:type owl:ObjectProperty ;
                                             owl:inverseOf <http://purl.obolibrary.org/obo/RO_0003001> ;
-                                            rdfs:comment "A produces B if some process that occurs_in A has_output B, where A and B are material entities."@en ,
-                                                         "A produz B se algum processo que ocorre em A tem B como resultado, onde A e B são entidades materiais."@pt-br ;
                                             rdfs:label "produces"@en ,
-                                                       "produz"@pt-br .
+                                                       "produz"@pt-br ;
+                                            ns1:definition "A produces B if some process that occurs_in A has_output B, where A and B are material entities."@en ,
+                                                           "A produz B se algum processo que ocorre em A tem B como resultado, onde A e B são entidades materiais."@pt-br .
 
 
 ###  http://purl.obolibrary.org/obo/RO_0003001
 <http://purl.obolibrary.org/obo/RO_0003001> rdf:type owl:ObjectProperty ;
-                                            rdfs:comment "A produced_by B iff some process that occurs_in B has_output A."@en ,
-                                                         "A é produzido por B se, e somente se, algum processo que ocorre em B tem A como resultado."@pt-br ;
                                             rdfs:label "produced by"@en ,
-                                                       "produzido por"@pt-br .
+                                                       "produzido por"@pt-br ;
+                                            ns1:definition "A produced_by B iff some process that occurs_in B has_output A."@en ,
+                                                           "A é produzido por B se, e somente se, algum processo que ocorre em B tem A como resultado."@pt-br .
 
 
 ###  https://w3id.org/APTO#has_ingredient
@@ -251,39 +251,39 @@ xsd:date rdf:type rdfs:Datatype .
                 owl:inverseOf :is_ingredient_of ;
                 rdfs:domain <http://aims.fao.org/aos/agrovoc/c_15742> ;
                 rdfs:range :PT0066 ;
-                rdfs:comment "Esta propriedade indica que um produto contém um ou mais ingredientes específicos."@pt-br ,
-                             "This property indicates that a product contains one or more specific ingredients."@en ;
                 rdfs:label "contém ingrediente"@pt-br ,
-                           "has ingredient"@en .
+                           "has ingredient"@en ;
+                ns1:definition "Esta propriedade indica que um produto contém um ou mais ingredientes específicos."@pt-br ,
+                               "This property indicates that a product contains one or more specific ingredients."@en .
 
 
 ###  https://w3id.org/APTO#is_a_hybrid_of
 :is_a_hybrid_of rdf:type owl:ObjectProperty ;
                 rdfs:domain :PT0051 ;
-                rdfs:comment "Esta propriedade indica que uma dada espécie é um híbrido de outras duas espécies."@pt-br ,
-                             "This property indicates that a given species is a hybrid of two other species."@en ;
                 rdfs:label "is a hybrid of"@en ,
-                           "é um híbrido de"@pt-br .
+                           "é um híbrido de"@pt-br ;
+                ns1:definition "Esta propriedade indica que uma dada espécie é um híbrido de outras duas espécies."@pt-br ,
+                               "This property indicates that a given species is a hybrid of two other species."@en .
 
 
 ###  https://w3id.org/APTO#is_ingredient_of
 :is_ingredient_of rdf:type owl:ObjectProperty ;
                   rdfs:domain :PT0066 ;
                   rdfs:range <http://aims.fao.org/aos/agrovoc/c_15742> ;
-                  rdfs:comment "Esta propriedade indica que algo é um ingrediente de um produto específico."@pt-br ,
-                               "This property indicates that something is an ingredient of a specific product."@en ;
                   rdfs:label "is ingredient of"@en ,
-                             "é ingrediente de"@pt-br .
+                             "é ingrediente de"@pt-br ;
+                  ns1:definition "Esta propriedade indica que algo é um ingrediente de um produto específico."@pt-br ,
+                                 "This property indicates that something is an ingredient of a specific product."@en .
 
 
 ###  https://w3id.org/APTO#residue_of
 :residue_of rdf:type owl:ObjectProperty ;
             rdfs:domain :PT0011 ;
             rdfs:range :PT0066 ;
-            rdfs:comment "A propriedade \"residue_of\" liga um subproduto ao produto cuja produção resulta nesse subproduto. Essa relação indica que o subproduto é um resíduo gerado durante o processo de produção do produto principal."@pt-br ,
-                         "The \"residue_of\" property links a by-product to the product whose production results in this by-product. This relationship indicates that the by-product is a residue generated during the manufacturing process of the main product."@en ;
             rdfs:label "residue of"@en ,
-                       "resíduo da produção de"@pt-br .
+                       "resíduo da produção de"@pt-br ;
+            ns1:definition "A propriedade \"residue_of\" liga um subproduto ao produto cuja produção resulta nesse subproduto. Essa relação indica que o subproduto é um resíduo gerado durante o processo de produção do produto principal."@pt-br ,
+                           "The \"residue_of\" property links a by-product to the product whose production results in this by-product. This relationship indicates that the by-product is a residue generated during the manufacturing process of the main product."@en .
 
 
 #################################################################
