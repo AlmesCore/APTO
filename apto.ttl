@@ -2414,8 +2414,8 @@ xsd:date rdf:type rdfs:Datatype .
                         :PT0011 ;
         rdfs:label "Animal by-product"@en ,
                    "Subproduto de origem animal"@pt-br ;
-        ns1:definition "A secondary or residual product obtained during the processing or utilization of a primary Animal Product. While not the main intended output, an Animal By-Product retains economic, nutritional, or industrial value. Examples include gelatin from collagen extraction, bone meal from meat processing, and lanolin from wool production."@en ,
-                       "Um produto secundário ou residual obtido durante o processamento ou a utilização de um Produto Animal primário. Embora não seja o principal resultado pretendido, um Subproduto Animal mantém valor econômico, nutricional ou industrial. Exemplos incluem gelatina obtida da extração de colágeno, farinha de ossos proveniente do processamento de carne e lanolina extraída da produção de lã."@pt-br .
+        ns1:definition "A secondary or residual product obtained during the processing or utilization of a primary Animal Product. While not the main intended output, an Animal By-Product retains economic, nutritional, or industrial value."@en ,
+                       "Um produto secundário ou residual obtido durante o processamento ou a utilização de um Produto Animal primário. Embora não seja o principal resultado pretendido, um Subproduto Animal mantém valor econômico, nutricional ou industrial."@pt-br .
 
 
 ###  https://w3id.org/APTO#PT0005
