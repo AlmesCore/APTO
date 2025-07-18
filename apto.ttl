@@ -1020,8 +1020,8 @@ xsd:date rdf:type rdfs:Datatype .
                                                           <http://aims.fao.org/aos/agrovoc/c_8171> ;
                                           rdfs:label "Processed plant product"@en ,
                                                      "Produto de origem vegetal processado"@pt-br ;
-                                          ns1:definition "A plant-derived product that have undergone processing, altering their physical or chemical properties, such as flour, paper, or refined oil."@en ,
-                                                         "Um produto de origem vegetal que passou por processamento, alterando suas propriedades físicas ou químicas, como farinha, papel ou óleo refinado."@pt-br .
+                                          ns1:definition "A plant-derived product that have undergone processing, altering their physical or chemical properties."@en ,
+                                                         "Um produto de origem vegetal que passou por processamento, alterando suas propriedades físicas ou químicas."@pt-br .
 
 
 ###  http://aims.fao.org/aos/agrovoc/c_3049
@@ -3090,8 +3090,8 @@ xsd:date rdf:type rdfs:Datatype .
                         <http://aims.fao.org/aos/agrovoc/c_438> ;
         rdfs:label "Processed animal product"@en ,
                    "Produto de origem animal processado"@pt-br ;
-        ns1:definition "A animal-derived product that have undergone processing, altering their physical or chemical properties, such as cheese, leather, or sausages."@en ,
-                       "Um produto de origem animal que passou por processamento, alterando suas propriedades físicas ou químicas, como por exemplo queijo, couro ou embutidos"@pt-br .
+        ns1:definition "A animal-derived product that have undergone processing, altering their physical or chemical properties."@en ,
+                       "Um produto de origem animal que passou por processamento, alterando suas propriedades físicas ou químicas."@pt-br .
 
 
 ###  https://w3id.org/APTO#PT0066
