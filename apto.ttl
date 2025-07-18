@@ -1879,7 +1879,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://aims.fao.org/aos/agrovoc/c_995ecefb
 <http://aims.fao.org/aos/agrovoc/c_995ecefb> rdf:type owl:Class ;
                                              rdfs:subClassOf <http://aims.fao.org/aos/agrovoc/c_8171> ;
-                                             rdfs:comment "A plant that provides direct or indirect benefits to humans, animals, or the environment. These benefits may include food, medicine, raw materials, fuel, ecological services, or ornamental value. Examples include wheat for food, aloe vera for medicinal use, cotton for fiber, and trees for carbon sequestration."@en ;
+                                             rdfs:comment "A plant that provides direct or indirect benefits to humans, animals, or the environment. These benefits may include food, medicine, raw materials, fuel, ecological services, or ornamental value."@en ;
                                              rdfs:label "Planta útil"@pt-br ,
                                                         "Useful plant"@en .
 
