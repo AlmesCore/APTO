@@ -2975,8 +2975,8 @@ xsd:date rdf:type rdfs:Datatype .
                         :PT0011 ;
         rdfs:label "Plant by-product"@en ,
                    "Subproduto de origem vegetal"@pt-br ;
-        ns1:definition "A secondary or residual product obtained during the processing or extraction of a primary Plant Product. While not the main intended output, a Plant By-Product retains economic, nutritional, or industrial value. Examples include bran from grain milling, bagasse from sugarcane processing, and fruit peels from juice production."@en ,
-                       "Um produto secundário ou residual obtido durante o processamento ou extração de um Produto Vegetal primário. Embora não seja o principal resultado pretendido, um Subproduto Vegetal mantém valor econômico, nutricional ou industrial. Exemplos incluem o farelo da moagem de grãos, o bagaço do processamento da cana-de-açúcar e as cascas de frutas da produção de sucos"@pt-br .
+        ns1:definition "A secondary or residual product obtained during the processing or extraction of a primary Plant Product. While not the main intended output, a Plant By-Product retains economic, nutritional, or industrial value."@en ,
+                       "Um produto secundário ou residual obtido durante o processamento ou extração de um Produto Vegetal primário. Embora não seja o principal resultado pretendido, um Subproduto Vegetal mantém valor econômico, nutricional ou industrial."@pt-br .
 
 
 ###  https://w3id.org/APTO#PT0056
