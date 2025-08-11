@@ -4408,7 +4408,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/APTO#PT0470
 :PT0470 rdf:type owl:Class ;
         rdfs:subClassOf :PT0467 ;
-        rdfs:label "Freshwater fishe"@en ,
+        rdfs:label "Freshwater fish"@en ,
                    "Peixe de água doce"@pt-br ;
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_3105"^^xsd:anyURI .
 
