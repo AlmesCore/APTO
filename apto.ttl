@@ -561,23 +561,25 @@ xsd:date rdf:type rdfs:Datatype .
 ###  https://w3id.org/APTO#PT0026
 :PT0026 rdf:type owl:Class ;
         rdfs:subClassOf :PT0025 ;
-        rdfs:label "Farinha de mandioca seca"@pt-br .
-
+        rdfs:label "Farinha de mandioca seca"@pt-br ;
+        rdfs:label "Dried cassava flour"@en .
 
 ###  https://w3id.org/APTO#PT0027
 :PT0027 rdf:type owl:Class ;
         rdfs:subClassOf :PT0026 ;
         rdfs:label "Farinha de mandioca seca fina"@pt-br ;
+        rdfs:label "Fine dried cassava flour"@en ;
         skos:altLabel "Mandioca seca fina"@pt-br ;
-        skos:prefLabel "Farinha de mandioca seca fina"@pt-br .
+        skos:altLabel "Fine dried cassava"@en .
 
 
 ###  https://w3id.org/APTO#PT0028
 :PT0028 rdf:type owl:Class ;
         rdfs:subClassOf :PT0026 ;
         rdfs:label "Farinha de mandioca seca grossa"@pt-br ;
+        rdfs:label "Coarse dried cassava flour"@en ;
         skos:altLabel "Mandioca seca grossa"@pt-br ;
-        skos:prefLabel "Farinha de mandioca seca grossa"@pt-br .
+        skos:altLabel "Coarse dried cassava"@en .
 
 
 ###  https://w3id.org/APTO#PT0029
