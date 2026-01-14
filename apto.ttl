@@ -1,4 +1,4 @@
-@prefix : <https://w3id.org/APTO#> .
+@prefix : <https://w3id.org/APTO/> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix ro: <http://purl.obolibrary.org/obo/RO_> .
 @prefix bfo: <http://purl.obolibrary.org/obo/BFO_> .
@@ -10,11 +10,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@base <https://w3id.org/APTO#> .
+@base <https://w3id.org/APTO/> .
 
-<https://w3id.org/APTO#> rdf:type owl:Ontology ;
+<https://w3id.org/APTO/> rdf:type owl:Ontology ;
                           dc:description "The Agriculture Product Types Ontology (APTO) is an ontology of types, meaning it does not contain individuals and is intended as a classification system for agricultural commodities price index databases in Brazil. This ontology contains labels and comments in both Portuguese and English. There are two main modules: :Organism and :Product_type. The :Organism class contains subclasses that represent the taxonomy of species related to the production of given product types. It imports taxonomic information from the Global Biodiversity Information Facility (GBIF) Backbone Taxonomy via API. The :Product_type class has six main subclasses organized into major groups: :Inorganic_compound :Animal_product :Plant_product :Raw_product :Processed_product :By-product The :Animal_product and :Plant_product classes include subclasses indicating the type of processing the product has undergone."@en ;
-                          dc:identifier "https://w3id.org/APTO#"^^xsd:anyURI ;
+                          dc:identifier "https://w3id.org/APTO/" ;
                           dc:relation "http://aims.fao.org/aos/agrovoc/"^^xsd:anyURI ,
                                       "https://sistemas.sede.embrapa.br/agrotermos/"^^xsd:anyURI ;
                           dc:rights "CC-BY-4.0" ;
@@ -34,9 +34,10 @@
                           dcterms:hasFormat "https://data.pldn.nl/FilipiSoares/APTO"^^xsd:anyURI ;
                           dcterms:issued "2024-10-15"^^xsd:date ;
                           dcterms:license "https://creativecommons.org/licenses/by/4.0/"^^xsd:anyURI ;
-                          dcterms:modified "2025-08-01" ;
+                          dcterms:modified "2026-01-14" ;
                           dcterms:title "Agriculture Product Types Ontology (APTO)" ;
-                          owl:versionInfo "1.3"^^xsd:float ;
+                          rdfs:comment "The base namespace was updated from a hash-based IRI (https://w3id.org/APTO#) to a slash-based IRI (https://w3id.org/APTO/) in version 1.3.1"@en ;
+                          owl:versionInfo "1.3.1"^^xsd:float ;
                           sdo:includedInDataCatalog "https://agroportal.lirmm.fr/"^^xsd:anyURI .
 
 #################################################################
@@ -241,7 +242,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                             "A é produzido por B se, e somente se, algum processo que ocorre em B tem A como resultado."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0405
+###  https://w3id.org/APTO/PT0405
 :PT0405 rdf:type owl:ObjectProperty ;
         owl:inverseOf :PT0407 ;
         rdfs:domain :PT0113 ;
@@ -252,7 +253,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "This property indicates that a product contains one or more specific ingredients."@en .
 
 
-###  https://w3id.org/APTO#PT0406
+###  https://w3id.org/APTO/PT0406
 :PT0406 rdf:type owl:ObjectProperty ;
         rdfs:domain :PT0051 ;
         rdfs:label "is a hybrid of"@en ,
@@ -261,7 +262,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "This property indicates that a given species is a hybrid of two other species."@en .
 
 
-###  https://w3id.org/APTO#PT0407
+###  https://w3id.org/APTO/PT0407
 :PT0407 rdf:type owl:ObjectProperty ;
         rdfs:domain :PT0066 ;
         rdfs:range :PT0113 ;
@@ -271,7 +272,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "This property indicates that something is an ingredient of a specific product."@en .
 
 
-###  https://w3id.org/APTO#PT0408
+###  https://w3id.org/APTO/PT0408
 :PT0408 rdf:type owl:ObjectProperty ;
         rdfs:domain :PT0011 ;
         rdfs:range :PT0066 ;
@@ -285,7 +286,7 @@ xsd:date rdf:type rdfs:Datatype .
 #    Classes
 #################################################################
 
-###  https://w3id.org/APTO#PT0001
+###  https://w3id.org/APTO/PT0001
 :PT0001 rdf:type owl:Class ;
         rdfs:subClassOf :PT0501 ,
                         [ rdf:type owl:Restriction ;
@@ -297,14 +298,14 @@ xsd:date rdf:type rdfs:Datatype .
                    "Açaí-verdadeiro"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0002
+###  https://w3id.org/APTO/PT0002
 :PT0002 rdf:type owl:Class ;
         rdfs:subClassOf :PT0456 ;
         rdfs:label "Chilled chicken"@en ,
                    "Frango resfriado"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0003
+###  https://w3id.org/APTO/PT0003
 :PT0003 rdf:type owl:Class ;
         rdfs:subClassOf :PT0453 ,
                         [ rdf:type owl:Restriction ;
@@ -318,7 +319,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Raw cotton as harvested from the field, consisting of both cotton fibers (lint) and seeds."@en .
 
 
-###  https://w3id.org/APTO#PT0004
+###  https://w3id.org/APTO/PT0004
 :PT0004 rdf:type owl:Class ;
         rdfs:subClassOf :PT0011 ,
                         :PT0111 ;
@@ -328,14 +329,14 @@ xsd:date rdf:type rdfs:Datatype .
                         "Um produto secundário ou residual obtido durante o processamento ou a utilização de um Produto Animal primário. Embora não seja o principal resultado pretendido, um Subproduto Animal mantém valor econômico, nutricional ou industrial."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0005
+###  https://w3id.org/APTO/PT0005
 :PT0005 rdf:type owl:Class ;
         rdfs:subClassOf :PT0067 ;
         rdfs:label "Aquaculture product"@en ,
                    "Produto da aquicultura"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0006
+###  https://w3id.org/APTO/PT0006
 :PT0006 rdf:type owl:Class ;
         rdfs:subClassOf :PT0056 ,
                         :PT0548 ,
@@ -348,7 +349,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Araucária"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0007
+###  https://w3id.org/APTO/PT0007
 :PT0007 rdf:type owl:Class ;
         rdfs:subClassOf :PT0418 ;
         rdfs:label "Boi gordo"@pt-br ,
@@ -358,7 +359,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "http://dbpedia.org/resource/Fed_cattle"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0008
+###  https://w3id.org/APTO/PT0008
 :PT0008 rdf:type owl:Class ;
         rdfs:subClassOf :PT0418 ;
         rdfs:label "Boi magro"@pt-br ,
@@ -368,7 +369,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Bovino que ainda não atingiu o peso ou a condição corporal ideal para o abate. Geralmente criado em regime de pasto ou alimentação forrageira, ele está em fase de crescimento e é destinado a sistemas de terminação, como o confinamento, para ser engordado até o ponto de abate."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0009
+###  https://w3id.org/APTO/PT0009
 :PT0009 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -382,7 +383,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "http://aims.fao.org/aos/agrovoc/c_4661"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0010
+###  https://w3id.org/APTO/PT0010
 :PT0010 rdf:type owl:Class ;
         rdfs:subClassOf :PT0501 ,
                         [ rdf:type owl:Restriction ;
@@ -394,7 +395,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Buritizeiro"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0011
+###  https://w3id.org/APTO/PT0011
 :PT0011 rdf:type owl:Class ;
         rdfs:subClassOf :PT0066 ;
         rdfs:label "By-product"@en ,
@@ -404,7 +405,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_1172"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0012
+###  https://w3id.org/APTO/PT0012
 :PT0012 rdf:type owl:Class ;
         rdfs:subClassOf :PT0438 ,
                         [ rdf:type owl:Restriction ;
@@ -418,7 +419,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Refers to dehulled and coarsely ground or whole kernels of white or yellow maize, typically used in traditional cooking."@en .
 
 
-###  https://w3id.org/APTO#PT0013
+###  https://w3id.org/APTO/PT0013
 :PT0013 rdf:type owl:Class ;
         rdfs:subClassOf :PT0493 ,
                         [ rdf:type owl:Restriction ;
@@ -429,7 +430,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Ovine meat"@en .
 
 
-###  https://w3id.org/APTO#PT0014
+###  https://w3id.org/APTO/PT0014
 :PT0014 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ,
                         [ rdf:type owl:Restriction ;
@@ -445,7 +446,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Cera de carnaúba"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0015
+###  https://w3id.org/APTO/PT0015
 :PT0015 rdf:type owl:Class ;
         rdfs:subClassOf :PT0446 ,
                         [ rdf:type owl:Restriction ;
@@ -456,21 +457,21 @@ xsd:date rdf:type rdfs:Datatype .
                    "Pimenta"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0016
+###  https://w3id.org/APTO/PT0016
 :PT0016 rdf:type owl:Class ;
         rdfs:subClassOf :PT0341 ;
         rdfs:label "Citrus maxima"@en ;
         skos:exactMatch "https://www.gbif.org/species/3190160"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0017
+###  https://w3id.org/APTO/PT0017
 :PT0017 rdf:type owl:Class ;
         rdfs:subClassOf :PT0341 ;
         rdfs:label "Citrus reticulata"@en ;
         skos:exactMatch "https://www.gbif.org/species/3190172"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0018
+###  https://w3id.org/APTO/PT0018
 :PT0018 rdf:type owl:Class ;
         rdfs:subClassOf :PT0546 ,
                         [ rdf:type owl:Restriction ;
@@ -482,7 +483,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Coco de babaçu"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0019
+###  https://w3id.org/APTO/PT0019
 :PT0019 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -495,7 +496,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:closeMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/b049f571bb7165ea6fb5d377e5dfdfd2"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0021
+###  https://w3id.org/APTO/PT0021
 :PT0021 rdf:type owl:Class ;
         rdfs:subClassOf :PT0032 ,
                         [ rdf:type owl:Restriction ;
@@ -509,7 +510,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Flocos de milho, conhecidos popularmente como \"cornflakes\", são feitos a partir de grãos de milho cozidos e depois esmagados e tostados em flocos finos e crocantes.São amplamente consumidos como cereais matinais, geralmente acompanhados de leite ou iogurte, e também são utilizados em algumas receitas culinárias, como empanados ou sobremesas."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0022
+###  https://w3id.org/APTO/PT0022
 :PT0022 rdf:type owl:Class ;
         rdfs:subClassOf :PT0442 ,
                         [ rdf:type owl:Restriction ;
@@ -520,7 +521,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Queijo de vaca"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0023
+###  https://w3id.org/APTO/PT0023
 :PT0023 rdf:type owl:Class ;
         rdfs:subClassOf :PT0508 ,
                         [ rdf:type owl:Restriction ;
@@ -532,7 +533,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Galinha doméstica"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0024
+###  https://w3id.org/APTO/PT0024
 :PT0024 rdf:type owl:Class ;
         rdfs:subClassOf :PT0056 ,
                         :PT0548 ,
@@ -544,7 +545,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Eucalyptus"@en .
 
 
-###  https://w3id.org/APTO#PT0025
+###  https://w3id.org/APTO/PT0025
 :PT0025 rdf:type owl:Class ;
         rdfs:subClassOf :PT0468 ,
                         [ rdf:type owl:Restriction ;
@@ -558,31 +559,32 @@ xsd:date rdf:type rdfs:Datatype .
                         "Produto granulado ou pulverulento obtido a partir da raiz da mandioca, que é descascada, ralada, prensada e posteriormente torrada."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0026
+###  https://w3id.org/APTO/PT0026
 :PT0026 rdf:type owl:Class ;
         rdfs:subClassOf :PT0025 ;
-        rdfs:label "Farinha de mandioca seca"@pt-br ;
-        rdfs:label "Dried cassava flour"@en .
+        rdfs:label "Dried cassava flour"@en ,
+                   "Farinha de mandioca seca"@pt-br .
 
-###  https://w3id.org/APTO#PT0027
+
+###  https://w3id.org/APTO/PT0027
 :PT0027 rdf:type owl:Class ;
         rdfs:subClassOf :PT0026 ;
-        rdfs:label "Farinha de mandioca seca fina"@pt-br ;
-        rdfs:label "Fine dried cassava flour"@en ;
-        skos:altLabel "Mandioca seca fina"@pt-br ;
-        skos:altLabel "Fine dried cassava"@en .
+        rdfs:label "Farinha de mandioca seca fina"@pt-br ,
+                   "Fine dried cassava flour"@en ;
+        skos:altLabel "Fine dried cassava"@en ,
+                      "Mandioca seca fina"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0028
+###  https://w3id.org/APTO/PT0028
 :PT0028 rdf:type owl:Class ;
         rdfs:subClassOf :PT0026 ;
-        rdfs:label "Farinha de mandioca seca grossa"@pt-br ;
-        rdfs:label "Coarse dried cassava flour"@en ;
-        skos:altLabel "Mandioca seca grossa"@pt-br ;
-        skos:altLabel "Coarse dried cassava"@en .
+        rdfs:label "Coarse dried cassava flour"@en ,
+                   "Farinha de mandioca seca grossa"@pt-br ;
+        skos:altLabel "Coarse dried cassava"@en ,
+                      "Mandioca seca grossa"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0029
+###  https://w3id.org/APTO/PT0029
 :PT0029 rdf:type owl:Class ;
         rdfs:subClassOf :PT0584 ,
                         [ rdf:type owl:Restriction ;
@@ -595,7 +597,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:altLabel "fava-d'anta"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0030
+###  https://w3id.org/APTO/PT0030
 :PT0030 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Fibra"@pt-br ,
@@ -604,7 +606,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/aaf228df552d57d8f74534022b863a4f"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0031
+###  https://w3id.org/APTO/PT0031
 :PT0031 rdf:type owl:Class ;
         rdfs:subClassOf :PT0030 ,
                         [ rdf:type owl:Restriction ;
@@ -616,21 +618,21 @@ xsd:date rdf:type rdfs:Datatype .
                    "Fibra de carnaúba"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0032
+###  https://w3id.org/APTO/PT0032
 :PT0032 rdf:type owl:Class ;
         rdfs:subClassOf :PT0438 ;
         rdfs:label "Flakes"@en ,
                    "Flocos"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0033
+###  https://w3id.org/APTO/PT0033
 :PT0033 rdf:type owl:Class ;
         rdfs:subClassOf :PT0456 ;
         rdfs:label "Frango congelado"@pt-br ,
                    "Frozen chicken"@en .
 
 
-###  https://w3id.org/APTO#PT0034
+###  https://w3id.org/APTO/PT0034
 :PT0034 rdf:type owl:Class ;
         rdfs:subClassOf :PT0442 ,
                         [ rdf:type owl:Restriction ;
@@ -641,7 +643,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Queijo de cabra"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0035
+###  https://w3id.org/APTO/PT0035
 :PT0035 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -654,7 +656,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:closeMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/cd4ad51e3ef278dffda7b240530a6cf7"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0036
+###  https://w3id.org/APTO/PT0036
 :PT0036 rdf:type owl:Class ;
         rdfs:subClassOf :PT0518 ,
                         [ rdf:type owl:Restriction ;
@@ -667,7 +669,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:closeMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/da85d12cdbbedf2418030018c66cb0b0"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0037
+###  https://w3id.org/APTO/PT0037
 :PT0037 rdf:type owl:Class ;
         rdfs:subClassOf :PT0470 ,
                         [ rdf:type owl:Restriction ;
@@ -682,7 +684,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Jaraqui"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0038
+###  https://w3id.org/APTO/PT0038
 :PT0038 rdf:type owl:Class ;
         rdfs:subClassOf :PT0501 ,
                         [ rdf:type owl:Restriction ;
@@ -697,7 +699,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Licurizeiro"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0039
+###  https://w3id.org/APTO/PT0039
 :PT0039 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         [ rdf:type owl:Restriction ;
@@ -711,7 +713,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Refers to the fruit of the castor oil plant that contains the castor beans still enclosed within their protective outer shell or husk."@en .
 
 
-###  https://w3id.org/APTO#PT0040
+###  https://w3id.org/APTO/PT0040
 :PT0040 rdf:type owl:Class ;
         rdfs:subClassOf :PT0055 ,
                         [ rdf:type owl:Restriction ;
@@ -724,7 +726,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Massa de mandioca"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0041
+###  https://w3id.org/APTO/PT0041
 :PT0041 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -736,7 +738,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:closeMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/2ba40885c990c681fbb1872fc59a5a16"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0042
+###  https://w3id.org/APTO/PT0042
 :PT0042 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         :PT0527 ,
@@ -750,7 +752,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Murumuru"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0043
+###  https://w3id.org/APTO/PT0043
 :PT0043 rdf:type owl:Class ;
         rdfs:subClassOf :PT0501 ,
                         [ rdf:type owl:Restriction ;
@@ -767,28 +769,28 @@ xsd:date rdf:type rdfs:Datatype .
                    "Palmeira murumuru"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0044
+###  https://w3id.org/APTO/PT0044
 :PT0044 rdf:type owl:Class ;
         rdfs:subClassOf :PT0067 ;
         rdfs:label "Hive product"@en ,
                    "Produto da apicultura"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0045
+###  https://w3id.org/APTO/PT0045
 :PT0045 rdf:type owl:Class ;
         rdfs:subClassOf :PT0067 ;
         rdfs:label "Livestock product"@en ,
                    "Produto pecuário"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0046
+###  https://w3id.org/APTO/PT0046
 :PT0046 rdf:type owl:Class ;
         rdfs:subClassOf :PT0067 ;
         rdfs:label "Produto da vida selvagem"@pt-br ,
                    "Wildlife product"@en .
 
 
-###  https://w3id.org/APTO#PT0047
+###  https://w3id.org/APTO/PT0047
 :PT0047 rdf:type owl:Class ;
         rdfs:subClassOf :PT0530 ,
                         [ rdf:type owl:Restriction ;
@@ -800,7 +802,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Óleo de buriti"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0048
+###  https://w3id.org/APTO/PT0048
 :PT0048 rdf:type owl:Class ;
         rdfs:subClassOf :PT0530 ,
                         [ rdf:type owl:Restriction ;
@@ -817,7 +819,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/29fb6a538d8ed7225c2787a2118752aa"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0049
+###  https://w3id.org/APTO/PT0049
 :PT0049 rdf:type owl:Class ;
         rdfs:subClassOf :PT0530 ,
                         [ rdf:type owl:Restriction ;
@@ -829,7 +831,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Óleo de murumuru"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0050
+###  https://w3id.org/APTO/PT0050
 :PT0050 rdf:type owl:Class ;
         rdfs:subClassOf :PT0530 ,
                         [ rdf:type owl:Restriction ;
@@ -841,14 +843,14 @@ xsd:date rdf:type rdfs:Datatype .
                    "Óleo de pequi"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0051
+###  https://w3id.org/APTO/PT0051
 :PT0051 rdf:type owl:Class ;
         rdfs:label "Organism"@en ,
                    "Organismo"@pt-br ;
         skos:exactMatch "http://purl.obolibrary.org/obo/OBI_0100026"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0052
+###  https://w3id.org/APTO/PT0052
 :PT0052 rdf:type owl:Class ;
         rdfs:subClassOf :PT0458 ,
                         [ rdf:type owl:Restriction ;
@@ -859,7 +861,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Ovo de galinha"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0053
+###  https://w3id.org/APTO/PT0053
 :PT0053 rdf:type owl:Class ;
         rdfs:subClassOf :PT0446 ,
                         [ rdf:type owl:Restriction ;
@@ -872,7 +874,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:altLabel "Black pepper"@en .
 
 
-###  https://w3id.org/APTO#PT0054
+###  https://w3id.org/APTO/PT0054
 :PT0054 rdf:type owl:Class ;
         rdfs:subClassOf :PT0056 ,
                         :PT0548 ,
@@ -884,7 +886,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Pinus"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0055
+###  https://w3id.org/APTO/PT0055
 :PT0055 rdf:type owl:Class ;
         rdfs:subClassOf :PT0011 ,
                         :PT0112 ;
@@ -894,7 +896,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Um produto secundário ou residual obtido durante o processamento ou extração de um Produto Vegetal primário. Embora não seja o principal resultado pretendido, um Subproduto Vegetal mantém valor econômico, nutricional ou industrial."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0056
+###  https://w3id.org/APTO/PT0056
 :PT0056 rdf:type owl:Class ;
         rdfs:subClassOf :PT0115 ,
                         :PT0469 ;
@@ -902,7 +904,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Planta produtora de celulose"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0057
+###  https://w3id.org/APTO/PT0057
 :PT0057 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Pó cerífero"@pt-br ,
@@ -911,7 +913,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Material particulado fino obtido a partir do revestimento externo ou do processamento de certas sementes, frutos ou superfícies vegetais que contêm ceras naturais. É comumente utilizado em aplicações cosméticas, farmacêuticas ou industriais por suas propriedades emolientes ou protetoras."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0058
+###  https://w3id.org/APTO/PT0058
 :PT0058 rdf:type owl:Class ;
         rdfs:subClassOf :PT0057 ,
                         [ rdf:type owl:Restriction ;
@@ -928,7 +930,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Pó cerífero de carnaúba"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0059
+###  https://w3id.org/APTO/PT0059
 :PT0059 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -940,7 +942,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de abacaxi"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0060
+###  https://w3id.org/APTO/PT0060
 :PT0060 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -952,7 +954,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de açaí"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0061
+###  https://w3id.org/APTO/PT0061
 :PT0061 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -964,7 +966,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de acerola"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0062
+###  https://w3id.org/APTO/PT0062
 :PT0062 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -976,7 +978,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Tamarind pulp"@en .
 
 
-###  https://w3id.org/APTO#PT0063
+###  https://w3id.org/APTO/PT0063
 :PT0063 rdf:type owl:Class ;
         rdfs:subClassOf :PT0581 ,
                         [ rdf:type owl:Restriction ;
@@ -992,14 +994,14 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Polvilho"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0064
+###  https://w3id.org/APTO/PT0064
 :PT0064 rdf:type owl:Class ;
         rdfs:subClassOf :PT0045 ;
         rdfs:label "Poultry product"@en ,
                    "Produto da avicultura"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0065
+###  https://w3id.org/APTO/PT0065
 :PT0065 rdf:type owl:Class ;
         rdfs:subClassOf :PT0111 ,
                         :PT0113 ;
@@ -1009,13 +1011,13 @@ xsd:date rdf:type rdfs:Datatype .
                         "Um produto de origem animal que passou por processamento, alterando suas propriedades físicas ou químicas."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0066
+###  https://w3id.org/APTO/PT0066
 :PT0066 rdf:type owl:Class ;
         rdfs:label "Product type"@en ,
                    "Tipo de produto"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0067
+###  https://w3id.org/APTO/PT0067
 :PT0067 rdf:type owl:Class ;
         rdfs:subClassOf :PT0069 ,
                         :PT0111 ;
@@ -1025,7 +1027,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Um Produto Animal que passou por nenhum ou mínimo processamento após ser obtido do animal. Esta categoria inclui produtos que estão em seu estado natural ou foram submetidos apenas a métodos básicos de preservação (ex.: refrigeração, congelamento ou secagem), sem transformação significativa."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0068
+###  https://w3id.org/APTO/PT0068
 :PT0068 rdf:type owl:Class ;
         rdfs:subClassOf :PT0069 ,
                         :PT0112 ;
@@ -1035,7 +1037,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Um Produto Vegetal que passou por nenhum ou mínimo processamento após ser colhido da planta. Esses produtos permanecem em seu estado natural ou foram submetidos apenas a métodos básicos de preservação (ex.: secagem, lavagem ou refrigeração) sem transformação significativa."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0069
+###  https://w3id.org/APTO/PT0069
 :PT0069 rdf:type owl:Class ;
         rdfs:subClassOf :PT0066 ;
         rdfs:label "Produto in natura"@pt-br ,
@@ -1045,7 +1047,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "http://aims.fao.org/aos/agrovoc/c_24887"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0070
+###  https://w3id.org/APTO/PT0070
 :PT0070 rdf:type owl:Class ;
         rdfs:subClassOf :PT0032 ,
                         [ rdf:type owl:Restriction ;
@@ -1059,7 +1061,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Rice flakes are grains of rice that have been processed to become thin and flattened. This process involves cooking the grains, dehydrating them, and pressing them, resulting in light and crispy flakes. They are commonly used in breakfast cereals, cereal bars, and can be eaten with milk, yogurt, or used in recipes like cakes and cookies."@en .
 
 
-###  https://w3id.org/APTO#PT0071
+###  https://w3id.org/APTO/PT0071
 :PT0071 rdf:type owl:Class ;
         rdfs:subClassOf :PT0067 ;
         rdfs:label "Produto da sericicultura"@pt-br ,
@@ -1067,7 +1069,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "http://aims.fao.org/aos/agrovoc/c_6981"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0072
+###  https://w3id.org/APTO/PT0072
 :PT0072 rdf:type owl:Class ;
         rdfs:subClassOf :PT0512 ,
                         [ rdf:type owl:Restriction ;
@@ -1079,7 +1081,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Sharinga tree"@en .
 
 
-###  https://w3id.org/APTO#PT0073
+###  https://w3id.org/APTO/PT0073
 :PT0073 rdf:type owl:Class ;
         rdfs:subClassOf :PT0055 ,
                         [ rdf:type owl:Restriction ;
@@ -1091,7 +1093,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Soybean meal"@en .
 
 
-###  https://w3id.org/APTO#PT0074
+###  https://w3id.org/APTO/PT0074
 :PT0074 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Sucroenergético"@pt-br ,
@@ -1100,7 +1102,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Produto derivado de culturas ricas em açúcares, como a cana-de-açúcar, a beterraba ou o milho, destinado à alimentação, à produção de combustíveis ou à geração de energia."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0075
+###  https://w3id.org/APTO/PT0075
 :PT0075 rdf:type owl:Class ;
         rdfs:subClassOf :PT0115 ;
         rdfs:label "Planta produtora de açúcar"@pt-br ,
@@ -1109,7 +1111,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Planta cultivada principalmente por seu alto teor natural de açúcar, que pode ser extraído e processado na forma de adoçantes como açúcar bruto, açúcar refinado ou etanol."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0076
+###  https://w3id.org/APTO/PT0076
 :PT0076 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -1122,7 +1124,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/5bf4ec8db1d13c79edfae0699ce662fe"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0077
+###  https://w3id.org/APTO/PT0077
 :PT0077 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ,
                         [ rdf:type owl:Restriction ;
@@ -1134,14 +1136,14 @@ xsd:date rdf:type rdfs:Datatype .
                    "Tomato extract"@en .
 
 
-###  https://w3id.org/APTO#PT0078
+###  https://w3id.org/APTO/PT0078
 :PT0078 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Triticum"@en ;
         skos:exactMatch "https://www.gbif.org/species/2706388"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0079
+###  https://w3id.org/APTO/PT0079
 :PT0079 rdf:type owl:Class ;
         rdfs:subClassOf :PT0030 ,
                         [ rdf:type owl:Restriction ;
@@ -1156,7 +1158,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "The soft, fibrous portion of the cotton boll that is separated during the ginning process."@en .
 
 
-###  https://w3id.org/APTO#PT0080
+###  https://w3id.org/APTO/PT0080
 :PT0080 rdf:type owl:Class ;
         rdfs:subClassOf :PT0574 ,
                         [ rdf:type owl:Restriction ;
@@ -1169,7 +1171,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:broadMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/8d11f918a65e21f7695af788b28001d5"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0081
+###  https://w3id.org/APTO/PT0081
 :PT0081 rdf:type owl:Class ;
         rdfs:subClassOf :PT0574 ,
                         [ rdf:type owl:Restriction ;
@@ -1181,7 +1183,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:altLabel "Amêndoa de baru"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0082
+###  https://w3id.org/APTO/PT0082
 :PT0082 rdf:type owl:Class ;
         rdfs:subClassOf :PT0574 ,
                         [ rdf:type owl:Restriction ;
@@ -1194,7 +1196,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:broadMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/b049f571bb7165ea6fb5d377e5dfdfd2"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0083
+###  https://w3id.org/APTO/PT0083
 :PT0083 rdf:type owl:Class ;
         rdfs:subClassOf :PT0574 ,
                         [ rdf:type owl:Restriction ;
@@ -1208,7 +1210,7 @@ xsd:date rdf:type rdfs:Datatype .
                       "Ouricuri"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0084
+###  https://w3id.org/APTO/PT0084
 :PT0084 rdf:type owl:Class ;
         rdfs:subClassOf :PT0574 ,
                         [ rdf:type owl:Restriction ;
@@ -1221,7 +1223,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:altLabel "Macaúba"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0085
+###  https://w3id.org/APTO/PT0085
 :PT0085 rdf:type owl:Class ;
         rdfs:subClassOf :PT0530 ,
                         [ rdf:type owl:Restriction ;
@@ -1234,7 +1236,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:altLabel "Óleo de babaçu"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0086
+###  https://w3id.org/APTO/PT0086
 :PT0086 rdf:type owl:Class ;
         rdfs:subClassOf :PT0530 ,
                         [ rdf:type owl:Restriction ;
@@ -1247,7 +1249,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:broadMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/513d52ec57a549910bf9ced35be817a8"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0087
+###  https://w3id.org/APTO/PT0087
 :PT0087 rdf:type owl:Class ;
         rdfs:subClassOf :PT0496 ,
                         [ rdf:type owl:Restriction ;
@@ -1262,7 +1264,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Dairy drink"@en .
 
 
-###  https://w3id.org/APTO#PT0088
+###  https://w3id.org/APTO/PT0088
 :PT0088 rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Class ;
                               owl:unionOf ( [ owl:intersectionOf ( :PT0091
@@ -1290,7 +1292,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Mistura culinária composta geralmente por salsa e cebolinha (e, em algumas variações, coentro), amplamente utilizada na culinária brasileira para aromatizar e dar sabor a pratos."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0089
+###  https://w3id.org/APTO/PT0089
 :PT0089 rdf:type owl:Class ;
         rdfs:subClassOf :PT0412 ;
         rdfs:label "Anhydrous ethanol"@en ,
@@ -1299,7 +1301,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Uma forma purificada de etanol que contém pouca ou nenhuma água (tipicamente menos de 0,5%). É amplamente utilizado como componente de biocombustíveis misturado à gasolina em motores de combustão."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0090
+###  https://w3id.org/APTO/PT0090
 :PT0090 rdf:type owl:Class ;
         rdfs:subClassOf :PT0412 ;
         rdfs:label "Etanol hidratado"@pt-br ,
@@ -1308,7 +1310,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Um tipo de etanol que contém uma proporção significativa de água, geralmente entre 4% e 7% em volume. É comumente utilizado como biocombustível direto em veículos flex e não requer mistura com gasolina."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0091
+###  https://w3id.org/APTO/PT0091
 :PT0091 rdf:type owl:Class ;
         rdfs:subClassOf :PT0478 ,
                         [ rdf:type owl:Restriction ;
@@ -1321,7 +1323,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:altLabel "Coentro-bravo"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0092
+###  https://w3id.org/APTO/PT0092
 :PT0092 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1333,7 +1335,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de buriti"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0093
+###  https://w3id.org/APTO/PT0093
 :PT0093 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1345,7 +1347,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de cacau"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0094
+###  https://w3id.org/APTO/PT0094
 :PT0094 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1357,7 +1359,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de cajá"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0095
+###  https://w3id.org/APTO/PT0095
 :PT0095 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1369,7 +1371,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de caju"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0096
+###  https://w3id.org/APTO/PT0096
 :PT0096 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1382,7 +1384,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:altLabel "Polpa de seriguela"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0097
+###  https://w3id.org/APTO/PT0097
 :PT0097 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1394,7 +1396,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de cupuaçu"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0098
+###  https://w3id.org/APTO/PT0098
 :PT0098 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1406,7 +1408,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de goiaba"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0099
+###  https://w3id.org/APTO/PT0099
 :PT0099 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1418,7 +1420,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Soursop pulp"@en .
 
 
-###  https://w3id.org/APTO#PT0100
+###  https://w3id.org/APTO/PT0100
 :PT0100 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1430,7 +1432,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de jenipapo"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0101
+###  https://w3id.org/APTO/PT0101
 :PT0101 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1442,7 +1444,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de manga"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0102
+###  https://w3id.org/APTO/PT0102
 :PT0102 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1454,7 +1456,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de mangaba"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0103
+###  https://w3id.org/APTO/PT0103
 :PT0103 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1466,7 +1468,7 @@ xsd:date rdf:type rdfs:Datatype .
                    "Polpa de maracujá"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0104
+###  https://w3id.org/APTO/PT0104
 :PT0104 rdf:type owl:Class ;
         rdfs:subClassOf :PT0567 ,
                         [ rdf:type owl:Restriction ;
@@ -1478,14 +1480,14 @@ xsd:date rdf:type rdfs:Datatype .
                    "Umbu pulp"@en .
 
 
-###  https://w3id.org/APTO#PT0105
+###  https://w3id.org/APTO/PT0105
 :PT0105 rdf:type owl:Class ;
         rdfs:subClassOf :PT0522 ;
         rdfs:label "Live pig"@en ,
                    "Suíno vivo"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0106
+###  https://w3id.org/APTO/PT0106
 :PT0106 rdf:type owl:Class ;
         rdfs:subClassOf :PT0534 ;
         rdfs:label "Improver wheat"@en ,
@@ -1494,7 +1496,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Tipo de trigo caracterizado por seu alto teor de proteína e forte qualidade de glúten, geralmente utilizado em misturas de farinha para melhorar a qualidade de panificação de pães e outros produtos assados. O trigo melhorador é frequentemente misturado com trigos de menor qualidade para aumentar a elasticidade da massa e o volume do produto final."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0107
+###  https://w3id.org/APTO/PT0107
 :PT0107 rdf:type owl:Class ;
         rdfs:subClassOf :PT0554 ;
         rdfs:label "Finished cow"@en ,
@@ -1503,7 +1505,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Mature female cow that has been fattened for slaughter"@en .
 
 
-###  https://w3id.org/APTO#PT0108
+###  https://w3id.org/APTO/PT0108
 :PT0108 rdf:type owl:Class ;
         rdfs:subClassOf :PT0480 ;
         rdfs:label "Açúcar refinado amorfo"@pt-br ,
@@ -1512,7 +1514,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "Tipo de açúcar refinado que não apresenta estrutura cristalina, geralmente obtido por processos de secagem rápida ou atomização. É amplamente utilizado na indústria alimentícia devido à sua alta solubilidade e facilidade de mistura em produtos em pó ou instantâneos."@pt-br .
 
 
-###  https://w3id.org/APTO#PT0109
+###  https://w3id.org/APTO/PT0109
 :PT0109 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         :PT0546 ,
@@ -1524,7 +1526,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "Buriti seed"@en .
 
 
-###  https://w3id.org/APTO#PT0110
+###  https://w3id.org/APTO/PT0110
 :PT0110 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         [ rdf:type owl:Restriction ;
@@ -1534,7 +1536,7 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "Pequi nut"@en .
 
 
-###  https://w3id.org/APTO#PT0111
+###  https://w3id.org/APTO/PT0111
 :PT0111 rdf:type owl:Class ;
         rdfs:subClassOf :PT0066 ;
         rdfs:comment "A product derived from an organism belonging to a specific taxon classified under Animalia."@en ;
@@ -1544,7 +1546,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/ec624cf8e3122d30f5c35286cfb3efc7"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0112
+###  https://w3id.org/APTO/PT0112
 :PT0112 rdf:type owl:Class ;
         rdfs:subClassOf :PT0066 ;
         rdfs:label "Plant product"@en ,
@@ -1554,7 +1556,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/67abbd6fd76a07e292828e3d15b34100"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0113
+###  https://w3id.org/APTO/PT0113
 :PT0113 rdf:type owl:Class ;
         rdfs:subClassOf :PT0066 ;
         rdfs:label "Processed product"@en ,
@@ -1563,7 +1565,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/7d7cb76048f9f558389d3ef8c77f4e82"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0114
+###  https://w3id.org/APTO/PT0114
 :PT0114 rdf:type owl:Class ;
         rdfs:subClassOf :PT0112 ,
                         :PT0113 ;
@@ -1574,7 +1576,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_29989"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0115
+###  https://w3id.org/APTO/PT0115
 :PT0115 rdf:type owl:Class ;
         rdfs:subClassOf :PT0112 ;
         rdfs:comment "A plant that provides direct or indirect benefits to humans, animals, or the environment. These benefits may include food, medicine, raw materials, fuel, ecological services, or ornamental value."@en ;
@@ -1583,7 +1585,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_995ecefb"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0116
+###  https://w3id.org/APTO/PT0116
 :PT0116 rdf:type owl:Class ;
         rdfs:subClassOf :PT0111 ;
         rdfs:comment "An animal that provides direct or indirect benefits to humans or ecosystems. These benefits may include food, labor, companionship, raw materials, pest control, or ecological balance. Examples include cattle for milk and meat, bees for pollination, horses for transportation, and earthworms for soil enrichment."@en ;
@@ -1593,763 +1595,763 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/ba94e65756b89654616f98cce03aee8a"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0117
+###  https://w3id.org/APTO/PT0117
 :PT0117 rdf:type owl:Class ;
         rdfs:subClassOf :PT0051 ;
         rdfs:label "Animalia"@en ;
         skos:exactMatch <https://www.gbif.org/species/1> .
 
 
-###  https://w3id.org/APTO#PT0118
+###  https://w3id.org/APTO/PT0118
 :PT0118 rdf:type owl:Class ;
         rdfs:subClassOf :PT0051 ;
         rdfs:label "Plantae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6> .
 
 
-###  https://w3id.org/APTO#PT0119
+###  https://w3id.org/APTO/PT0119
 :PT0119 rdf:type owl:Class ;
         rdfs:subClassOf :PT0117 ;
         rdfs:label "Chordata"@en ;
         skos:exactMatch <https://www.gbif.org/species/44> .
 
 
-###  https://w3id.org/APTO#PT0120
+###  https://w3id.org/APTO/PT0120
 :PT0120 rdf:type owl:Class ;
         rdfs:subClassOf :PT0117 ;
         rdfs:label "Arthropoda"@en ;
         skos:exactMatch <https://www.gbif.org/species/54> .
 
 
-###  https://w3id.org/APTO#PT0121
+###  https://w3id.org/APTO/PT0121
 :PT0121 rdf:type owl:Class ;
         rdfs:subClassOf :PT0384 ;
         rdfs:label "Pinopsida"@en ;
         skos:exactMatch <https://www.gbif.org/species/194> .
 
 
-###  https://w3id.org/APTO#PT0122
+###  https://w3id.org/APTO/PT0122
 :PT0122 rdf:type owl:Class ;
         rdfs:subClassOf :PT0384 ;
         rdfs:label "Liliopsida"@en ;
         skos:exactMatch <https://www.gbif.org/species/196> .
 
 
-###  https://w3id.org/APTO#PT0123
+###  https://w3id.org/APTO/PT0123
 :PT0123 rdf:type owl:Class ;
         rdfs:subClassOf :PT0119 ;
         rdfs:label "Aves"@en ;
         skos:exactMatch <https://www.gbif.org/species/212> .
 
 
-###  https://w3id.org/APTO#PT0124
+###  https://w3id.org/APTO/PT0124
 :PT0124 rdf:type owl:Class ;
         rdfs:subClassOf :PT0120 ;
         rdfs:label "Insecta"@en ;
         skos:exactMatch <https://www.gbif.org/species/216> .
 
 
-###  https://w3id.org/APTO#PT0125
+###  https://w3id.org/APTO/PT0125
 :PT0125 rdf:type owl:Class ;
         rdfs:subClassOf :PT0384 ;
         rdfs:label "Magnoliopsida"@en ;
         skos:exactMatch <https://www.gbif.org/species/220> .
 
 
-###  https://w3id.org/APTO#PT0126
+###  https://w3id.org/APTO/PT0126
 :PT0126 rdf:type owl:Class ;
         rdfs:subClassOf :PT0119 ;
         rdfs:label "Mammalia"@en ;
         skos:exactMatch <https://www.gbif.org/species/359> .
 
 
-###  https://w3id.org/APTO#PT0127
+###  https://w3id.org/APTO/PT0127
 :PT0127 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Piperales"@en ;
         skos:exactMatch <https://www.gbif.org/species/404> .
 
 
-###  https://w3id.org/APTO#PT0128
+###  https://w3id.org/APTO/PT0128
 :PT0128 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Gentianales"@en ;
         skos:exactMatch <https://www.gbif.org/species/412> .
 
 
-###  https://w3id.org/APTO#PT0129
+###  https://w3id.org/APTO/PT0129
 :PT0129 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Asterales"@en ;
         skos:exactMatch <https://www.gbif.org/species/414> .
 
 
-###  https://w3id.org/APTO#PT0130
+###  https://w3id.org/APTO/PT0130
 :PT0130 rdf:type owl:Class ;
         rdfs:subClassOf :PT0119 ;
         rdfs:label "Characiformes"@en ;
         skos:exactMatch <https://www.gbif.org/species/537> .
 
 
-###  https://w3id.org/APTO#PT0131
+###  https://w3id.org/APTO/PT0131
 :PT0131 rdf:type owl:Class ;
         rdfs:subClassOf :PT0122 ;
         rdfs:label "Alismatales"@en ;
         skos:exactMatch <https://www.gbif.org/species/551> .
 
 
-###  https://w3id.org/APTO#PT0132
+###  https://w3id.org/APTO/PT0132
 :PT0132 rdf:type owl:Class ;
         rdfs:subClassOf :PT0122 ;
         rdfs:label "Arecales"@en ;
         skos:exactMatch <https://www.gbif.org/species/552> .
 
 
-###  https://w3id.org/APTO#PT0133
+###  https://w3id.org/APTO/PT0133
 :PT0133 rdf:type owl:Class ;
         rdfs:subClassOf :PT0119 ;
         rdfs:label "Perciformes"@en ;
         skos:exactMatch <https://www.gbif.org/species/587> .
 
 
-###  https://w3id.org/APTO#PT0134
+###  https://w3id.org/APTO/PT0134
 :PT0134 rdf:type owl:Class ;
         rdfs:subClassOf :PT0122 ;
         rdfs:label "Zingiberales"@en ;
         skos:exactMatch <https://www.gbif.org/species/627> .
 
 
-###  https://w3id.org/APTO#PT0135
+###  https://w3id.org/APTO/PT0135
 :PT0135 rdf:type owl:Class ;
         rdfs:subClassOf :PT0121 ;
         rdfs:label "Pinales"@en ;
         skos:exactMatch <https://www.gbif.org/species/640> .
 
 
-###  https://w3id.org/APTO#PT0136
+###  https://w3id.org/APTO/PT0136
 :PT0136 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Myrtales"@en ;
         skos:exactMatch <https://www.gbif.org/species/690> .
 
 
-###  https://w3id.org/APTO#PT0137
+###  https://w3id.org/APTO/PT0137
 :PT0137 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Rosales"@en ;
         skos:exactMatch <https://www.gbif.org/species/691> .
 
 
-###  https://w3id.org/APTO#PT0138
+###  https://w3id.org/APTO/PT0138
 :PT0138 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Magnoliales"@en ;
         skos:exactMatch <https://www.gbif.org/species/718> .
 
 
-###  https://w3id.org/APTO#PT0139
+###  https://w3id.org/APTO/PT0139
 :PT0139 rdf:type owl:Class ;
         rdfs:subClassOf :PT0123 ;
         rdfs:label "Galliformes"@en ;
         skos:exactMatch <https://www.gbif.org/species/723> .
 
 
-###  https://w3id.org/APTO#PT0140
+###  https://w3id.org/APTO/PT0140
 :PT0140 rdf:type owl:Class ;
         rdfs:subClassOf :PT0126 ;
         rdfs:label "Artiodactyla"@en ;
         skos:exactMatch <https://www.gbif.org/species/731> .
 
 
-###  https://w3id.org/APTO#PT0141
+###  https://w3id.org/APTO/PT0141
 :PT0141 rdf:type owl:Class ;
         rdfs:subClassOf :PT0124 ;
         rdfs:label "Lepidoptera"@en ;
         skos:exactMatch <https://www.gbif.org/species/797> .
 
 
-###  https://w3id.org/APTO#PT0142
+###  https://w3id.org/APTO/PT0142
 :PT0142 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Sapindales"@en ;
         skos:exactMatch <https://www.gbif.org/species/933> .
 
 
-###  https://w3id.org/APTO#PT0143
+###  https://w3id.org/APTO/PT0143
 :PT0143 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Malvales"@en ;
         skos:exactMatch <https://www.gbif.org/species/941> .
 
 
-###  https://w3id.org/APTO#PT0144
+###  https://w3id.org/APTO/PT0144
 :PT0144 rdf:type owl:Class ;
         rdfs:subClassOf :PT0119 ;
         rdfs:label "Osteoglossiformes"@en ;
         skos:exactMatch <https://www.gbif.org/species/1069> .
 
 
-###  https://w3id.org/APTO#PT0145
+###  https://w3id.org/APTO/PT0145
 :PT0145 rdf:type owl:Class ;
         rdfs:subClassOf :PT0122 ;
         rdfs:label "Asparagales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1169> .
 
 
-###  https://w3id.org/APTO#PT0146
+###  https://w3id.org/APTO/PT0146
 :PT0146 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Solanales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1176> .
 
 
-###  https://w3id.org/APTO#PT0147
+###  https://w3id.org/APTO/PT0147
 :PT0147 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Apiales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1351> .
 
 
-###  https://w3id.org/APTO#PT0148
+###  https://w3id.org/APTO/PT0148
 :PT0148 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Ericales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1353> .
 
 
-###  https://w3id.org/APTO#PT0149
+###  https://w3id.org/APTO/PT0149
 :PT0149 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Fagales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1354> .
 
 
-###  https://w3id.org/APTO#PT0150
+###  https://w3id.org/APTO/PT0150
 :PT0150 rdf:type owl:Class ;
         rdfs:subClassOf :PT0122 ;
         rdfs:label "Poales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1369> .
 
 
-###  https://w3id.org/APTO#PT0151
+###  https://w3id.org/APTO/PT0151
 :PT0151 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Fabales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1370> .
 
 
-###  https://w3id.org/APTO#PT0152
+###  https://w3id.org/APTO/PT0152
 :PT0152 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Malpighiales"@en ;
         skos:exactMatch <https://www.gbif.org/species/1414> .
 
 
-###  https://w3id.org/APTO#PT0153
+###  https://w3id.org/APTO/PT0153
 :PT0153 rdf:type owl:Class ;
         rdfs:subClassOf :PT0124 ;
         rdfs:label "Hymenoptera"@en ;
         skos:exactMatch <https://www.gbif.org/species/1457> .
 
 
-###  https://w3id.org/APTO#PT0154
+###  https://w3id.org/APTO/PT0154
 :PT0154 rdf:type owl:Class ;
         rdfs:subClassOf :PT0152 ;
         rdfs:label "Passifloraceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/2378> .
 
 
-###  https://w3id.org/APTO#PT0155
+###  https://w3id.org/APTO/PT0155
 :PT0155 rdf:type owl:Class ;
         rdfs:subClassOf :PT0146 ;
         rdfs:label "Convolvulaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/2389> .
 
 
-###  https://w3id.org/APTO#PT0156
+###  https://w3id.org/APTO/PT0156
 :PT0156 rdf:type owl:Class ;
         rdfs:subClassOf :PT0142 ;
         rdfs:label "Rutaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/2396> .
 
 
-###  https://w3id.org/APTO#PT0157
+###  https://w3id.org/APTO/PT0157
 :PT0157 rdf:type owl:Class ;
         rdfs:subClassOf :PT0142 ;
         rdfs:label "Meliaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/2397> .
 
 
-###  https://w3id.org/APTO#PT0158
+###  https://w3id.org/APTO/PT0158
 :PT0158 rdf:type owl:Class ;
         rdfs:subClassOf :PT0142 ;
         rdfs:label "Anacardiaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/2398> .
 
 
-###  https://w3id.org/APTO#PT0159
+###  https://w3id.org/APTO/PT0159
 :PT0159 rdf:type owl:Class ;
         rdfs:subClassOf :PT0149 ;
         rdfs:label "Juglandaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/2499> .
 
 
-###  https://w3id.org/APTO#PT0160
+###  https://w3id.org/APTO/PT0160
 :PT0160 rdf:type owl:Class ;
         rdfs:subClassOf :PT0129 ;
         rdfs:label "Asteraceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/3065> .
 
 
-###  https://w3id.org/APTO#PT0161
+###  https://w3id.org/APTO/PT0161
 :PT0161 rdf:type owl:Class ;
         rdfs:subClassOf :PT0150 ;
         rdfs:label "Poaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/3073> .
 
 
-###  https://w3id.org/APTO#PT0162
+###  https://w3id.org/APTO/PT0162
 :PT0162 rdf:type owl:Class ;
         rdfs:subClassOf :PT0376 ;
         rdfs:label "Brassicaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/3112> .
 
 
-###  https://w3id.org/APTO#PT0163
+###  https://w3id.org/APTO/PT0163
 :PT0163 rdf:type owl:Class ;
         rdfs:subClassOf :PT0150 ;
         rdfs:label "Bromeliaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/3740> .
 
 
-###  https://w3id.org/APTO#PT0164
+###  https://w3id.org/APTO/PT0164
 :PT0164 rdf:type owl:Class ;
         rdfs:subClassOf :PT0135 ;
         rdfs:label "Araucariaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/3924> .
 
 
-###  https://w3id.org/APTO#PT0165
+###  https://w3id.org/APTO/PT0165
 :PT0165 rdf:type owl:Class ;
         rdfs:subClassOf :PT0135 ;
         rdfs:label "Pinaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/3925> .
 
 
-###  https://w3id.org/APTO#PT0166
+###  https://w3id.org/APTO/PT0166
 :PT0166 rdf:type owl:Class ;
         rdfs:subClassOf :PT0148 ;
         rdfs:label "Lecythidaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/3990> .
 
 
-###  https://w3id.org/APTO#PT0167
+###  https://w3id.org/APTO/PT0167
 :PT0167 rdf:type owl:Class ;
         rdfs:subClassOf :PT0144 ;
         rdfs:label "Arapaimidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/4228> .
 
 
-###  https://w3id.org/APTO#PT0168
+###  https://w3id.org/APTO/PT0168
 :PT0168 rdf:type owl:Class ;
         rdfs:subClassOf :PT0153 ;
         rdfs:label "Apidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/4334> .
 
 
-###  https://w3id.org/APTO#PT0169
+###  https://w3id.org/APTO/PT0169
 :PT0169 rdf:type owl:Class ;
         rdfs:subClassOf :PT0134 ;
         rdfs:label "Musaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/4686> .
 
 
-###  https://w3id.org/APTO#PT0170
+###  https://w3id.org/APTO/PT0170
 :PT0170 rdf:type owl:Class ;
         rdfs:subClassOf :PT0152 ;
         rdfs:label "Euphorbiaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/4691> .
 
 
-###  https://w3id.org/APTO#PT0171
+###  https://w3id.org/APTO/PT0171
 :PT0171 rdf:type owl:Class ;
         rdfs:subClassOf :PT0136 ;
         rdfs:label "Myrtaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/5014> .
 
 
-###  https://w3id.org/APTO#PT0172
+###  https://w3id.org/APTO/PT0172
 :PT0172 rdf:type owl:Class ;
         rdfs:subClassOf :PT0137 ;
         rdfs:label "Rosaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/5015> .
 
 
-###  https://w3id.org/APTO#PT0173
+###  https://w3id.org/APTO/PT0173
 :PT0173 rdf:type owl:Class ;
         rdfs:subClassOf :PT0140 ;
         rdfs:label "Suidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/5302> .
 
 
-###  https://w3id.org/APTO#PT0174
+###  https://w3id.org/APTO/PT0174
 :PT0174 rdf:type owl:Class ;
         rdfs:subClassOf :PT0151 ;
         rdfs:label "Fabaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/5386> .
 
 
-###  https://w3id.org/APTO#PT0175
+###  https://w3id.org/APTO/PT0175
 :PT0175 rdf:type owl:Class ;
         rdfs:subClassOf :PT0375 ;
         rdfs:label "Cucurbitaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6634> .
 
 
-###  https://w3id.org/APTO#PT0176
+###  https://w3id.org/APTO/PT0176
 :PT0176 rdf:type owl:Class ;
         rdfs:subClassOf :PT0376 ;
         rdfs:label "Caricaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6636> .
 
 
-###  https://w3id.org/APTO#PT0177
+###  https://w3id.org/APTO/PT0177
 :PT0177 rdf:type owl:Class ;
         rdfs:subClassOf :PT0152 ;
         rdfs:label "Caryocaraceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6647> .
 
 
-###  https://w3id.org/APTO#PT0178
+###  https://w3id.org/APTO/PT0178
 :PT0178 rdf:type owl:Class ;
         rdfs:subClassOf :PT0142 ;
         rdfs:label "Sapindaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6657> .
 
 
-###  https://w3id.org/APTO#PT0179
+###  https://w3id.org/APTO/PT0179
 :PT0179 rdf:type owl:Class ;
         rdfs:subClassOf :PT0374 ;
         rdfs:label "Vitaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6672> .
 
 
-###  https://w3id.org/APTO#PT0180
+###  https://w3id.org/APTO/PT0180
 :PT0180 rdf:type owl:Class ;
         rdfs:subClassOf :PT0152 ;
         rdfs:label "Malpighiaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6676> .
 
 
-###  https://w3id.org/APTO#PT0181
+###  https://w3id.org/APTO/PT0181
 :PT0181 rdf:type owl:Class ;
         rdfs:subClassOf :PT0127 ;
         rdfs:label "Piperaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6678> .
 
 
-###  https://w3id.org/APTO#PT0182
+###  https://w3id.org/APTO/PT0182
 :PT0182 rdf:type owl:Class ;
         rdfs:subClassOf :PT0143 ;
         rdfs:label "Malvaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6685> .
 
 
-###  https://w3id.org/APTO#PT0183
+###  https://w3id.org/APTO/PT0183
 :PT0183 rdf:type owl:Class ;
         rdfs:subClassOf :PT0128 ;
         rdfs:label "Apocynaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6701> .
 
 
-###  https://w3id.org/APTO#PT0184
+###  https://w3id.org/APTO/PT0184
 :PT0184 rdf:type owl:Class ;
         rdfs:subClassOf :PT0377 ;
         rdfs:label "Aquifoliaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6716> .
 
 
-###  https://w3id.org/APTO#PT0185
+###  https://w3id.org/APTO/PT0185
 :PT0185 rdf:type owl:Class ;
         rdfs:subClassOf :PT0147 ;
         rdfs:label "Apiaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6720> .
 
 
-###  https://w3id.org/APTO#PT0186
+###  https://w3id.org/APTO/PT0186
 :PT0186 rdf:type owl:Class ;
         rdfs:subClassOf :PT0131 ;
         rdfs:label "Araceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/6979> .
 
 
-###  https://w3id.org/APTO#PT0187
+###  https://w3id.org/APTO/PT0187
 :PT0187 rdf:type owl:Class ;
         rdfs:subClassOf :PT0130 ;
         rdfs:label "Prochilodontidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/7331> .
 
 
-###  https://w3id.org/APTO#PT0188
+###  https://w3id.org/APTO/PT0188
 :PT0188 rdf:type owl:Class ;
         rdfs:subClassOf :PT0132 ;
         rdfs:label "Arecaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/7681> .
 
 
-###  https://w3id.org/APTO#PT0189
+###  https://w3id.org/APTO/PT0189
 :PT0189 rdf:type owl:Class ;
         rdfs:subClassOf :PT0145 ;
         rdfs:label "Amaryllidaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/7682> .
 
 
-###  https://w3id.org/APTO#PT0190
+###  https://w3id.org/APTO/PT0190
 :PT0190 rdf:type owl:Class ;
         rdfs:subClassOf :PT0145 ;
         rdfs:label "Asparagaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/7683> .
 
 
-###  https://w3id.org/APTO#PT0191
+###  https://w3id.org/APTO/PT0191
 :PT0191 rdf:type owl:Class ;
         rdfs:subClassOf :PT0146 ;
         rdfs:label "Solanaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/7717> .
 
 
-###  https://w3id.org/APTO#PT0192
+###  https://w3id.org/APTO/PT0192
 :PT0192 rdf:type owl:Class ;
         rdfs:subClassOf :PT0133 ;
         rdfs:label "Cichlidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/8522> .
 
 
-###  https://w3id.org/APTO#PT0193
+###  https://w3id.org/APTO/PT0193
 :PT0193 rdf:type owl:Class ;
         rdfs:subClassOf :PT0128 ;
         rdfs:label "Rubiaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/8798> .
 
 
-###  https://w3id.org/APTO#PT0194
+###  https://w3id.org/APTO/PT0194
 :PT0194 rdf:type owl:Class ;
         rdfs:subClassOf :PT0141 ;
         rdfs:label "Bombycidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/8832> .
 
 
-###  https://w3id.org/APTO#PT0195
+###  https://w3id.org/APTO/PT0195
 :PT0195 rdf:type owl:Class ;
         rdfs:subClassOf :PT0138 ;
         rdfs:label "Annonaceae"@en ;
         skos:exactMatch <https://www.gbif.org/species/9291> .
 
 
-###  https://w3id.org/APTO#PT0196
+###  https://w3id.org/APTO/PT0196
 :PT0196 rdf:type owl:Class ;
         rdfs:subClassOf :PT0139 ;
         rdfs:label "Phasianidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/9331> .
 
 
-###  https://w3id.org/APTO#PT0197
+###  https://w3id.org/APTO/PT0197
 :PT0197 rdf:type owl:Class ;
         rdfs:subClassOf :PT0140 ;
         rdfs:label "Bovidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/9614> .
 
 
-###  https://w3id.org/APTO#PT0198
+###  https://w3id.org/APTO/PT0198
 :PT0198 rdf:type owl:Class ;
         rdfs:subClassOf :PT0168 ;
         rdfs:label "Apis"@en ;
         skos:exactMatch <https://www.gbif.org/species/1334757> .
 
 
-###  https://w3id.org/APTO#PT0199
+###  https://w3id.org/APTO/PT0199
 :PT0199 rdf:type owl:Class ;
         rdfs:subClassOf :PT0198 ;
         rdfs:label "Apis mellifera"@en ;
         skos:exactMatch <https://www.gbif.org/species/1341976> .
 
 
-###  https://w3id.org/APTO#PT0200
+###  https://w3id.org/APTO/PT0200
 :PT0200 rdf:type owl:Class ;
         rdfs:subClassOf :PT0194 ;
         rdfs:label "Bombyx"@en ;
         skos:exactMatch <https://www.gbif.org/species/1868660> .
 
 
-###  https://w3id.org/APTO#PT0201
+###  https://w3id.org/APTO/PT0201
 :PT0201 rdf:type owl:Class ;
         rdfs:subClassOf :PT0200 ;
         rdfs:label "Bombyx mori"@en ;
         skos:exactMatch <https://www.gbif.org/species/1868664> .
 
 
-###  https://w3id.org/APTO#PT0202
+###  https://w3id.org/APTO/PT0202
 :PT0202 rdf:type owl:Class ;
         rdfs:subClassOf :PT0187 ;
         rdfs:label "Semaprochilodus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2352125> .
 
 
-###  https://w3id.org/APTO#PT0203
+###  https://w3id.org/APTO/PT0203
 :PT0203 rdf:type owl:Class ;
         rdfs:subClassOf :PT0202 ;
         rdfs:label "Semaprochilodus insignis"@en ;
         skos:exactMatch <https://www.gbif.org/species/2352126> .
 
 
-###  https://w3id.org/APTO#PT0204
+###  https://w3id.org/APTO/PT0204
 :PT0204 rdf:type owl:Class ;
         rdfs:subClassOf :PT0202 ;
         rdfs:label "Semaprochilodus taeniurus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2352134> .
 
 
-###  https://w3id.org/APTO#PT0205
+###  https://w3id.org/APTO/PT0205
 :PT0205 rdf:type owl:Class ;
         rdfs:subClassOf :PT0187 ;
         rdfs:label "Prochilodus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2352148> .
 
 
-###  https://w3id.org/APTO#PT0206
+###  https://w3id.org/APTO/PT0206
 :PT0206 rdf:type owl:Class ;
         rdfs:subClassOf :PT0205 ;
         rdfs:label "Prochilodus brevis"@en ;
         skos:exactMatch <https://www.gbif.org/species/2352151> .
 
 
-###  https://w3id.org/APTO#PT0207
+###  https://w3id.org/APTO/PT0207
 :PT0207 rdf:type owl:Class ;
         rdfs:subClassOf :PT0205 ;
         rdfs:label "Prochilodus lineatus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2352154> .
 
 
-###  https://w3id.org/APTO#PT0208
+###  https://w3id.org/APTO/PT0208
 :PT0208 rdf:type owl:Class ;
         rdfs:subClassOf :PT0205 ;
         rdfs:label "Prochilodus argenteus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2352177> .
 
 
-###  https://w3id.org/APTO#PT0209
+###  https://w3id.org/APTO/PT0209
 :PT0209 rdf:type owl:Class ;
         rdfs:subClassOf :PT0351 ;
         rdfs:label "Piaractus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2353218> .
 
 
-###  https://w3id.org/APTO#PT0210
+###  https://w3id.org/APTO/PT0210
 :PT0210 rdf:type owl:Class ;
         rdfs:subClassOf :PT0209 ;
         rdfs:label "Piaractus mesopotamicus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2353219> .
 
 
-###  https://w3id.org/APTO#PT0211
+###  https://w3id.org/APTO/PT0211
 :PT0211 rdf:type owl:Class ;
         rdfs:subClassOf :PT0192 ;
         rdfs:label "Tilapia"@en ;
         skos:exactMatch <https://www.gbif.org/species/2370578> .
 
 
-###  https://w3id.org/APTO#PT0212
+###  https://w3id.org/APTO/PT0212
 :PT0212 rdf:type owl:Class ;
         rdfs:subClassOf :PT0167 ;
         rdfs:label "Arapaima"@en ;
         skos:exactMatch <https://www.gbif.org/species/2402332> .
 
 
-###  https://w3id.org/APTO#PT0213
+###  https://w3id.org/APTO/PT0213
 :PT0213 rdf:type owl:Class ;
         rdfs:subClassOf :PT0197 ;
         rdfs:label "Bos"@en ;
         skos:exactMatch <https://www.gbif.org/species/2441017> .
 
 
-###  https://w3id.org/APTO#PT0214
+###  https://w3id.org/APTO/PT0214
 :PT0214 rdf:type owl:Class ;
         rdfs:subClassOf :PT0213 ;
         rdfs:label "Bos taurus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2441022> .
 
 
-###  https://w3id.org/APTO#PT0215
+###  https://w3id.org/APTO/PT0215
 :PT0215 rdf:type owl:Class ;
         rdfs:subClassOf :PT0197 ;
         rdfs:label "Capra"@en ;
         skos:exactMatch <https://www.gbif.org/species/2441047> .
 
 
-###  https://w3id.org/APTO#PT0216
+###  https://w3id.org/APTO/PT0216
 :PT0216 rdf:type owl:Class ;
         rdfs:subClassOf :PT0215 ;
         rdfs:label "Capra hircus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2441056> .
 
 
-###  https://w3id.org/APTO#PT0217
+###  https://w3id.org/APTO/PT0217
 :PT0217 rdf:type owl:Class ;
         rdfs:subClassOf :PT0401 ;
         rdfs:label "Ovis aries"@en ;
         skos:exactMatch <https://www.gbif.org/species/2441110> .
 
 
-###  https://w3id.org/APTO#PT0218
+###  https://w3id.org/APTO/PT0218
 :PT0218 rdf:type owl:Class ;
         rdfs:subClassOf :PT0173 ;
         rdfs:label "Sus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2441213> .
 
 
-###  https://w3id.org/APTO#PT0219
+###  https://w3id.org/APTO/PT0219
 :PT0219 rdf:type owl:Class ;
         rdfs:subClassOf :PT0196 ;
         rdfs:label "Gallus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2473720> .
 
 
-###  https://w3id.org/APTO#PT0220
+###  https://w3id.org/APTO/PT0220
 :PT0220 rdf:type owl:Class ;
         rdfs:subClassOf :PT0165 ;
         rdfs:label "Pinus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2684241> .
 
 
-###  https://w3id.org/APTO#PT0221
+###  https://w3id.org/APTO/PT0221
 :PT0221 rdf:type owl:Class ;
         rdfs:subClassOf :PT0164 ;
         rdfs:label "Araucaria"@en ;
         skos:exactMatch <https://www.gbif.org/species/2684910> .
 
 
-###  https://w3id.org/APTO#PT0222
+###  https://w3id.org/APTO/PT0222
 :PT0222 rdf:type owl:Class ;
         rdfs:subClassOf :PT0221 ;
         rdfs:label "Araucaria angustifolia"@en ;
         skos:exactMatch <https://www.gbif.org/species/2684940> .
 
 
-###  https://w3id.org/APTO#PT0223
+###  https://w3id.org/APTO/PT0223
 :PT0223 rdf:type owl:Class ;
         rdfs:subClassOf :PT0163 ;
         rdfs:label "Ananas"@en ;
         skos:exactMatch <https://www.gbif.org/species/2699430> .
 
 
-###  https://w3id.org/APTO#PT0224
+###  https://w3id.org/APTO/PT0224
 :PT0224 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Cenchrus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2703201> .
 
 
-###  https://w3id.org/APTO#PT0225
+###  https://w3id.org/APTO/PT0225
 :PT0225 rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Restriction ;
                               owl:onProperty :PT0406 ;
@@ -2366,98 +2368,98 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch <https://www.gbif.org/species/2703325> .
 
 
-###  https://w3id.org/APTO#PT0226
+###  https://w3id.org/APTO/PT0226
 :PT0226 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Oryza"@en ;
         skos:exactMatch <https://www.gbif.org/species/2703455> .
 
 
-###  https://w3id.org/APTO#PT0227
+###  https://w3id.org/APTO/PT0227
 :PT0227 rdf:type owl:Class ;
         rdfs:subClassOf :PT0226 ;
         rdfs:label "Oryza sativa"@en ;
         skos:exactMatch <https://www.gbif.org/species/2703459> .
 
 
-###  https://w3id.org/APTO#PT0228
+###  https://w3id.org/APTO/PT0228
 :PT0228 rdf:type owl:Class ;
         rdfs:subClassOf :PT0226 ;
         rdfs:label "Oryza glaberrima"@en ;
         skos:exactMatch <https://www.gbif.org/species/2703464> .
 
 
-###  https://w3id.org/APTO#PT0229
+###  https://w3id.org/APTO/PT0229
 :PT0229 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Saccharum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2703910> .
 
 
-###  https://w3id.org/APTO#PT0230
+###  https://w3id.org/APTO/PT0230
 :PT0230 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Zea"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705049> .
 
 
-###  https://w3id.org/APTO#PT0231
+###  https://w3id.org/APTO/PT0231
 :PT0231 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Sorghum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705180> .
 
 
-###  https://w3id.org/APTO#PT0232
+###  https://w3id.org/APTO/PT0232
 :PT0232 rdf:type owl:Class ;
         rdfs:subClassOf :PT0231 ;
         rdfs:label "Sorghum bicolor"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705181> .
 
 
-###  https://w3id.org/APTO#PT0233
+###  https://w3id.org/APTO/PT0233
 :PT0233 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Avena"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705282> .
 
 
-###  https://w3id.org/APTO#PT0234
+###  https://w3id.org/APTO/PT0234
 :PT0234 rdf:type owl:Class ;
         rdfs:subClassOf :PT0233 ;
         rdfs:label "Avena sativa"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705290> .
 
 
-###  https://w3id.org/APTO#PT0235
+###  https://w3id.org/APTO/PT0235
 :PT0235 rdf:type owl:Class ;
         rdfs:subClassOf :PT0233 ;
         rdfs:label "Avena byzantina"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705292> .
 
 
-###  https://w3id.org/APTO#PT0236
+###  https://w3id.org/APTO/PT0236
 :PT0236 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Secale"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705965> .
 
 
-###  https://w3id.org/APTO#PT0237
+###  https://w3id.org/APTO/PT0237
 :PT0237 rdf:type owl:Class ;
         rdfs:subClassOf :PT0236 ;
         rdfs:label "Secale cereale"@en ;
         skos:exactMatch <https://www.gbif.org/species/2705966> .
 
 
-###  https://w3id.org/APTO#PT0238
+###  https://w3id.org/APTO/PT0238
 :PT0238 rdf:type owl:Class ;
         rdfs:subClassOf :PT0161 ;
         rdfs:label "Hordeum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2706050> .
 
 
-###  https://w3id.org/APTO#PT0239
+###  https://w3id.org/APTO/PT0239
 :PT0239 rdf:type owl:Class ;
         rdfs:subClassOf :PT0238 ,
                         [ rdf:type owl:Restriction ;
@@ -2469,1043 +2471,1043 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch <https://www.gbif.org/species/2706056> .
 
 
-###  https://w3id.org/APTO#PT0240
+###  https://w3id.org/APTO/PT0240
 :PT0240 rdf:type owl:Class ;
         rdfs:subClassOf :PT0224 ;
         rdfs:label "Pennisetum glaucum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2706141> .
 
 
-###  https://w3id.org/APTO#PT0241
+###  https://w3id.org/APTO/PT0241
 :PT0241 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Leopoldinia"@en ;
         skos:exactMatch <https://www.gbif.org/species/2732585> .
 
 
-###  https://w3id.org/APTO#PT0242
+###  https://w3id.org/APTO/PT0242
 :PT0242 rdf:type owl:Class ;
         rdfs:subClassOf :PT0241 ;
         rdfs:label "Leopoldinia piassaba"@en ;
         skos:exactMatch <https://www.gbif.org/species/2732586> .
 
 
-###  https://w3id.org/APTO#PT0243
+###  https://w3id.org/APTO/PT0243
 :PT0243 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Attalea"@en ;
         skos:exactMatch <https://www.gbif.org/species/2732664> .
 
 
-###  https://w3id.org/APTO#PT0244
+###  https://w3id.org/APTO/PT0244
 :PT0244 rdf:type owl:Class ;
         rdfs:subClassOf :PT0243 ;
         rdfs:label "Attalea funifera"@en ;
         skos:exactMatch <https://www.gbif.org/species/2732833> .
 
 
-###  https://w3id.org/APTO#PT0245
+###  https://w3id.org/APTO/PT0245
 :PT0245 rdf:type owl:Class ;
         rdfs:subClassOf :PT0243 ;
         rdfs:label "Attalea speciosa"@en ;
         skos:exactMatch <https://www.gbif.org/species/2732877> .
 
 
-###  https://w3id.org/APTO#PT0246
+###  https://w3id.org/APTO/PT0246
 :PT0246 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Cocos"@en ;
         skos:exactMatch <https://www.gbif.org/species/2735116> .
 
 
-###  https://w3id.org/APTO#PT0247
+###  https://w3id.org/APTO/PT0247
 :PT0247 rdf:type owl:Class ;
         rdfs:subClassOf :PT0246 ;
         rdfs:label "Cocos nucifera"@en ;
         skos:exactMatch <https://www.gbif.org/species/2735117> .
 
 
-###  https://w3id.org/APTO#PT0248
+###  https://w3id.org/APTO/PT0248
 :PT0248 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Syagrus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2737041> .
 
 
-###  https://w3id.org/APTO#PT0249
+###  https://w3id.org/APTO/PT0249
 :PT0249 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Astrocaryum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2738048> .
 
 
-###  https://w3id.org/APTO#PT0250
+###  https://w3id.org/APTO/PT0250
 :PT0250 rdf:type owl:Class ;
         rdfs:subClassOf :PT0249 ;
         rdfs:label "Astrocaryum murumuru"@en ;
         skos:exactMatch <https://www.gbif.org/species/2738081> .
 
 
-###  https://w3id.org/APTO#PT0251
+###  https://w3id.org/APTO/PT0251
 :PT0251 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Copernicia"@en ;
         skos:exactMatch <https://www.gbif.org/species/2738233> .
 
 
-###  https://w3id.org/APTO#PT0252
+###  https://w3id.org/APTO/PT0252
 :PT0252 rdf:type owl:Class ;
         rdfs:subClassOf :PT0251 ;
         rdfs:label "Copernicia prunifera"@en ;
         skos:exactMatch <https://www.gbif.org/species/2738262> .
 
 
-###  https://w3id.org/APTO#PT0253
+###  https://w3id.org/APTO/PT0253
 :PT0253 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Acrocomia"@en ;
         skos:exactMatch <https://www.gbif.org/species/2739147> .
 
 
-###  https://w3id.org/APTO#PT0254
+###  https://w3id.org/APTO/PT0254
 :PT0254 rdf:type owl:Class ;
         rdfs:subClassOf :PT0169 ;
         rdfs:label "Musa"@en ;
         skos:exactMatch <https://www.gbif.org/species/2760990> .
 
 
-###  https://w3id.org/APTO#PT0255
+###  https://w3id.org/APTO/PT0255
 :PT0255 rdf:type owl:Class ;
         rdfs:subClassOf :PT0254 ;
         rdfs:label "Musa acuminata"@en ;
         skos:exactMatch <https://www.gbif.org/species/2762680> .
 
 
-###  https://w3id.org/APTO#PT0256
+###  https://w3id.org/APTO/PT0256
 :PT0256 rdf:type owl:Class ;
         rdfs:subClassOf :PT0254 ;
         rdfs:label "Musa balbisiana"@en ;
         skos:exactMatch <https://www.gbif.org/species/2762950> .
 
 
-###  https://w3id.org/APTO#PT0257
+###  https://w3id.org/APTO/PT0257
 :PT0257 rdf:type owl:Class ;
         rdfs:subClassOf :PT0190 ;
         rdfs:label "Agave"@en ;
         skos:exactMatch <https://www.gbif.org/species/2766430> .
 
 
-###  https://w3id.org/APTO#PT0258
+###  https://w3id.org/APTO/PT0258
 :PT0258 rdf:type owl:Class ;
         rdfs:subClassOf :PT0402 ;
         rdfs:label "Allium schoenoprasum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2855860> .
 
 
-###  https://w3id.org/APTO#PT0259
+###  https://w3id.org/APTO/PT0259
 :PT0259 rdf:type owl:Class ;
         rdfs:subClassOf :PT0402 ;
         rdfs:label "Allium sativum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2856681> .
 
 
-###  https://w3id.org/APTO#PT0260
+###  https://w3id.org/APTO/PT0260
 :PT0260 rdf:type owl:Class ;
         rdfs:subClassOf :PT0402 ;
         rdfs:label "Allium cepa"@en ;
         skos:exactMatch <https://www.gbif.org/species/2857697> .
 
 
-###  https://w3id.org/APTO#PT0261
+###  https://w3id.org/APTO/PT0261
 :PT0261 rdf:type owl:Class ;
         rdfs:subClassOf :PT0154 ;
         rdfs:label "Passiflora"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874172> .
 
 
-###  https://w3id.org/APTO#PT0262
+###  https://w3id.org/APTO/PT0262
 :PT0262 rdf:type owl:Class ;
         rdfs:subClassOf :PT0261 ;
         rdfs:label "Passiflora edulis"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874190> .
 
 
-###  https://w3id.org/APTO#PT0263
+###  https://w3id.org/APTO/PT0263
 :PT0263 rdf:type owl:Class ;
         rdfs:subClassOf :PT0176 ;
         rdfs:label "Carica"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874482> .
 
 
-###  https://w3id.org/APTO#PT0264
+###  https://w3id.org/APTO/PT0264
 :PT0264 rdf:type owl:Class ;
         rdfs:subClassOf :PT0263 ;
         rdfs:label "Carica papaya"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874484> .
 
 
-###  https://w3id.org/APTO#PT0265
+###  https://w3id.org/APTO/PT0265
 :PT0265 rdf:type owl:Class ;
         rdfs:subClassOf :PT0175 ;
         rdfs:label "Cucurbita"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874506> .
 
 
-###  https://w3id.org/APTO#PT0266
+###  https://w3id.org/APTO/PT0266
 :PT0266 rdf:type owl:Class ;
         rdfs:subClassOf :PT0265 ;
         rdfs:label "Cucurbita maxima"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874515> .
 
 
-###  https://w3id.org/APTO#PT0267
+###  https://w3id.org/APTO/PT0267
 :PT0267 rdf:type owl:Class ;
         rdfs:subClassOf :PT0175 ;
         rdfs:label "Cucumis"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874568> .
 
 
-###  https://w3id.org/APTO#PT0268
+###  https://w3id.org/APTO/PT0268
 :PT0268 rdf:type owl:Class ;
         rdfs:subClassOf :PT0267 ;
         rdfs:label "Cucumis sativus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874569> .
 
 
-###  https://w3id.org/APTO#PT0269
+###  https://w3id.org/APTO/PT0269
 :PT0269 rdf:type owl:Class ;
         rdfs:subClassOf :PT0267 ;
         rdfs:label "Cucumis melo"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874570> .
 
 
-###  https://w3id.org/APTO#PT0270
+###  https://w3id.org/APTO/PT0270
 :PT0270 rdf:type owl:Class ;
         rdfs:subClassOf :PT0267 ;
         rdfs:label "Cucumis anguria"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874573> .
 
 
-###  https://w3id.org/APTO#PT0271
+###  https://w3id.org/APTO/PT0271
 :PT0271 rdf:type owl:Class ;
         rdfs:subClassOf :PT0394 ;
         rdfs:label "Citrullus lanatus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2874621> .
 
 
-###  https://w3id.org/APTO#PT0272
+###  https://w3id.org/APTO/PT0272
 :PT0272 rdf:type owl:Class ;
         rdfs:subClassOf :PT0193 ;
         rdfs:label "Coffea"@en ;
         skos:exactMatch <https://www.gbif.org/species/2895315> .
 
 
-###  https://w3id.org/APTO#PT0273
+###  https://w3id.org/APTO/PT0273
 :PT0273 rdf:type owl:Class ;
         rdfs:subClassOf :PT0272 ;
         rdfs:label "Coffea arabica"@en ;
         skos:exactMatch <https://www.gbif.org/species/2895345> .
 
 
-###  https://w3id.org/APTO#PT0274
+###  https://w3id.org/APTO/PT0274
 :PT0274 rdf:type owl:Class ;
         rdfs:subClassOf :PT0272 ;
         rdfs:label "Coffea canephora"@en ;
         skos:exactMatch <https://www.gbif.org/species/2895528> .
 
 
-###  https://w3id.org/APTO#PT0275
+###  https://w3id.org/APTO/PT0275
 :PT0275 rdf:type owl:Class ;
         rdfs:subClassOf :PT0193 ;
         rdfs:label "Genipa"@en ;
         skos:exactMatch <https://www.gbif.org/species/2895591> .
 
 
-###  https://w3id.org/APTO#PT0276
+###  https://w3id.org/APTO/PT0276
 :PT0276 rdf:type owl:Class ;
         rdfs:subClassOf :PT0275 ;
         rdfs:label "Genipa americana"@en ;
         skos:exactMatch <https://www.gbif.org/species/2895593> .
 
 
-###  https://w3id.org/APTO#PT0277
+###  https://w3id.org/APTO/PT0277
 :PT0277 rdf:type owl:Class ;
         rdfs:subClassOf :PT0155 ;
         rdfs:label "Ipomoea"@en ;
         skos:exactMatch <https://www.gbif.org/species/2928509> .
 
 
-###  https://w3id.org/APTO#PT0278
+###  https://w3id.org/APTO/PT0278
 :PT0278 rdf:type owl:Class ;
         rdfs:subClassOf :PT0277 ;
         rdfs:label "Ipomoea batatas"@en ;
         skos:exactMatch <https://www.gbif.org/species/2928551> .
 
 
-###  https://w3id.org/APTO#PT0279
+###  https://w3id.org/APTO/PT0279
 :PT0279 rdf:type owl:Class ;
         rdfs:subClassOf :PT0191 ;
         rdfs:label "Nicotiana"@en ;
         skos:exactMatch <https://www.gbif.org/species/2928756> .
 
 
-###  https://w3id.org/APTO#PT0280
+###  https://w3id.org/APTO/PT0280
 :PT0280 rdf:type owl:Class ;
         rdfs:subClassOf :PT0279 ;
         rdfs:label "Nicotiana tabacum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2928774> .
 
 
-###  https://w3id.org/APTO#PT0281
+###  https://w3id.org/APTO/PT0281
 :PT0281 rdf:type owl:Class ;
         rdfs:subClassOf :PT0191 ;
         rdfs:label "Solanum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2928997> .
 
 
-###  https://w3id.org/APTO#PT0282
+###  https://w3id.org/APTO/PT0282
 :PT0282 rdf:type owl:Class ;
         rdfs:subClassOf :PT0281 ;
         rdfs:label "Solanum lycopersicum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2930137> .
 
 
-###  https://w3id.org/APTO#PT0283
+###  https://w3id.org/APTO/PT0283
 :PT0283 rdf:type owl:Class ;
         rdfs:subClassOf :PT0281 ;
         rdfs:label "Solanum tuberosum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2930262> .
 
 
-###  https://w3id.org/APTO#PT0284
+###  https://w3id.org/APTO/PT0284
 :PT0284 rdf:type owl:Class ;
         rdfs:subClassOf :PT0281 ;
         rdfs:label "Solanum melongena"@en ;
         skos:exactMatch <https://www.gbif.org/species/2930617> .
 
 
-###  https://w3id.org/APTO#PT0285
+###  https://w3id.org/APTO/PT0285
 :PT0285 rdf:type owl:Class ;
         rdfs:subClassOf :PT0191 ;
         rdfs:label "Capsicum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2932937> .
 
 
-###  https://w3id.org/APTO#PT0286
+###  https://w3id.org/APTO/PT0286
 :PT0286 rdf:type owl:Class ;
         rdfs:subClassOf :PT0285 ;
         rdfs:label "Capsicum annuum"@en ;
         skos:exactMatch <https://www.gbif.org/species/2932944> .
 
 
-###  https://w3id.org/APTO#PT0287
+###  https://w3id.org/APTO/PT0287
 :PT0287 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Dipteryx"@en ;
         skos:exactMatch <https://www.gbif.org/species/2947121> .
 
 
-###  https://w3id.org/APTO#PT0288
+###  https://w3id.org/APTO/PT0288
 :PT0288 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Phaseolus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2947798> .
 
 
-###  https://w3id.org/APTO#PT0289
+###  https://w3id.org/APTO/PT0289
 :PT0289 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Arachis"@en ;
         skos:exactMatch <https://www.gbif.org/species/2956684> .
 
 
-###  https://w3id.org/APTO#PT0290
+###  https://w3id.org/APTO/PT0290
 :PT0290 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Dimorphandra"@en ;
         skos:exactMatch <https://www.gbif.org/species/2974262> .
 
 
-###  https://w3id.org/APTO#PT0291
+###  https://w3id.org/APTO/PT0291
 :PT0291 rdf:type owl:Class ;
         rdfs:subClassOf :PT0290 ;
         rdfs:label "Dimorphandra mollis"@en ;
         skos:exactMatch <https://www.gbif.org/species/2974269> .
 
 
-###  https://w3id.org/APTO#PT0292
+###  https://w3id.org/APTO/PT0292
 :PT0292 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Vicia"@en ;
         skos:exactMatch <https://www.gbif.org/species/2974751> .
 
 
-###  https://w3id.org/APTO#PT0293
+###  https://w3id.org/APTO/PT0293
 :PT0293 rdf:type owl:Class ;
         rdfs:subClassOf :PT0292 ;
         rdfs:label "Vicia faba"@en ;
         skos:exactMatch <https://www.gbif.org/species/2974832> .
 
 
-###  https://w3id.org/APTO#PT0294
+###  https://w3id.org/APTO/PT0294
 :PT0294 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Tamarindus"@en ;
         skos:exactMatch <https://www.gbif.org/species/2975767> .
 
 
-###  https://w3id.org/APTO#PT0295
+###  https://w3id.org/APTO/PT0295
 :PT0295 rdf:type owl:Class ;
         rdfs:subClassOf :PT0294 ;
         rdfs:label "Tamarindus indica"@en ;
         skos:exactMatch <https://www.gbif.org/species/2975768> .
 
 
-###  https://w3id.org/APTO#PT0296
+###  https://w3id.org/APTO/PT0296
 :PT0296 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Copaifera"@en ;
         skos:exactMatch <https://www.gbif.org/species/2978115> .
 
 
-###  https://w3id.org/APTO#PT0297
+###  https://w3id.org/APTO/PT0297
 :PT0297 rdf:type owl:Class ;
         rdfs:subClassOf :PT0296 ;
         rdfs:label "Copaifera multijuga"@en ;
         skos:exactMatch <https://www.gbif.org/species/2978132> .
 
 
-###  https://w3id.org/APTO#PT0298
+###  https://w3id.org/APTO/PT0298
 :PT0298 rdf:type owl:Class ;
         rdfs:subClassOf :PT0296 ;
         rdfs:label "Copaifera langsdorffii"@en ;
         skos:exactMatch <https://www.gbif.org/species/2978171> .
 
 
-###  https://w3id.org/APTO#PT0299
+###  https://w3id.org/APTO/PT0299
 :PT0299 rdf:type owl:Class ;
         rdfs:subClassOf :PT0182 ;
         rdfs:label "Theobroma"@en ;
         skos:exactMatch <https://www.gbif.org/species/2984934> .
 
 
-###  https://w3id.org/APTO#PT0300
+###  https://w3id.org/APTO/PT0300
 :PT0300 rdf:type owl:Class ;
         rdfs:subClassOf :PT0172 ;
         rdfs:label "Malus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3001068> .
 
 
-###  https://w3id.org/APTO#PT0301
+###  https://w3id.org/APTO/PT0301
 :PT0301 rdf:type owl:Class ;
         rdfs:subClassOf :PT0300 ;
         rdfs:label "Malus domestica"@en ;
         skos:exactMatch <https://www.gbif.org/species/3001244> .
 
 
-###  https://w3id.org/APTO#PT0302
+###  https://w3id.org/APTO/PT0302
 :PT0302 rdf:type owl:Class ;
         rdfs:subClassOf :PT0172 ;
         rdfs:label "Prunus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3020559> .
 
 
-###  https://w3id.org/APTO#PT0303
+###  https://w3id.org/APTO/PT0303
 :PT0303 rdf:type owl:Class ;
         rdfs:subClassOf :PT0182 ;
         rdfs:label "Corchorus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3032212> .
 
 
-###  https://w3id.org/APTO#PT0304
+###  https://w3id.org/APTO/PT0304
 :PT0304 rdf:type owl:Class ;
         rdfs:subClassOf :PT0185 ;
         rdfs:label "Eryngium"@en ;
         skos:exactMatch <https://www.gbif.org/species/3034387> .
 
 
-###  https://w3id.org/APTO#PT0305
+###  https://w3id.org/APTO/PT0305
 :PT0305 rdf:type owl:Class ;
         rdfs:subClassOf :PT0304 ;
         rdfs:label "Eryngium foetidum"@en ;
         skos:exactMatch <https://www.gbif.org/species/3034425> .
 
 
-###  https://w3id.org/APTO#PT0306
+###  https://w3id.org/APTO/PT0306
 :PT0306 rdf:type owl:Class ;
         rdfs:subClassOf :PT0185 ;
         rdfs:label "Daucus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3034740> .
 
 
-###  https://w3id.org/APTO#PT0307
+###  https://w3id.org/APTO/PT0307
 :PT0307 rdf:type owl:Class ;
         rdfs:subClassOf :PT0306 ;
         rdfs:label "Daucus carota"@en ;
         skos:exactMatch <https://www.gbif.org/species/3034742> .
 
 
-###  https://w3id.org/APTO#PT0308
+###  https://w3id.org/APTO/PT0308
 :PT0308 rdf:type owl:Class ;
         rdfs:subClassOf :PT0185 ;
         rdfs:label "Coriandrum"@en ;
         skos:exactMatch <https://www.gbif.org/species/3034870> .
 
 
-###  https://w3id.org/APTO#PT0309
+###  https://w3id.org/APTO/PT0309
 :PT0309 rdf:type owl:Class ;
         rdfs:subClassOf :PT0308 ;
         rdfs:label "Coriandrum sativum"@en ;
         skos:exactMatch <https://www.gbif.org/species/3034871> .
 
 
-###  https://w3id.org/APTO#PT0310
+###  https://w3id.org/APTO/PT0310
 :PT0310 rdf:type owl:Class ;
         rdfs:subClassOf :PT0185 ;
         rdfs:label "Petroselinum"@en ;
         skos:exactMatch <https://www.gbif.org/species/3034906> .
 
 
-###  https://w3id.org/APTO#PT0311
+###  https://w3id.org/APTO/PT0311
 :PT0311 rdf:type owl:Class ;
         rdfs:subClassOf :PT0162 ;
         rdfs:label "Brassica"@en ;
         skos:exactMatch <https://www.gbif.org/species/3042506> .
 
 
-###  https://w3id.org/APTO#PT0312
+###  https://w3id.org/APTO/PT0312
 :PT0312 rdf:type owl:Class ;
         rdfs:subClassOf :PT0311 ;
         rdfs:label "Brassica napus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3042636> .
 
 
-###  https://w3id.org/APTO#PT0313
+###  https://w3id.org/APTO/PT0313
 :PT0313 rdf:type owl:Class ;
         rdfs:subClassOf :PT0311 ;
         rdfs:label "Brassica oleracea"@en ;
         skos:exactMatch <https://www.gbif.org/species/3042845> .
 
 
-###  https://w3id.org/APTO#PT0314
+###  https://w3id.org/APTO/PT0314
 :PT0314 rdf:type owl:Class ;
         rdfs:subClassOf :PT0162 ;
         rdfs:label "Eruca"@en ;
         skos:exactMatch <https://www.gbif.org/species/3049319> .
 
 
-###  https://w3id.org/APTO#PT0315
+###  https://w3id.org/APTO/PT0315
 :PT0315 rdf:type owl:Class ;
         rdfs:subClassOf :PT0159 ;
         rdfs:label "Juglans"@en ;
         skos:exactMatch <https://www.gbif.org/species/3054350> .
 
 
-###  https://w3id.org/APTO#PT0316
+###  https://w3id.org/APTO/PT0316
 :PT0316 rdf:type owl:Class ;
         rdfs:subClassOf :PT0315 ;
         rdfs:label "Juglans regia"@en ;
         skos:exactMatch <https://www.gbif.org/species/3054368> .
 
 
-###  https://w3id.org/APTO#PT0317
+###  https://w3id.org/APTO/PT0317
 :PT0317 rdf:type owl:Class ;
         rdfs:subClassOf :PT0170 ;
         rdfs:label "Manihot"@en ;
         skos:exactMatch <https://www.gbif.org/species/3060685> .
 
 
-###  https://w3id.org/APTO#PT0318
+###  https://w3id.org/APTO/PT0318
 :PT0318 rdf:type owl:Class ;
         rdfs:subClassOf :PT0317 ;
         rdfs:label "Manihot esculenta"@en ;
         skos:exactMatch <https://www.gbif.org/species/3060998> .
 
 
-###  https://w3id.org/APTO#PT0319
+###  https://w3id.org/APTO/PT0319
 :PT0319 rdf:type owl:Class ;
         rdfs:subClassOf :PT0170 ;
         rdfs:label "Hevea"@en ;
         skos:exactMatch <https://www.gbif.org/species/3071157> .
 
 
-###  https://w3id.org/APTO#PT0320
+###  https://w3id.org/APTO/PT0320
 :PT0320 rdf:type owl:Class ;
         rdfs:subClassOf :PT0319 ;
         rdfs:label "Hevea brasiliensis"@en ;
         skos:exactMatch <https://www.gbif.org/species/3071171> .
 
 
-###  https://w3id.org/APTO#PT0321
+###  https://w3id.org/APTO/PT0321
 :PT0321 rdf:type owl:Class ;
         rdfs:subClassOf :PT0181 ;
         rdfs:label "Piper"@en ;
         skos:exactMatch <https://www.gbif.org/species/3075433> .
 
 
-###  https://w3id.org/APTO#PT0322
+###  https://w3id.org/APTO/PT0322
 :PT0322 rdf:type owl:Class ;
         rdfs:subClassOf :PT0158 ;
         rdfs:label "Mangifera"@en ;
         skos:exactMatch <https://www.gbif.org/species/3075453> .
 
 
-###  https://w3id.org/APTO#PT0323
+###  https://w3id.org/APTO/PT0323
 :PT0323 rdf:type owl:Class ;
         rdfs:subClassOf :PT0166 ;
         rdfs:label "Bertholletia"@en ;
         skos:exactMatch <https://www.gbif.org/species/3083179> .
 
 
-###  https://w3id.org/APTO#PT0324
+###  https://w3id.org/APTO/PT0324
 :PT0324 rdf:type owl:Class ;
         rdfs:subClassOf :PT0321 ;
         rdfs:label "Piper nigrum"@en ;
         skos:exactMatch <https://www.gbif.org/species/3086357> .
 
 
-###  https://w3id.org/APTO#PT0325
+###  https://w3id.org/APTO/PT0325
 :PT0325 rdf:type owl:Class ;
         rdfs:subClassOf :PT0160 ;
         rdfs:label "Helianthus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3119134> .
 
 
-###  https://w3id.org/APTO#PT0326
+###  https://w3id.org/APTO/PT0326
 :PT0326 rdf:type owl:Class ;
         rdfs:subClassOf :PT0160 ;
         rdfs:label "Lactuca"@en ;
         skos:exactMatch <https://www.gbif.org/species/3140231> .
 
 
-###  https://w3id.org/APTO#PT0327
+###  https://w3id.org/APTO/PT0327
 :PT0327 rdf:type owl:Class ;
         rdfs:subClassOf :PT0303 ;
         rdfs:label "Corchorus capsularis"@en ;
         skos:exactMatch <https://www.gbif.org/species/3152082> .
 
 
-###  https://w3id.org/APTO#PT0328
+###  https://w3id.org/APTO/PT0328
 :PT0328 rdf:type owl:Class ;
         rdfs:subClassOf :PT0299 ;
         rdfs:label "Theobroma cacao"@en ;
         skos:exactMatch <https://www.gbif.org/species/3152205> .
 
 
-###  https://w3id.org/APTO#PT0329
+###  https://w3id.org/APTO/PT0329
 :PT0329 rdf:type owl:Class ;
         rdfs:subClassOf :PT0299 ;
         rdfs:label "Theobroma grandiflorum"@en ;
         skos:exactMatch <https://www.gbif.org/species/3152208> .
 
 
-###  https://w3id.org/APTO#PT0330
+###  https://w3id.org/APTO/PT0330
 :PT0330 rdf:type owl:Class ;
         rdfs:subClassOf :PT0182 ;
         rdfs:label "Gossypium"@en ;
         skos:exactMatch <https://www.gbif.org/species/3152652> .
 
 
-###  https://w3id.org/APTO#PT0331
+###  https://w3id.org/APTO/PT0331
 :PT0331 rdf:type owl:Class ;
         rdfs:subClassOf :PT0182 ;
         rdfs:label "Abelmoschus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3152705> .
 
 
-###  https://w3id.org/APTO#PT0332
+###  https://w3id.org/APTO/PT0332
 :PT0332 rdf:type owl:Class ;
         rdfs:subClassOf :PT0331 ;
         rdfs:label "Abelmoschus esculentus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3152707> .
 
 
-###  https://w3id.org/APTO#PT0333
+###  https://w3id.org/APTO/PT0333
 :PT0333 rdf:type owl:Class ;
         rdfs:subClassOf :PT0195 ;
         rdfs:label "Annona"@en ;
         skos:exactMatch <https://www.gbif.org/species/3155252> .
 
 
-###  https://w3id.org/APTO#PT0334
+###  https://w3id.org/APTO/PT0334
 :PT0334 rdf:type owl:Class ;
         rdfs:subClassOf :PT0183 ;
         rdfs:label "Hancornia"@en ;
         skos:exactMatch <https://www.gbif.org/species/3169678> .
 
 
-###  https://w3id.org/APTO#PT0335
+###  https://w3id.org/APTO/PT0335
 :PT0335 rdf:type owl:Class ;
         rdfs:subClassOf :PT0334 ;
         rdfs:label "Hancornia speciosa"@en ;
         skos:exactMatch <https://www.gbif.org/species/3169679> .
 
 
-###  https://w3id.org/APTO#PT0336
+###  https://w3id.org/APTO/PT0336
 :PT0336 rdf:type owl:Class ;
         rdfs:subClassOf :PT0171 ;
         rdfs:label "Psidium"@en ;
         skos:exactMatch <https://www.gbif.org/species/3187232> .
 
 
-###  https://w3id.org/APTO#PT0337
+###  https://w3id.org/APTO/PT0337
 :PT0337 rdf:type owl:Class ;
         rdfs:subClassOf :PT0177 ;
         rdfs:label "Caryocar"@en ;
         skos:exactMatch <https://www.gbif.org/species/3189661> .
 
 
-###  https://w3id.org/APTO#PT0338
+###  https://w3id.org/APTO/PT0338
 :PT0338 rdf:type owl:Class ;
         rdfs:subClassOf :PT0337 ;
         rdfs:label "Caryocar brasiliense"@en ;
         skos:exactMatch <https://www.gbif.org/species/3189663> .
 
 
-###  https://w3id.org/APTO#PT0339
+###  https://w3id.org/APTO/PT0339
 :PT0339 rdf:type owl:Class ;
         rdfs:subClassOf :PT0178 ;
         rdfs:label "Paullinia"@en ;
         skos:exactMatch <https://www.gbif.org/species/3189948> .
 
 
-###  https://w3id.org/APTO#PT0340
+###  https://w3id.org/APTO/PT0340
 :PT0340 rdf:type owl:Class ;
         rdfs:subClassOf :PT0339 ;
         rdfs:label "Paullinia cupana"@en ;
         skos:exactMatch <https://www.gbif.org/species/3189949> .
 
 
-###  https://w3id.org/APTO#PT0341
+###  https://w3id.org/APTO/PT0341
 :PT0341 rdf:type owl:Class ;
         rdfs:subClassOf :PT0156 ;
         rdfs:label "Citrus"@en ;
         skos:exactMatch <https://www.gbif.org/species/3190155> .
 
 
-###  https://w3id.org/APTO#PT0342
+###  https://w3id.org/APTO/PT0342
 :PT0342 rdf:type owl:Class ;
         rdfs:subClassOf :PT0341 ;
         rdfs:label "Citrus aurantiifolia"@en ;
         skos:exactMatch <https://www.gbif.org/species/3190164> .
 
 
-###  https://w3id.org/APTO#PT0343
+###  https://w3id.org/APTO/PT0343
 :PT0343 rdf:type owl:Class ;
         rdfs:subClassOf :PT0157 ;
         rdfs:label "Carapa"@en ;
         skos:exactMatch <https://www.gbif.org/species/3190512> .
 
 
-###  https://w3id.org/APTO#PT0344
+###  https://w3id.org/APTO/PT0344
 :PT0344 rdf:type owl:Class ;
         rdfs:subClassOf :PT0343 ;
         rdfs:label "Carapa guianensis"@en ;
         skos:exactMatch <https://www.gbif.org/species/3190513> .
 
 
-###  https://w3id.org/APTO#PT0345
+###  https://w3id.org/APTO/PT0345
 :PT0345 rdf:type owl:Class ;
         rdfs:subClassOf :PT0158 ;
         rdfs:label "Spondias"@en ;
         skos:exactMatch <https://www.gbif.org/species/3190592> .
 
 
-###  https://w3id.org/APTO#PT0346
+###  https://w3id.org/APTO/PT0346
 :PT0346 rdf:type owl:Class ;
         rdfs:subClassOf :PT0345 ;
         rdfs:label "Spondias purpurea"@en ;
         skos:exactMatch <https://www.gbif.org/species/3190598> .
 
 
-###  https://w3id.org/APTO#PT0347
+###  https://w3id.org/APTO/PT0347
 :PT0347 rdf:type owl:Class ;
         rdfs:subClassOf :PT0322 ;
         rdfs:label "Mangifera indica"@en ;
         skos:exactMatch <https://www.gbif.org/species/3190638> .
 
 
-###  https://w3id.org/APTO#PT0348
+###  https://w3id.org/APTO/PT0348
 :PT0348 rdf:type owl:Class ;
         rdfs:subClassOf :PT0180 ;
         rdfs:label "Malpighia"@en ;
         skos:exactMatch <https://www.gbif.org/species/3191274> .
 
 
-###  https://w3id.org/APTO#PT0349
+###  https://w3id.org/APTO/PT0349
 :PT0349 rdf:type owl:Class ;
         rdfs:subClassOf :PT0180 ;
         rdfs:label "Byrsonima"@en ;
         skos:exactMatch <https://www.gbif.org/species/3191347> .
 
 
-###  https://w3id.org/APTO#PT0350
+###  https://w3id.org/APTO/PT0350
 :PT0350 rdf:type owl:Class ;
         rdfs:subClassOf :PT0349 ;
         rdfs:label "Byrsonima crassifolia"@en ;
         skos:exactMatch <https://www.gbif.org/species/3191361> .
 
 
-###  https://w3id.org/APTO#PT0351
+###  https://w3id.org/APTO/PT0351
 :PT0351 rdf:type owl:Class ;
         rdfs:subClassOf :PT0130 ;
         rdfs:label "Serrasalmidae"@en ;
         skos:exactMatch <https://www.gbif.org/species/4287106> .
 
 
-###  https://w3id.org/APTO#PT0352
+###  https://w3id.org/APTO/PT0352
 :PT0352 rdf:type owl:Class ;
         rdfs:subClassOf :PT0212 ;
         rdfs:label "Arapaima gigas"@en ;
         skos:exactMatch <https://www.gbif.org/species/5212877> .
 
 
-###  https://w3id.org/APTO#PT0353
+###  https://w3id.org/APTO/PT0353
 :PT0353 rdf:type owl:Class ;
         rdfs:subClassOf :PT0223 ;
         rdfs:label "Ananas comosus"@en ;
         skos:exactMatch <https://www.gbif.org/species/5288819> .
 
 
-###  https://w3id.org/APTO#PT0354
+###  https://w3id.org/APTO/PT0354
 :PT0354 rdf:type owl:Class ;
         rdfs:subClassOf :PT0230 ;
         rdfs:label "Zea mays"@en ;
         skos:exactMatch <https://www.gbif.org/species/5290052> .
 
 
-###  https://w3id.org/APTO#PT0355
+###  https://w3id.org/APTO/PT0355
 :PT0355 rdf:type owl:Class ;
         rdfs:subClassOf :PT0386 ;
         rdfs:label "Euterpe oleracea"@en ;
         skos:exactMatch <https://www.gbif.org/species/5293398> .
 
 
-###  https://w3id.org/APTO#PT0356
+###  https://w3id.org/APTO/PT0356
 :PT0356 rdf:type owl:Class ;
         rdfs:subClassOf :PT0386 ;
         rdfs:label "Euterpe edulis"@en ;
         skos:exactMatch <https://www.gbif.org/species/5293403> .
 
 
-###  https://w3id.org/APTO#PT0357
+###  https://w3id.org/APTO/PT0357
 :PT0357 rdf:type owl:Class ;
         rdfs:subClassOf :PT0248 ;
         rdfs:label "Syagrus coronata"@en ;
         skos:exactMatch <https://www.gbif.org/species/5293875> .
 
 
-###  https://w3id.org/APTO#PT0358
+###  https://w3id.org/APTO/PT0358
 :PT0358 rdf:type owl:Class ;
         rdfs:subClassOf :PT0395 ;
         rdfs:label "Mauritia flexuosa"@en ;
         skos:exactMatch <https://www.gbif.org/species/5294777> .
 
 
-###  https://w3id.org/APTO#PT0359
+###  https://w3id.org/APTO/PT0359
 :PT0359 rdf:type owl:Class ;
         rdfs:subClassOf :PT0186 ;
         rdfs:label "Colocasia"@en ;
         skos:exactMatch <https://www.gbif.org/species/5330758> .
 
 
-###  https://w3id.org/APTO#PT0360
+###  https://w3id.org/APTO/PT0360
 :PT0360 rdf:type owl:Class ;
         rdfs:subClassOf :PT0359 ;
         rdfs:label "Colocasia esculenta"@en ;
         skos:exactMatch <https://www.gbif.org/species/5330776> .
 
 
-###  https://w3id.org/APTO#PT0361
+###  https://w3id.org/APTO/PT0361
 :PT0361 rdf:type owl:Class ;
         rdfs:subClassOf :PT0288 ;
         rdfs:label "Phaseolus vulgaris"@en ;
         skos:exactMatch <https://www.gbif.org/species/5350452> .
 
 
-###  https://w3id.org/APTO#PT0362
+###  https://w3id.org/APTO/PT0362
 :PT0362 rdf:type owl:Class ;
         rdfs:subClassOf :PT0289 ;
         rdfs:label "Arachis hypogaea"@en ;
         skos:exactMatch <https://www.gbif.org/species/5353770> .
 
 
-###  https://w3id.org/APTO#PT0363
+###  https://w3id.org/APTO/PT0363
 :PT0363 rdf:type owl:Class ;
         rdfs:subClassOf :PT0387 ;
         rdfs:label "Glycine max"@en ;
         skos:exactMatch <https://www.gbif.org/species/5359660> .
 
 
-###  https://w3id.org/APTO#PT0364
+###  https://w3id.org/APTO/PT0364
 :PT0364 rdf:type owl:Class ;
         rdfs:subClassOf :PT0380 ;
         rdfs:label "Vitis vinifera"@en ;
         skos:exactMatch <https://www.gbif.org/species/5372392> .
 
 
-###  https://w3id.org/APTO#PT0365
+###  https://w3id.org/APTO/PT0365
 :PT0365 rdf:type owl:Class ;
         rdfs:subClassOf :PT0397 ;
         rdfs:label "Ricinus communis"@en ;
         skos:exactMatch <https://www.gbif.org/species/5380041> .
 
 
-###  https://w3id.org/APTO#PT0366
+###  https://w3id.org/APTO/PT0366
 :PT0366 rdf:type owl:Class ;
         rdfs:subClassOf :PT0333 ;
         rdfs:label "Annona squamosa"@en ;
         skos:exactMatch <https://www.gbif.org/species/5407099> .
 
 
-###  https://w3id.org/APTO#PT0367
+###  https://w3id.org/APTO/PT0367
 :PT0367 rdf:type owl:Class ;
         rdfs:subClassOf :PT0333 ;
         rdfs:label "Annona muricata"@en ;
         skos:exactMatch <https://www.gbif.org/species/5407273> .
 
 
-###  https://w3id.org/APTO#PT0368
+###  https://w3id.org/APTO/PT0368
 :PT0368 rdf:type owl:Class ;
         rdfs:subClassOf :PT0404 ;
         rdfs:label "Ilex paraguariensis"@en ;
         skos:exactMatch <https://www.gbif.org/species/5414252> .
 
 
-###  https://w3id.org/APTO#PT0369
+###  https://w3id.org/APTO/PT0369
 :PT0369 rdf:type owl:Class ;
         rdfs:subClassOf :PT0336 ;
         rdfs:label "Psidium guajava"@en ;
         skos:exactMatch <https://www.gbif.org/species/5420380> .
 
 
-###  https://w3id.org/APTO#PT0370
+###  https://w3id.org/APTO/PT0370
 :PT0370 rdf:type owl:Class ;
         rdfs:subClassOf :PT0158 ;
         rdfs:label "Anacardium"@en ;
         skos:exactMatch <https://www.gbif.org/species/5421367> .
 
 
-###  https://w3id.org/APTO#PT0371
+###  https://w3id.org/APTO/PT0371
 :PT0371 rdf:type owl:Class ;
         rdfs:subClassOf :PT0370 ;
         rdfs:label "Anacardium occidentale"@en ;
         skos:exactMatch <https://www.gbif.org/species/5421368> .
 
 
-###  https://w3id.org/APTO#PT0372
+###  https://w3id.org/APTO/PT0372
 :PT0372 rdf:type owl:Class ;
         rdfs:subClassOf :PT0348 ;
         rdfs:label "Malpighia glabra"@en ;
         skos:exactMatch <https://www.gbif.org/species/5421429> .
 
 
-###  https://w3id.org/APTO#PT0373
+###  https://w3id.org/APTO/PT0373
 :PT0373 rdf:type owl:Class ;
         rdfs:subClassOf :PT0224 ;
         rdfs:label "Cenchrus americanus"@en ;
         skos:exactMatch <https://www.gbif.org/species/5828197> .
 
 
-###  https://w3id.org/APTO#PT0374
+###  https://w3id.org/APTO/PT0374
 :PT0374 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Vitales"@en ;
         skos:exactMatch <https://www.gbif.org/species/7222050> .
 
 
-###  https://w3id.org/APTO#PT0375
+###  https://w3id.org/APTO/PT0375
 :PT0375 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Cucurbitales"@en ;
         skos:exactMatch <https://www.gbif.org/species/7224005> .
 
 
-###  https://w3id.org/APTO#PT0376
+###  https://w3id.org/APTO/PT0376
 :PT0376 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Brassicales"@en ;
         skos:exactMatch <https://www.gbif.org/species/7225535> .
 
 
-###  https://w3id.org/APTO#PT0377
+###  https://w3id.org/APTO/PT0377
 :PT0377 rdf:type owl:Class ;
         rdfs:subClassOf :PT0125 ;
         rdfs:label "Aquifoliales"@en ;
         skos:exactMatch <https://www.gbif.org/species/7226638> .
 
 
-###  https://w3id.org/APTO#PT0378
+###  https://w3id.org/APTO/PT0378
 :PT0378 rdf:type owl:Class ;
         rdfs:subClassOf :PT0326 ;
         rdfs:label "Lactuca sativa"@en ;
         skos:exactMatch <https://www.gbif.org/species/7403263> .
 
 
-###  https://w3id.org/APTO#PT0379
+###  https://w3id.org/APTO/PT0379
 :PT0379 rdf:type owl:Class ;
         rdfs:subClassOf :PT0253 ;
         rdfs:label "Acrocomia aculeata"@en ;
         skos:exactMatch <https://www.gbif.org/species/7413879> .
 
 
-###  https://w3id.org/APTO#PT0380
+###  https://w3id.org/APTO/PT0380
 :PT0380 rdf:type owl:Class ;
         rdfs:subClassOf :PT0179 ;
         rdfs:label "Vitis"@en ;
         skos:exactMatch <https://www.gbif.org/species/7467468> .
 
 
-###  https://w3id.org/APTO#PT0381
+###  https://w3id.org/APTO/PT0381
 :PT0381 rdf:type owl:Class ;
         rdfs:subClassOf :PT0314 ;
         rdfs:label "Eruca sativa"@en ;
         skos:exactMatch <https://www.gbif.org/species/7474861> .
 
 
-###  https://w3id.org/APTO#PT0382
+###  https://w3id.org/APTO/PT0382
 :PT0382 rdf:type owl:Class ;
         rdfs:subClassOf :PT0171 ;
         rdfs:label "Eucalyptus"@en ;
         skos:exactMatch <https://www.gbif.org/species/7493935> .
 
 
-###  https://w3id.org/APTO#PT0383
+###  https://w3id.org/APTO/PT0383
 :PT0383 rdf:type owl:Class ;
         rdfs:subClassOf :PT0341 ;
         rdfs:label "Citrus limon"@en ;
         skos:exactMatch <https://www.gbif.org/species/7647136> .
 
 
-###  https://w3id.org/APTO#PT0384
+###  https://w3id.org/APTO/PT0384
 :PT0384 rdf:type owl:Class ;
         rdfs:subClassOf :PT0118 ;
         rdfs:label "Tracheophyta"@en ;
         skos:exactMatch <https://www.gbif.org/species/7707728> .
 
 
-###  https://w3id.org/APTO#PT0385
+###  https://w3id.org/APTO/PT0385
 :PT0385 rdf:type owl:Class ;
         rdfs:subClassOf :PT0310 ;
         rdfs:label "Petroselinum crispum"@en ;
         skos:exactMatch <https://www.gbif.org/species/7828157> .
 
 
-###  https://w3id.org/APTO#PT0386
+###  https://w3id.org/APTO/PT0386
 :PT0386 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Euterpe"@en ;
         skos:exactMatch <https://www.gbif.org/species/7906352> .
 
 
-###  https://w3id.org/APTO#PT0387
+###  https://w3id.org/APTO/PT0387
 :PT0387 rdf:type owl:Class ;
         rdfs:subClassOf :PT0174 ;
         rdfs:label "Glycine"@en ;
         skos:exactMatch <https://www.gbif.org/species/7968287> .
 
 
-###  https://w3id.org/APTO#PT0388
+###  https://w3id.org/APTO/PT0388
 :PT0388 rdf:type owl:Class ;
         owl:equivalentClass [ rdf:type owl:Restriction ;
                               owl:onProperty :PT0406 ;
@@ -3520,119 +3522,119 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch <https://www.gbif.org/species/8077391> .
 
 
-###  https://w3id.org/APTO#PT0389
+###  https://w3id.org/APTO/PT0389
 :PT0389 rdf:type owl:Class ;
         rdfs:subClassOf :PT0323 ;
         rdfs:label "Bertholletia excelsa"@en ;
         skos:exactMatch <https://www.gbif.org/species/8088560> .
 
 
-###  https://w3id.org/APTO#PT0390
+###  https://w3id.org/APTO/PT0390
 :PT0390 rdf:type owl:Class ;
         rdfs:subClassOf :PT0257 ;
         rdfs:label "Agave sisalana"@en ;
         skos:exactMatch <https://www.gbif.org/species/8123118> .
 
 
-###  https://w3id.org/APTO#PT0391
+###  https://w3id.org/APTO/PT0391
 :PT0391 rdf:type owl:Class ;
         rdfs:subClassOf :PT0302 ;
         rdfs:label "Prunus persica"@en ;
         skos:exactMatch <https://www.gbif.org/species/8149923> .
 
 
-###  https://w3id.org/APTO#PT0392
+###  https://w3id.org/APTO/PT0392
 :PT0392 rdf:type owl:Class ;
         rdfs:subClassOf :PT0345 ;
         rdfs:label "Spondias mombin"@en ;
         skos:exactMatch <https://www.gbif.org/species/8185571> .
 
 
-###  https://w3id.org/APTO#PT0393
+###  https://w3id.org/APTO/PT0393
 :PT0393 rdf:type owl:Class ;
         rdfs:subClassOf :PT0345 ;
         rdfs:label "Spondias tuberosa"@en ;
         skos:exactMatch <https://www.gbif.org/species/8230360> .
 
 
-###  https://w3id.org/APTO#PT0394
+###  https://w3id.org/APTO/PT0394
 :PT0394 rdf:type owl:Class ;
         rdfs:subClassOf :PT0175 ;
         rdfs:label "Citrullus"@en ;
         skos:exactMatch <https://www.gbif.org/species/8257011> .
 
 
-###  https://w3id.org/APTO#PT0395
+###  https://w3id.org/APTO/PT0395
 :PT0395 rdf:type owl:Class ;
         rdfs:subClassOf :PT0188 ;
         rdfs:label "Mauritia"@en ;
         skos:exactMatch <https://www.gbif.org/species/8413640> .
 
 
-###  https://w3id.org/APTO#PT0396
+###  https://w3id.org/APTO/PT0396
 :PT0396 rdf:type owl:Class ;
         rdfs:subClassOf :PT0265 ;
         rdfs:label "Cucurbita pepo"@en ;
         skos:exactMatch <https://www.gbif.org/species/8717303> .
 
 
-###  https://w3id.org/APTO#PT0397
+###  https://w3id.org/APTO/PT0397
 :PT0397 rdf:type owl:Class ;
         rdfs:subClassOf :PT0170 ;
         rdfs:label "Ricinus"@en ;
         skos:exactMatch <https://www.gbif.org/species/9188216> .
 
 
-###  https://w3id.org/APTO#PT0398
+###  https://w3id.org/APTO/PT0398
 :PT0398 rdf:type owl:Class ;
         rdfs:subClassOf :PT0325 ;
         rdfs:label "Helianthus annuus"@en ;
         skos:exactMatch <https://www.gbif.org/species/9206251> .
 
 
-###  https://w3id.org/APTO#PT0399
+###  https://w3id.org/APTO/PT0399
 :PT0399 rdf:type owl:Class ;
         rdfs:subClassOf :PT0219 ;
         rdfs:label "Gallus gallus"@en ;
         skos:exactMatch <https://www.gbif.org/species/9326020> .
 
 
-###  https://w3id.org/APTO#PT0400
+###  https://w3id.org/APTO/PT0400
 :PT0400 rdf:type owl:Class ;
         rdfs:subClassOf :PT0399 ;
         rdfs:label "Gallus gallus f. domesticus"@en ;
         skos:exactMatch <https://www.gbif.org/species/9457155> .
 
 
-###  https://w3id.org/APTO#PT0401
+###  https://w3id.org/APTO/PT0401
 :PT0401 rdf:type owl:Class ;
         rdfs:subClassOf :PT0197 ;
         rdfs:label "Ovis"@en ;
         skos:exactMatch <https://www.gbif.org/species/9531221> .
 
 
-###  https://w3id.org/APTO#PT0402
+###  https://w3id.org/APTO/PT0402
 :PT0402 rdf:type owl:Class ;
         rdfs:subClassOf :PT0189 ;
         rdfs:label "Allium"@en ;
         skos:exactMatch <https://www.gbif.org/species/9624496> .
 
 
-###  https://w3id.org/APTO#PT0403
+###  https://w3id.org/APTO/PT0403
 :PT0403 rdf:type owl:Class ;
         rdfs:subClassOf :PT0287 ;
         rdfs:label "Dipteryx odorata"@en ;
         skos:exactMatch <https://www.gbif.org/species/10779983> .
 
 
-###  https://w3id.org/APTO#PT0404
+###  https://w3id.org/APTO/PT0404
 :PT0404 rdf:type owl:Class ;
         rdfs:subClassOf :PT0184 ;
         rdfs:label "Ilex"@en ;
         skos:exactMatch <https://www.gbif.org/species/10792217> .
 
 
-###  https://w3id.org/APTO#PT0409
+###  https://w3id.org/APTO/PT0409
 :PT0409 rdf:type owl:Class ;
         rdfs:subClassOf :PT0055 ,
                         [ rdf:type owl:Restriction ;
@@ -3645,7 +3647,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_019ee1cc"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0410
+###  https://w3id.org/APTO/PT0410
 :PT0410 rdf:type owl:Class ;
         rdfs:subClassOf :PT0446 ,
                         :PT0478 ,
@@ -3661,7 +3663,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/64eb2b6204d7163a62fd0692b221260e"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0411
+###  https://w3id.org/APTO/PT0411
 :PT0411 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -3674,7 +3676,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_10195"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0412
+###  https://w3id.org/APTO/PT0412
 :PT0412 rdf:type owl:Class ;
         rdfs:subClassOf :PT0457 ,
                         [ rdf:type owl:Class ;
@@ -3691,7 +3693,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/95eac3b4e952901f4b80aea54f6f9e16"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0413
+###  https://w3id.org/APTO/PT0413
 :PT0413 rdf:type owl:Class ;
         rdfs:subClassOf :PT0526 ;
         rdfs:label "Bread"@en ,
@@ -3699,7 +3701,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_1071"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0414
+###  https://w3id.org/APTO/PT0414
 :PT0414 rdf:type owl:Class ;
         rdfs:subClassOf :PT0584 ,
                         [ rdf:type owl:Restriction ;
@@ -3712,7 +3714,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_10722"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0415
+###  https://w3id.org/APTO/PT0415
 :PT0415 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -3725,7 +3727,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_11091"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0416
+###  https://w3id.org/APTO/PT0416
 :PT0416 rdf:type owl:Class ;
         rdfs:subClassOf :PT0438 ,
                         [ rdf:type owl:Restriction ;
@@ -3738,7 +3740,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_11131"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0417
+###  https://w3id.org/APTO/PT0417
 :PT0417 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -3752,7 +3754,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/a0b91d8e06136094e4e9f2633d219324"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0418
+###  https://w3id.org/APTO/PT0418
 :PT0418 rdf:type owl:Class ;
         rdfs:subClassOf :PT0560 ;
         rdfs:label "Boi"@pt-br ,
@@ -3761,7 +3763,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/86a270a74dd36082d129dbc67da00c36"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0419
+###  https://w3id.org/APTO/PT0419
 :PT0419 rdf:type owl:Class ;
         rdfs:subClassOf :PT0023 ,
                         [ rdf:type owl:Restriction ;
@@ -3775,7 +3777,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/fd2c4059780b8a9637c4e67191980744"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0420
+###  https://w3id.org/APTO/PT0420
 :PT0420 rdf:type owl:Class ;
         rdfs:subClassOf :PT0477 ,
                         [ rdf:type owl:Restriction ;
@@ -3789,7 +3791,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/57a28dbfb65685d05aba506ff9728f85"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0421
+###  https://w3id.org/APTO/PT0421
 :PT0421 rdf:type owl:Class ;
         rdfs:subClassOf :PT0560 ;
         rdfs:label "Bezerro"@pt-br ,
@@ -3798,7 +3800,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/dbe05e794688e1e0a690316f4e3cb155"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0422
+###  https://w3id.org/APTO/PT0422
 :PT0422 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -3812,7 +3814,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/48f22450ff89f732ae0cd7c0f2dfe1eb"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0423
+###  https://w3id.org/APTO/PT0423
 :PT0423 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -3826,7 +3828,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/b16e21785bcdd2394b3e2a77de0f8eaa"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0424
+###  https://w3id.org/APTO/PT0424
 :PT0424 rdf:type owl:Class ;
         rdfs:subClassOf :PT0471 ,
                         [ rdf:type owl:Restriction ;
@@ -3839,7 +3841,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_12487"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0425
+###  https://w3id.org/APTO/PT0425
 :PT0425 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -3852,7 +3854,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_12920"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0426
+###  https://w3id.org/APTO/PT0426
 :PT0426 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -3866,7 +3868,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/281d59c6d9c8fe4b4e627a3aa56a9670"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0427
+###  https://w3id.org/APTO/PT0427
 :PT0427 rdf:type owl:Class ;
         rdfs:subClassOf :PT0478 ,
                         :PT0531 ,
@@ -3882,7 +3884,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Salsa"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0428
+###  https://w3id.org/APTO/PT0428
 :PT0428 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -3896,7 +3898,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/9e2501934d067d71bb1c5850722a73d1"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0429
+###  https://w3id.org/APTO/PT0429
 :PT0429 rdf:type owl:Class ;
         rdfs:subClassOf :PT0496 ,
                         [ rdf:type owl:Restriction ;
@@ -3909,7 +3911,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/6a3e0cb43f80ee57b0895dc0870d5f12"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0430
+###  https://w3id.org/APTO/PT0430
 :PT0430 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -3923,7 +3925,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/4b96d5c1ff312eea069ddc760794963d"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0431
+###  https://w3id.org/APTO/PT0431
 :PT0431 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -3936,7 +3938,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_13551"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0432
+###  https://w3id.org/APTO/PT0432
 :PT0432 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -3949,7 +3951,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_14010"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0433
+###  https://w3id.org/APTO/PT0433
 :PT0433 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ,
                         [ rdf:type owl:Restriction ;
@@ -3967,7 +3969,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/6a324a803fcf2cb57faddfe4ea18326a"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0434
+###  https://w3id.org/APTO/PT0434
 :PT0434 rdf:type owl:Class ;
         rdfs:subClassOf :PT0534 ;
         rdfs:label "Soft wheat"@en ,
@@ -3976,7 +3978,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_14386"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0435
+###  https://w3id.org/APTO/PT0435
 :PT0435 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         :PT0584 ,
@@ -3992,7 +3994,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/bdc7645e04618dd9f14f06d96ab6967d"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0436
+###  https://w3id.org/APTO/PT0436
 :PT0436 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -4006,7 +4008,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/a5f74e850f12620e61ba8013e75b59b4"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0437
+###  https://w3id.org/APTO/PT0437
 :PT0437 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -4019,7 +4021,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_14729"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0438
+###  https://w3id.org/APTO/PT0438
 :PT0438 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Cereal product"@en ,
@@ -4028,7 +4030,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/7f875377fcab131e0629c16fc503e31a"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0439
+###  https://w3id.org/APTO/PT0439
 :PT0439 rdf:type owl:Class ;
         rdfs:subClassOf :PT0475 ;
         rdfs:label "Cereal"@en ,
@@ -4037,7 +4039,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/42a1751fa85f0a5024720bd40f350ba3"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0440
+###  https://w3id.org/APTO/PT0440
 :PT0440 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -4053,7 +4055,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/3886bc9c9655241c5737d45eec5447bb"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0441
+###  https://w3id.org/APTO/PT0441
 :PT0441 rdf:type owl:Class ;
         rdfs:subClassOf :PT0496 ,
                         [ rdf:type owl:Restriction ;
@@ -4066,7 +4068,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/2428d4ce74f58cd871700239f5136f3f"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0442
+###  https://w3id.org/APTO/PT0442
 :PT0442 rdf:type owl:Class ;
         rdfs:subClassOf :PT0496 ;
         rdfs:label "Cheese"@en ,
@@ -4075,7 +4077,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/c4d194cfc9f10a4885bd388564036bef"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0443
+###  https://w3id.org/APTO/PT0443
 :PT0443 rdf:type owl:Class ;
         rdfs:subClassOf :PT0471 ,
                         [ rdf:type owl:Restriction ;
@@ -4089,7 +4091,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/5e8f4e06a72887b71ce41638fca221cf"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0444
+###  https://w3id.org/APTO/PT0444
 :PT0444 rdf:type owl:Class ;
         rdfs:subClassOf :PT0023 ;
         rdfs:label "Chicken"@en ,
@@ -4098,7 +4100,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/10d5a0555a83f8bb41290c1e14e603e3"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0445
+###  https://w3id.org/APTO/PT0445
 :PT0445 rdf:type owl:Class ;
         rdfs:subClassOf :PT0496 ,
                         [ rdf:type owl:Restriction ;
@@ -4111,7 +4113,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/2a65973eca6cc9283ab62acf05a41ba2"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0446
+###  https://w3id.org/APTO/PT0446
 :PT0446 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Especiaria"@pt-br ,
@@ -4120,7 +4122,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/8eb41f06f00ccb7e912de9c6782ccea4"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0447
+###  https://w3id.org/APTO/PT0447
 :PT0447 rdf:type owl:Class ;
         rdfs:subClassOf :PT0493 ,
                         [ rdf:type owl:Restriction ;
@@ -4135,7 +4137,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Carne caprina"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0448
+###  https://w3id.org/APTO/PT0448
 :PT0448 rdf:type owl:Class ;
         rdfs:subClassOf :PT0494 ,
                         [ rdf:type owl:Restriction ;
@@ -4155,7 +4157,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_16080"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0449
+###  https://w3id.org/APTO/PT0449
 :PT0449 rdf:type owl:Class ;
         rdfs:subClassOf :PT0494 ,
                         [ rdf:type owl:Restriction ;
@@ -4168,7 +4170,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/6b1c99fc07dc0e133ab5b1282f5ed6ea"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0450
+###  https://w3id.org/APTO/PT0450
 :PT0450 rdf:type owl:Class ;
         rdfs:subClassOf :PT0471 ;
         rdfs:label "Citrus fruit"@en ,
@@ -4177,7 +4179,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_1641"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0451
+###  https://w3id.org/APTO/PT0451
 :PT0451 rdf:type owl:Class ;
         rdfs:subClassOf :PT0519 ,
                         [ rdf:type owl:Restriction ;
@@ -4191,7 +4193,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/9852e4677bf923bfb2ac3b6136924a0b" .
 
 
-###  https://w3id.org/APTO#PT0452
+###  https://w3id.org/APTO/PT0452
 :PT0452 rdf:type owl:Class ;
         rdfs:subClassOf :PT0530 ,
                         [ rdf:type owl:Restriction ;
@@ -4204,7 +4206,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_16508"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0453
+###  https://w3id.org/APTO/PT0453
 :PT0453 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ,
                         [ rdf:type owl:Restriction ;
@@ -4217,7 +4219,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/d8f3d67c92743cb979008b6372af3176"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0454
+###  https://w3id.org/APTO/PT0454
 :PT0454 rdf:type owl:Class ;
         rdfs:subClassOf :PT0560 ;
         rdfs:label "Cow"@en ,
@@ -4226,7 +4228,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/90f077d7759d0d4d21e6867727d4b2bd"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0455
+###  https://w3id.org/APTO/PT0455
 :PT0455 rdf:type owl:Class ;
         rdfs:subClassOf :PT0496 ,
                         [ rdf:type owl:Restriction ;
@@ -4239,7 +4241,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/7d3e6a0eddeeb429cd94658f5c6f2626"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0456
+###  https://w3id.org/APTO/PT0456
 :PT0456 rdf:type owl:Class ;
         rdfs:subClassOf :PT0064 ,
                         :PT0493 ,
@@ -4254,7 +4256,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/5bdef85b388203f1f3aa24880672146c"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0457
+###  https://w3id.org/APTO/PT0457
 :PT0457 rdf:type owl:Class ;
         rdfs:subClassOf :PT0074 ;
         rdfs:label "Alcohol"@en ,
@@ -4263,7 +4265,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/79b89ad67167fad67c264a54ef962b44"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0458
+###  https://w3id.org/APTO/PT0458
 :PT0458 rdf:type owl:Class ;
         rdfs:subClassOf :PT0064 ;
         rdfs:label "Egg"@en ,
@@ -4272,7 +4274,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/8472071ced24fe2226f7ca33cff91272"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0459
+###  https://w3id.org/APTO/PT0459
 :PT0459 rdf:type owl:Class ;
         rdfs:subClassOf :PT0546 ,
                         [ rdf:type owl:Restriction ;
@@ -4286,7 +4288,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_25470"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0460
+###  https://w3id.org/APTO/PT0460
 :PT0460 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         [ rdf:type owl:Restriction ;
@@ -4301,7 +4303,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/a0eb8f32cd10ba23677e89f9e871ef04"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0461
+###  https://w3id.org/APTO/PT0461
 :PT0461 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Oil seed"@en ,
@@ -4311,7 +4313,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/11d1922eb5e932db908581eb83e3f457"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0462
+###  https://w3id.org/APTO/PT0462
 :PT0462 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         [ rdf:type owl:Restriction ;
@@ -4327,7 +4329,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Semente de canola"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0463
+###  https://w3id.org/APTO/PT0463
 :PT0463 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         [ rdf:type owl:Restriction ;
@@ -4343,7 +4345,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Semente de girassol"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0464
+###  https://w3id.org/APTO/PT0464
 :PT0464 rdf:type owl:Class ;
         rdfs:subClassOf :PT0438 ,
                         :PT0468 ,
@@ -4357,7 +4359,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_25511"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0465
+###  https://w3id.org/APTO/PT0465
 :PT0465 rdf:type owl:Class ;
         rdfs:subClassOf :PT0454 ,
                         [ rdf:type owl:Restriction ;
@@ -4370,7 +4372,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/99c85c3f0a8cf76f365de195ab35f8a3"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0466
+###  https://w3id.org/APTO/PT0466
 :PT0466 rdf:type owl:Class ;
         rdfs:subClassOf :PT0518 ;
         rdfs:label "Café em grãos"@pt-br ,
@@ -4380,7 +4382,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Café em grãos"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0467
+###  https://w3id.org/APTO/PT0467
 :PT0467 rdf:type owl:Class ;
         rdfs:subClassOf :PT0005 ,
                         :PT0116 ;
@@ -4390,7 +4392,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/cb4bb0dafca8dc9e0452723bc627435d"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0468
+###  https://w3id.org/APTO/PT0468
 :PT0468 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Farinha"@pt-br ,
@@ -4399,7 +4401,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/9df38bda0adee40b17d54026429d0fdb"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0469
+###  https://w3id.org/APTO/PT0469
 :PT0469 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Forest product"@en ,
@@ -4407,7 +4409,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_3049"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0470
+###  https://w3id.org/APTO/PT0470
 :PT0470 rdf:type owl:Class ;
         rdfs:subClassOf :PT0467 ;
         rdfs:label "Freshwater fish"@en ,
@@ -4415,7 +4417,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_3105"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0471
+###  https://w3id.org/APTO/PT0471
 :PT0471 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Fruit"@en ,
@@ -4424,7 +4426,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "http://aims.fao.org/aos/agrovoc/c_3131"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0472
+###  https://w3id.org/APTO/PT0472
 :PT0472 rdf:type owl:Class ;
         rdfs:subClassOf :PT0470 ,
                         [ rdf:type owl:Restriction ;
@@ -4437,7 +4439,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/a30d5e4e0ec8526c396994bd8c4e637b"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0473
+###  https://w3id.org/APTO/PT0473
 :PT0473 rdf:type owl:Class ;
         rdfs:subClassOf :PT0584 ,
                         [ rdf:type owl:Restriction ;
@@ -4451,7 +4453,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/62b8288c2867583bbbfc172290439710"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0474
+###  https://w3id.org/APTO/PT0474
 :PT0474 rdf:type owl:Class ;
         rdfs:subClassOf :PT0491 ;
         rdfs:label "Caprino"@pt-br ,
@@ -4460,7 +4462,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/fb00d24ff5fe1e47871b7876841f5024"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0475
+###  https://w3id.org/APTO/PT0475
 :PT0475 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Grain"@en ,
@@ -4469,7 +4471,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/b868e45362655d1998f3bee01f991d94"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0476
+###  https://w3id.org/APTO/PT0476
 :PT0476 rdf:type owl:Class ;
         rdfs:subClassOf :PT0524 ,
                         [ rdf:type owl:Restriction ;
@@ -4482,7 +4484,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/d3da5eb0da6870aec2297a935d7159a8"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0477
+###  https://w3id.org/APTO/PT0477
 :PT0477 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ;
         rdfs:label "Hortaliça de folha"@pt-br ,
@@ -4493,7 +4495,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Hortaliça de folha"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0478
+###  https://w3id.org/APTO/PT0478
 :PT0478 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Culinary herbs"@en ,
@@ -4501,7 +4503,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_3568"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0479
+###  https://w3id.org/APTO/PT0479
 :PT0479 rdf:type owl:Class ;
         rdfs:subClassOf :PT0004 ;
         rdfs:label "Couros e peles"@pt-br ,
@@ -4510,7 +4512,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/378cb44a9af7ef24dff9873abb5fb8b2"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0480
+###  https://w3id.org/APTO/PT0480
 :PT0480 rdf:type owl:Class ;
         rdfs:subClassOf :PT0451 ;
         rdfs:label "Açúcar refinado"@pt-br ,
@@ -4519,7 +4521,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/891c923495e2fae8b1a751afb2956895"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0481
+###  https://w3id.org/APTO/PT0481
 :PT0481 rdf:type owl:Class ;
         rdfs:subClassOf :PT0044 ,
                         [ rdf:type owl:Restriction ;
@@ -4532,7 +4534,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/8f50ba9e7d863515cdc192cfdce1eb41"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0482
+###  https://w3id.org/APTO/PT0482
 :PT0482 rdf:type owl:Class ;
         rdfs:subClassOf :PT0071 ,
                         [ rdf:type owl:Restriction ;
@@ -4548,7 +4550,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Casulo de seda"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0483
+###  https://w3id.org/APTO/PT0483
 :PT0483 rdf:type owl:Class ;
         rdfs:subClassOf :PT0529 ,
                         [ rdf:type owl:Restriction ;
@@ -4567,7 +4569,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Abelha melífera"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0484
+###  https://w3id.org/APTO/PT0484
 :PT0484 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ;
         rdfs:label "Abóbora"@pt-br ,
@@ -4576,7 +4578,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/0641ab8e01b7f3b5fe5c340082784021"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0485
+###  https://w3id.org/APTO/PT0485
 :PT0485 rdf:type owl:Class ;
         rdfs:subClassOf :PT0066 ;
         rdfs:label "Composto inorgânico"@pt-br ,
@@ -4585,7 +4587,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/9bc1d45dc6914580199935a8c1e26709"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0486
+###  https://w3id.org/APTO/PT0486
 :PT0486 rdf:type owl:Class ;
         rdfs:subClassOf :PT0030 ,
                         [ rdf:type owl:Restriction ;
@@ -4598,7 +4600,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_4065"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0487
+###  https://w3id.org/APTO/PT0487
 :PT0487 rdf:type owl:Class ;
         rdfs:subClassOf :PT0477 ,
                         [ rdf:type owl:Restriction ;
@@ -4612,7 +4614,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/5779a2c5efecaa6c45833f93794286e1"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0488
+###  https://w3id.org/APTO/PT0488
 :PT0488 rdf:type owl:Class ;
         rdfs:subClassOf :PT0514 ,
                         [ rdf:type owl:Restriction ;
@@ -4626,7 +4628,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/8731dc7e812594c5353915ed54fbb5ba"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0489
+###  https://w3id.org/APTO/PT0489
 :PT0489 rdf:type owl:Class ;
         rdfs:subClassOf :PT0479 ,
                         [ rdf:type owl:Restriction ;
@@ -4638,7 +4640,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_4241"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0490
+###  https://w3id.org/APTO/PT0490
 :PT0490 rdf:type owl:Class ;
         rdfs:subClassOf :PT0450 ,
                         [ rdf:type owl:Restriction ;
@@ -4652,7 +4654,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/23a6a6f019e446235d9251e7bf1939c4"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0491
+###  https://w3id.org/APTO/PT0491
 :PT0491 rdf:type owl:Class ;
         rdfs:subClassOf :PT0116 ;
         rdfs:label "Gado"@pt-br ,
@@ -4660,7 +4662,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_4397"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0492
+###  https://w3id.org/APTO/PT0492
 :PT0492 rdf:type owl:Class ;
         rdfs:subClassOf :PT0518 ,
                         [ rdf:type owl:Restriction ;
@@ -4675,7 +4677,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/7c13aea47d6e6ddefd62d2c00653b2a4"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0493
+###  https://w3id.org/APTO/PT0493
 :PT0493 rdf:type owl:Class ;
         rdfs:subClassOf :PT0045 ;
         rdfs:label "Carne"@pt-br ,
@@ -4684,7 +4686,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/409f4cd5e6a103f5a0d4bfcc18215b0e"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0494
+###  https://w3id.org/APTO/PT0494
 :PT0494 rdf:type owl:Class ;
         rdfs:subClassOf :PT0045 ;
         rdfs:label "Leite"@pt-br ,
@@ -4692,7 +4694,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_4826"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0495
+###  https://w3id.org/APTO/PT0495
 :PT0495 rdf:type owl:Class ;
         rdfs:subClassOf :PT0004 ,
                         [ rdf:type owl:Restriction ;
@@ -4705,7 +4707,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/bea2cf5e51ed952a0f398806ac737878"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0496
+###  https://w3id.org/APTO/PT0496
 :PT0496 rdf:type owl:Class ;
         rdfs:subClassOf :PT0065 ;
         rdfs:label "Milk product"@en ,
@@ -4716,7 +4718,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Milk product"@en .
 
 
-###  https://w3id.org/APTO#PT0497
+###  https://w3id.org/APTO/PT0497
 :PT0497 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -4730,7 +4732,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_4838"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0498
+###  https://w3id.org/APTO/PT0498
 :PT0498 rdf:type owl:Class ;
         rdfs:subClassOf :PT0013 ;
         rdfs:label "Carne de carneiro"@pt-br ,
@@ -4739,7 +4741,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/2ed585b38f8e1a8e5c7278354ea40e11"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0499
+###  https://w3id.org/APTO/PT0499
 :PT0499 rdf:type owl:Class ;
         rdfs:subClassOf :PT0474 ,
                         [ rdf:type owl:Restriction ;
@@ -4753,7 +4755,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/7c21a0ecb0e51b244a6ba16f35a1047f"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0500
+###  https://w3id.org/APTO/PT0500
 :PT0500 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -4770,7 +4772,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/b54fb2fcde17a9c2da33470ae95fe39f"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0501
+###  https://w3id.org/APTO/PT0501
 :PT0501 rdf:type owl:Class ;
         rdfs:subClassOf :PT0115 ;
         rdfs:label "Oil palm"@en ,
@@ -4779,7 +4781,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/821d61281118d169f36bb25a77c5fe48"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0502
+###  https://w3id.org/APTO/PT0502
 :PT0502 rdf:type owl:Class ;
         rdfs:subClassOf :PT0524 ,
                         [ rdf:type owl:Restriction ;
@@ -4791,7 +4793,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_541"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0503
+###  https://w3id.org/APTO/PT0503
 :PT0503 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ,
                         [ rdf:type owl:Restriction ;
@@ -4805,7 +4807,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/acbf61dc603a375f7841d5bfd5ca928f"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0504
+###  https://w3id.org/APTO/PT0504
 :PT0504 rdf:type owl:Class ;
         rdfs:subClassOf :PT0524 ,
                         [ rdf:type owl:Restriction ;
@@ -4818,7 +4820,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_5638"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0505
+###  https://w3id.org/APTO/PT0505
 :PT0505 rdf:type owl:Class ;
         rdfs:subClassOf :PT0466 ,
                         [ rdf:type owl:Restriction ;
@@ -4831,7 +4833,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_566"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0506
+###  https://w3id.org/APTO/PT0506
 :PT0506 rdf:type owl:Class ;
         rdfs:subClassOf :PT0477 ,
                         [ rdf:type owl:Restriction ;
@@ -4845,7 +4847,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/8c6d70bd7e4b4f0fa5cca06e224ac3ba"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0507
+###  https://w3id.org/APTO/PT0507
 :PT0507 rdf:type owl:Class ;
         rdfs:subClassOf :PT0493 ,
                         [ rdf:type owl:Restriction ;
@@ -4860,7 +4862,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Carne suína"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0508
+###  https://w3id.org/APTO/PT0508
 :PT0508 rdf:type owl:Class ;
         rdfs:subClassOf :PT0116 ;
         rdfs:label "Ave de capoeira"@pt-br ,
@@ -4868,7 +4870,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_6145"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0509
+###  https://w3id.org/APTO/PT0509
 :PT0509 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -4882,7 +4884,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/cd762ef822be9c0c8b1d8b2c3633eddf"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0510
+###  https://w3id.org/APTO/PT0510
 :PT0510 rdf:type owl:Class ;
         rdfs:subClassOf :PT0466 ,
                         [ rdf:type owl:Restriction ;
@@ -4895,7 +4897,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_6626"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0511
+###  https://w3id.org/APTO/PT0511
 :PT0511 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ,
                         [ rdf:type owl:Restriction ;
@@ -4910,7 +4912,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/2b5b436e38e557be6333ee663cc234f9"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0512
+###  https://w3id.org/APTO/PT0512
 :PT0512 rdf:type owl:Class ;
         rdfs:subClassOf :PT0115 ,
                         [ rdf:type owl:Restriction ;
@@ -4923,7 +4925,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/028e219a04f2febda150fadb1d886712"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0513
+###  https://w3id.org/APTO/PT0513
 :PT0513 rdf:type owl:Class ;
         rdfs:subClassOf :PT0438 ,
                         [ rdf:type owl:Restriction ;
@@ -4938,7 +4940,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/f9c9caaa48da729d2a8c0328388e9565"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0514
+###  https://w3id.org/APTO/PT0514
 :PT0514 rdf:type owl:Class ;
         rdfs:subClassOf :PT0491 ;
         rdfs:label "Ovino"@pt-br ,
@@ -4947,7 +4949,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/d7c7bd6f1ed5b065106e6cb98cbce396"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0515
+###  https://w3id.org/APTO/PT0515
 :PT0515 rdf:type owl:Class ;
         rdfs:subClassOf :PT0529 ,
                         [ rdf:type owl:Restriction ;
@@ -4964,7 +4966,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_7064"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0516
+###  https://w3id.org/APTO/PT0516
 :PT0516 rdf:type owl:Class ;
         rdfs:subClassOf :PT0030 ,
                         [ rdf:type owl:Restriction ;
@@ -4978,7 +4980,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/941490e4a8761000a77ebdd4b7f3a54d"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0517
+###  https://w3id.org/APTO/PT0517
 :PT0517 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -4994,7 +4996,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Sorgo"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0518
+###  https://w3id.org/APTO/PT0518
 :PT0518 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Planta estimulante"@pt-br ,
@@ -5003,7 +5005,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/8cfa9f207f98fd89447017bc69313888"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0519
+###  https://w3id.org/APTO/PT0519
 :PT0519 rdf:type owl:Class ;
         rdfs:subClassOf :PT0074 ;
         rdfs:label "Açúcar"@pt-br ,
@@ -5012,7 +5014,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/f34ae1525ab8cba9dfe78de135ac81f0" .
 
 
-###  https://w3id.org/APTO#PT0520
+###  https://w3id.org/APTO/PT0520
 :PT0520 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ,
                         :PT0075 ,
@@ -5034,7 +5036,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/fe91bcfb4bc023da0ecfabf5030f92db"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0521
+###  https://w3id.org/APTO/PT0521
 :PT0521 rdf:type owl:Class ;
         rdfs:subClassOf :PT0450 ,
                         [ rdf:type owl:Restriction ;
@@ -5048,7 +5050,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/cf75ceb29197f57b19dcb8b4757368e8"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0522
+###  https://w3id.org/APTO/PT0522
 :PT0522 rdf:type owl:Class ;
         rdfs:subClassOf :PT0491 ,
                         [ rdf:type owl:Restriction ;
@@ -5061,7 +5063,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/91125fa713391ed5b8fcdf4ca818d011"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0523
+###  https://w3id.org/APTO/PT0523
 :PT0523 rdf:type owl:Class ;
         rdfs:subClassOf :PT0450 ,
                         [ rdf:type owl:Restriction ;
@@ -5078,7 +5080,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/d7b920215594108bd28b35702cb27236"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0524
+###  https://w3id.org/APTO/PT0524
 :PT0524 rdf:type owl:Class ;
         rdfs:subClassOf :PT0471 ;
         rdfs:label "Fruta de clima temperado"@pt-br ,
@@ -5086,7 +5088,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_7655"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0525
+###  https://w3id.org/APTO/PT0525
 :PT0525 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -5100,7 +5102,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/02e409c8bf00d35d7a7d61c56829da7f"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0526
+###  https://w3id.org/APTO/PT0526
 :PT0526 rdf:type owl:Class ;
         rdfs:subClassOf :PT0438 ;
         rdfs:label "Baked good"@en ,
@@ -5108,7 +5110,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_785"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0527
+###  https://w3id.org/APTO/PT0527
 :PT0527 rdf:type owl:Class ;
         rdfs:subClassOf :PT0471 ;
         rdfs:label "Fruta tropical"@pt-br ,
@@ -5117,7 +5119,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/bfb9ab9aadfc6cb021ca3d04221efc65"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0528
+###  https://w3id.org/APTO/PT0528
 :PT0528 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5130,7 +5132,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/72b302bf297a228a75730123efef7c41"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0529
+###  https://w3id.org/APTO/PT0529
 :PT0529 rdf:type owl:Class ;
         rdfs:subClassOf :PT0116 ;
         rdfs:label "Artrópode útil"@pt-br ,
@@ -5138,7 +5140,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_8115"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0530
+###  https://w3id.org/APTO/PT0530
 :PT0530 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Plant oil"@en ,
@@ -5147,7 +5149,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/f3577d6a7af8c40945365082dd588456"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0531
+###  https://w3id.org/APTO/PT0531
 :PT0531 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Produto hortícola"@pt-br ,
@@ -5155,7 +5157,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_8174"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0532
+###  https://w3id.org/APTO/PT0532
 :PT0532 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -5168,7 +5170,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_823"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0533
+###  https://w3id.org/APTO/PT0533
 :PT0533 rdf:type owl:Class ;
         rdfs:subClassOf :PT0115 ;
         rdfs:label "Planta produtora de cera"@pt-br ,
@@ -5177,7 +5179,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/a5528d684a04bc1651f0879ed04817d4"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0534
+###  https://w3id.org/APTO/PT0534
 :PT0534 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -5190,7 +5192,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/e2369eaf443fc28d5b546a7e23c7ea6c"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0535
+###  https://w3id.org/APTO/PT0535
 :PT0535 rdf:type owl:Class ;
         rdfs:subClassOf :PT0495 ,
                         [ rdf:type owl:Restriction ;
@@ -5203,7 +5205,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/9cd7fc78880bea64f045a006720f4c6d"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0536
+###  https://w3id.org/APTO/PT0536
 :PT0536 rdf:type owl:Class ;
         rdfs:subClassOf :PT0469 ,
                         [ rdf:type owl:Restriction ;
@@ -5216,7 +5218,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/d471f65a3e7768cb32d51debc22d9f60"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0537
+###  https://w3id.org/APTO/PT0537
 :PT0537 rdf:type owl:Class ;
         rdfs:subClassOf :PT0493 ,
                         [ rdf:type owl:Restriction ;
@@ -5231,7 +5233,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:prefLabel "Carne bovina"@pt-br .
 
 
-###  https://w3id.org/APTO#PT0538
+###  https://w3id.org/APTO/PT0538
 :PT0538 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -5245,7 +5247,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/561a32dd09056431c368b5ad71e64432"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0539
+###  https://w3id.org/APTO/PT0539
 :PT0539 rdf:type owl:Class ;
         rdfs:subClassOf :PT0552 ,
                         [ rdf:type owl:Restriction ;
@@ -5260,7 +5262,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/d8d964d1d7dbc6aab32e0ea56331e525"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0540
+###  https://w3id.org/APTO/PT0540
 :PT0540 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -5274,7 +5276,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/1a868182fce986fe0701a2d5c593acbf"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0541
+###  https://w3id.org/APTO/PT0541
 :PT0541 rdf:type owl:Class ;
         rdfs:subClassOf :PT0531 ,
                         [ rdf:type owl:Restriction ;
@@ -5291,7 +5293,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/373b74610542263335c865a6e39ee9d5"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0542
+###  https://w3id.org/APTO/PT0542
 :PT0542 rdf:type owl:Class ;
         rdfs:subClassOf :PT0478 ,
                         :PT0531 ,
@@ -5307,7 +5309,7 @@ xsd:date rdf:type rdfs:Datatype .
                         "https://sistemas.sede.embrapa.br/agrotermos/resources/c0304fb7306cc510b82e5a98d7db7618"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0543
+###  https://w3id.org/APTO/PT0543
 :PT0543 rdf:type owl:Class ;
         rdfs:subClassOf :PT0560 ;
         rdfs:label "Novilho"@pt-br ,
@@ -5317,7 +5319,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/05c55a77a73e2b5b498d15bea6fe6e35"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0544
+###  https://w3id.org/APTO/PT0544
 :PT0544 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5332,7 +5334,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/0b251a6dcde4c65670b467527c2e12f3"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0545
+###  https://w3id.org/APTO/PT0545
 :PT0545 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5346,7 +5348,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/1fabaa992654f45f4602e2f843463d50"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0546
+###  https://w3id.org/APTO/PT0546
 :PT0546 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Edible nut"@en ,
@@ -5354,7 +5356,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/28156081ffd59c01e5ad8c39d92d517b"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0547
+###  https://w3id.org/APTO/PT0547
 :PT0547 rdf:type owl:Class ;
         rdfs:subClassOf :PT0470 ,
                         [ rdf:type owl:Restriction ;
@@ -5374,7 +5376,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/2dc82a09c0941cb977352c10fba56d86"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0548
+###  https://w3id.org/APTO/PT0548
 :PT0548 rdf:type owl:Class ;
         rdfs:subClassOf :PT0115 ,
                         :PT0469 ;
@@ -5383,7 +5385,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/411edbea36c30f435e4d70751a9be9b2"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0549
+###  https://w3id.org/APTO/PT0549
 :PT0549 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5397,7 +5399,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "http://aims.fao.org/aos/agrovoc/c_9647"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0550
+###  https://w3id.org/APTO/PT0550
 :PT0550 rdf:type owl:Class ;
         rdfs:subClassOf :PT0501 ,
                         [ rdf:type owl:Restriction ;
@@ -5410,7 +5412,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/513d52ec57a549910bf9ced35be817a8"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0551
+###  https://w3id.org/APTO/PT0551
 :PT0551 rdf:type owl:Class ;
         rdfs:subClassOf :PT0470 ,
                         [ rdf:type owl:Restriction ;
@@ -5423,7 +5425,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/51c17a606edc3755c249bd9f44a88a29"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0552
+###  https://w3id.org/APTO/PT0552
 :PT0552 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         :PT0546 ;
@@ -5432,7 +5434,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_12873"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0553
+###  https://w3id.org/APTO/PT0553
 :PT0553 rdf:type owl:Class ;
         rdfs:subClassOf :PT0509 ;
         rdfs:label "Arroz em casca"@pt-br ,
@@ -5440,7 +5442,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/5949bdd80605dd4136a6b5a2cbe5b8f7"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0554
+###  https://w3id.org/APTO/PT0554
 :PT0554 rdf:type owl:Class ;
         rdfs:subClassOf :PT0454 ;
         rdfs:label "Beef cow"@en ,
@@ -5448,7 +5450,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/5973875894f680f6171765597c0b302c"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0555
+###  https://w3id.org/APTO/PT0555
 :PT0555 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5461,7 +5463,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/5ca3ba89b5052310f056bffc84ad2359"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0556
+###  https://w3id.org/APTO/PT0556
 :PT0556 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ;
         rdfs:label "Drug-producing plant"@en ,
@@ -5469,7 +5471,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/5fe1bb8cb4a85f7794a509eebfc271a7"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0557
+###  https://w3id.org/APTO/PT0557
 :PT0557 rdf:type owl:Class ;
         rdfs:subClassOf :PT0552 ,
                         [ rdf:type owl:Restriction ;
@@ -5483,7 +5485,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "https://agrovoc.fao.org/browse/agrovoc/en/page/c_9647"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0558
+###  https://w3id.org/APTO/PT0558
 :PT0558 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         :PT0527 ,
@@ -5497,7 +5499,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/62646d1e38e30e9a1901a3cc69d75178"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0559
+###  https://w3id.org/APTO/PT0559
 :PT0559 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5510,7 +5512,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/62ebfd337d11d466ca77260d335c62e6"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0560
+###  https://w3id.org/APTO/PT0560
 :PT0560 rdf:type owl:Class ;
         rdfs:subClassOf :PT0491 ,
                         [ rdf:type owl:Restriction ;
@@ -5523,7 +5525,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/638c80419412ec2aa5a3ab46897fcb04"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0561
+###  https://w3id.org/APTO/PT0561
 :PT0561 rdf:type owl:Class ;
         rdfs:subClassOf :PT0556 ;
         rdfs:label "Tabaco"@pt-br ,
@@ -5533,7 +5535,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/6c577516edc7117699a72d620847be73"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0562
+###  https://w3id.org/APTO/PT0562
 :PT0562 rdf:type owl:Class ;
         rdfs:subClassOf :PT0439 ,
                         [ rdf:type owl:Restriction ;
@@ -5546,7 +5548,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/6ccfec83258bc84dd914b82963ff15a0"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0563
+###  https://w3id.org/APTO/PT0563
 :PT0563 rdf:type owl:Class ;
         rdfs:subClassOf :PT0546 ;
         rdfs:label "Macadamia"@en ,
@@ -5554,7 +5556,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/6e5ec1f7742bbbfaccd577c26aa30bc5"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0564
+###  https://w3id.org/APTO/PT0564
 :PT0564 rdf:type owl:Class ;
         rdfs:subClassOf :PT0485 ;
         rdfs:label "Sal"@pt-br ,
@@ -5563,7 +5565,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:relatedMatch "http://aims.fao.org/aos/agrovoc/c_33129"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0565
+###  https://w3id.org/APTO/PT0565
 :PT0565 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5575,7 +5577,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/7a0149773ebabe1d82eb9830a577d16a"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0566
+###  https://w3id.org/APTO/PT0566
 :PT0566 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5593,7 +5595,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/7e8c918aba66629d9ac84d99fd56b745"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0567
+###  https://w3id.org/APTO/PT0567
 :PT0567 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Fruit pulp"@en ,
@@ -5601,7 +5603,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/845caef614387a897ba1f99e3a3558cd"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0568
+###  https://w3id.org/APTO/PT0568
 :PT0568 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ,
                         [ rdf:type owl:Restriction ;
@@ -5613,7 +5615,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/8a1700ad77be316e1185a58a9df4663a"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0569
+###  https://w3id.org/APTO/PT0569
 :PT0569 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ,
                         [ rdf:type owl:Restriction ;
@@ -5632,7 +5634,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/91e839283cf386499582d297bf181227"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0570
+###  https://w3id.org/APTO/PT0570
 :PT0570 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5645,7 +5647,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/93091ce029083f6c99e904493ae41517"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0571
+###  https://w3id.org/APTO/PT0571
 :PT0571 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5658,7 +5660,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/936400f151ba2146a86cfcc342279f57"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0572
+###  https://w3id.org/APTO/PT0572
 :PT0572 rdf:type owl:Class ;
         rdfs:subClassOf :PT0533 ,
                         [ rdf:type owl:Restriction ;
@@ -5671,7 +5673,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/9ddefc424391e81b5e0cea3f94bd04bd"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0573
+###  https://w3id.org/APTO/PT0573
 :PT0573 rdf:type owl:Class ;
         rdfs:subClassOf :PT0030 ,
                         [ rdf:type owl:Class ;
@@ -5687,7 +5689,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/a110c0bb4ca441a61349d22192c6c583"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0574
+###  https://w3id.org/APTO/PT0574
 :PT0574 rdf:type owl:Class ;
         rdfs:subClassOf :PT0461 ,
                         :PT0546 ;
@@ -5696,7 +5698,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/aaff761df6b25c60c9454df207578876"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0575
+###  https://w3id.org/APTO/PT0575
 :PT0575 rdf:type owl:Class ;
         rdfs:subClassOf :PT0546 ,
                         [ rdf:type owl:Restriction ;
@@ -5711,7 +5713,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "http://aims.fao.org/aos/agrovoc/c_15254"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0576
+###  https://w3id.org/APTO/PT0576
 :PT0576 rdf:type owl:Class ;
         rdfs:subClassOf :PT0584 ,
                         [ rdf:type owl:Restriction ;
@@ -5724,7 +5726,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/b8019c5cd743abe5e568bca34e1035a2"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0577
+###  https://w3id.org/APTO/PT0577
 :PT0577 rdf:type owl:Class ;
         rdfs:subClassOf :PT0451 ;
         rdfs:label "Açúcar cristal"@pt-br ,
@@ -5732,7 +5734,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/c149abe6c0478ea98091733724878114"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0578
+###  https://w3id.org/APTO/PT0578
 :PT0578 rdf:type owl:Class ;
         rdfs:subClassOf :PT0470 ,
                         [ rdf:type owl:Restriction ;
@@ -5744,7 +5746,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/c7bd43872382af7e405eb31fbe0d62b3"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0579
+###  https://w3id.org/APTO/PT0579
 :PT0579 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5760,7 +5762,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/d624e0944dcd81829d9fcc3cc6611929"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0580
+###  https://w3id.org/APTO/PT0580
 :PT0580 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5773,7 +5775,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/d673d8cbfcb7c2fd26ef7fbd8b69d709"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0581
+###  https://w3id.org/APTO/PT0581
 :PT0581 rdf:type owl:Class ;
         rdfs:subClassOf :PT0114 ;
         rdfs:label "Fécula"@pt-br ,
@@ -5781,7 +5783,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/d7f09ae1740a8f52cefd25b0614965a1"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0582
+###  https://w3id.org/APTO/PT0582
 :PT0582 rdf:type owl:Class ;
         rdfs:subClassOf :PT0484 ,
                         [ rdf:type owl:Restriction ;
@@ -5796,7 +5798,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/d942eb37336785079bc6623ee5ff81a9"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0583
+###  https://w3id.org/APTO/PT0583
 :PT0583 rdf:type owl:Class ;
         rdfs:subClassOf :PT0501 ,
                         [ rdf:type owl:Restriction ;
@@ -5809,7 +5811,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/e4a3d44a48cc1650a37dc45948407a83"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0584
+###  https://w3id.org/APTO/PT0584
 :PT0584 rdf:type owl:Class ;
         rdfs:subClassOf :PT0475 ;
         rdfs:label "Grain legume"@en ,
@@ -5817,7 +5819,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/e59b534a1f0b7dc770e1b7578597c131"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0585
+###  https://w3id.org/APTO/PT0585
 :PT0585 rdf:type owl:Class ;
         rdfs:subClassOf :PT0527 ,
                         [ rdf:type owl:Restriction ;
@@ -5830,7 +5832,7 @@ xsd:date rdf:type rdfs:Datatype .
         skos:exactMatch "https://sistemas.sede.embrapa.br/agrotermos/resources/f52a78f322bd8fcd941bf77dee403436"^^xsd:anyURI .
 
 
-###  https://w3id.org/APTO#PT0586
+###  https://w3id.org/APTO/PT0586
 :PT0586 rdf:type owl:Class ;
         rdfs:subClassOf :PT0068 ,
                         [ rdf:type owl:Restriction ;
